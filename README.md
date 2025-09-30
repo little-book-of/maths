@@ -42,11 +42,11 @@ improving examples.
 Nguyen, Duc-Tam (2025). _The Little Book of Maths_
 
 ```
-@book{Nguyen2025TLBoLA,
+@book{Nguyen2025TLBoM,
   author = {Duc-Tam Nguyen},
   title  = {The Little Book of Maths},
   year   = {2025},
-  url    = {https://github.com/little-book-of/linear-algebra}
+  url    = {https://github.com/little-book-of/maths}
 }
 ```
 

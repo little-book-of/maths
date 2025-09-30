@@ -65,6 +65,46 @@
 \fi
 \makeatother
 
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{241,243,245}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.40,0.45,0.13}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\ExtensionTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.28,0.35,0.67}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.46,0.62}{#1}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.07,0.07,0.07}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
 
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
@@ -173,7 +213,7 @@
   \apptocmd{\@title}{\par {\large #1 \par}}{}{}
 }
 \makeatother
-\subtitle{Version 0.2.0}
+\subtitle{Version 0.2.1}
 \author{Duc-Tam Nguyen}
 \date{2025-09-30}
 \begin{document}
@@ -7676,8 +7716,50 @@ circle drawn upon the infinite.
 
 \chapter{The Ideas}\label{the-ideas}
 
-\subsection{Chapter 1. Pebbles and Shadows: The Birth of
-Number}\label{chapter-1.-pebbles-and-shadows-the-birth-of-number}
+\subsubsection{About}\label{about}
+
+Each section in this book tells a story - how an idea was born, why it
+mattered, and what it changed. Yet stories alone cannot capture the
+precision of thought. Mathematics is a language; so is code. Between
+symbol and syntax, they form a bridge - a grammar shared by minds and
+machines.
+
+These key ideas distill each concept to its essence. The tiny code
+snippets beside them are not full programs, but \emph{parables in
+Python} - small enough to grasp, yet expressive enough to show how
+thought becomes action.
+
+In these few lines, you can see abstraction at work: rules turned into
+computation, logic shaped into loops, geometry drawn in numbers. They
+remind us that algorithms are not only tools - they are \emph{sentences}
+in a universal tongue, spoken by both human and machine.
+
+To read them is to glimpse the unity of understanding - how an equation,
+a proof, or a program are all ways of saying: \emph{this is how the
+world makes sense.}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://github.com/little-book-of/maths/blob/main/releases/book.pdf}{Download
+  PDF} - print-ready
+\item
+  \href{https://github.com/little-book-of/maths/blob/main/releases/book.epub}{Download
+  EPUB} - e-reader friendly
+\item
+  \href{https://github.com/little-book-of/maths/blob/main/releases/book.tex}{View
+  LaTex} - \texttt{.tex} source
+\item
+  \href{https://github.com/little-book-of/maths/blob/main/books/en-US/ideas.md}{Source
+  code (Github)} - Markdown source
+\item
+  \href{https://little-book-of.github.io/maths/books/en-US/ideas.html}{Read
+  on GitHub Pages}
+\end{itemize}
+
+\subsection{\texorpdfstring{\href{https://little-book-of.github.io/maths/books/en-US/chronicles-1.html}{Chapter
+1. Pebbles and Shadows: The Birth of
+Number}}{Chapter 1. Pebbles and Shadows: The Birth of Number}}\label{chapter-1.-pebbles-and-shadows-the-birth-of-number}
 
 \subsubsection{1. Pebbles and Shadows - The First
 Count}\label{pebbles-and-shadows---the-first-count}
@@ -7690,7 +7772,7 @@ thing stand for another - gave birth to number. It was a way of
 extending memory into matter. From gesture came mark, from mark came
 meaning.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -7706,6 +7788,18 @@ meaning.
   Abstraction began when humans stepped beyond what they saw.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# One pebble per sheep: if mapping is one{-}to{-}one, counts match.}
+\NormalTok{sheep }\OperatorTok{=}\NormalTok{ [}\StringTok{"🐑1"}\NormalTok{,}\StringTok{"🐑2"}\NormalTok{,}\StringTok{"🐑3"}\NormalTok{,}\StringTok{"🐑4"}\NormalTok{,}\StringTok{"🐑5"}\NormalTok{]}
+\NormalTok{pebbles }\OperatorTok{=}\NormalTok{ [}\StringTok{"●"} \ControlFlowTok{for}\NormalTok{ \_ }\KeywordTok{in}\NormalTok{ sheep]}
+\ControlFlowTok{assert} \BuiltInTok{len}\NormalTok{(sheep) }\OperatorTok{==} \BuiltInTok{len}\NormalTok{(pebbles)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Sheep counted:"}\NormalTok{, }\BuiltInTok{len}\NormalTok{(pebbles))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{2. Symbols of the Invisible - Writing
 Number}\label{symbols-of-the-invisible---writing-number}
 
@@ -7716,7 +7810,7 @@ fixed signs. Over time, simple marks became symbols, each carrying an
 idea beyond its shape. Numbers were no longer just quantities - they
 became part of language.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -7732,6 +7826,17 @@ became part of language.
   Number gained power when joined to writing.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Tally marks as a written memory for quantities.}
+\KeywordTok{def}\NormalTok{ tally(n): }\ControlFlowTok{return}\NormalTok{ (}\StringTok{"|||| "} \OperatorTok{*}\NormalTok{ (n }\OperatorTok{//} \DecValTok{5}\NormalTok{) }\OperatorTok{+} \StringTok{"|"} \OperatorTok{*}\NormalTok{ (n }\OperatorTok{\%} \DecValTok{5}\NormalTok{)).strip()}
+\NormalTok{ledger }\OperatorTok{=}\NormalTok{ \{}\StringTok{"grain\_jars"}\NormalTok{: }\DecValTok{12}\NormalTok{, }\StringTok{"goats"}\NormalTok{: }\DecValTok{7}\NormalTok{\}}
+\ControlFlowTok{for}\NormalTok{ k,v }\KeywordTok{in}\NormalTok{ ledger.items(): }\BuiltInTok{print}\NormalTok{(}\SpecialStringTok{f"}\SpecialCharTok{\{}\NormalTok{k}\SpecialCharTok{:11s\}}\SpecialStringTok{ → }\SpecialCharTok{\{}\NormalTok{tally(v)}\SpecialCharTok{\}}\SpecialStringTok{"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{3. The Birth of Arithmetic - Adding the
 World}\label{the-birth-of-arithmetic---adding-the-world}
 
@@ -7742,7 +7847,7 @@ merchants balanced trade. Step by step, arithmetic taught that numbers
 could not only describe the world but also \emph{predict} it. The rules
 discovered in practice became the grammar of quantity.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -7759,6 +7864,20 @@ discovered in practice became the grammar of quantity.
   Mathematics became a tool for reasoning about the future.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Add, subtract, multiply, divide: a tiny calculator of needs.}
+\NormalTok{needs }\OperatorTok{=}\NormalTok{ \{}\StringTok{"rope"}\NormalTok{: }\DecValTok{3}\NormalTok{, }\StringTok{"lamp\_oil"}\NormalTok{: }\DecValTok{2}\NormalTok{\}}
+\NormalTok{stock }\OperatorTok{=}\NormalTok{ \{}\StringTok{"rope"}\NormalTok{: }\DecValTok{1}\NormalTok{, }\StringTok{"lamp\_oil"}\NormalTok{: }\DecValTok{5}\NormalTok{\}}
+\KeywordTok{def}\NormalTok{ add(a,b): }\ControlFlowTok{return}\NormalTok{ a}\OperatorTok{+}\NormalTok{b}
+\KeywordTok{def}\NormalTok{ sub(a,b): }\ControlFlowTok{return}\NormalTok{ a}\OperatorTok{{-}}\NormalTok{b}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Rope to buy:"}\NormalTok{, sub(needs[}\StringTok{"rope"}\NormalTok{], stock[}\StringTok{"rope"}\NormalTok{]))}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Total containers:"}\NormalTok{, add(needs[}\StringTok{"lamp\_oil"}\NormalTok{], stock[}\StringTok{"lamp\_oil"}\NormalTok{]))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{4. Geometry and the Divine - Measuring Heaven and
 Earth}\label{geometry-and-the-divine---measuring-heaven-and-earth}
 
@@ -7769,7 +7888,7 @@ required shape and proportion. In Egypt and Mesopotamia, geometry was
 both practical and sacred, linking human design to cosmic rhythm. To
 measure was to understand one's place in a patterned world.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -7785,6 +7904,20 @@ measure was to understand one's place in a patterned world.
   Measuring was both a science and a spiritual act.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Distance \& triangle area from coordinates (surveying the field).}
+\ImportTok{import}\NormalTok{ math}
+\NormalTok{A,B,C }\OperatorTok{=}\NormalTok{ (}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{),(}\DecValTok{4}\NormalTok{,}\DecValTok{0}\NormalTok{),(}\DecValTok{1}\NormalTok{,}\DecValTok{3}\NormalTok{)}
+\KeywordTok{def}\NormalTok{ dist(P,Q): }\ControlFlowTok{return}\NormalTok{ math.hypot(P[}\DecValTok{0}\NormalTok{]}\OperatorTok{{-}}\NormalTok{Q[}\DecValTok{0}\NormalTok{], P[}\DecValTok{1}\NormalTok{]}\OperatorTok{{-}}\NormalTok{Q[}\DecValTok{1}\NormalTok{])}
+\NormalTok{perimeter }\OperatorTok{=}\NormalTok{ dist(A,B)}\OperatorTok{+}\NormalTok{dist(B,C)}\OperatorTok{+}\NormalTok{dist(C,A)}
+\NormalTok{area }\OperatorTok{=} \BuiltInTok{abs}\NormalTok{((A[}\DecValTok{0}\NormalTok{]}\OperatorTok{*}\NormalTok{(B[}\DecValTok{1}\NormalTok{]}\OperatorTok{{-}}\NormalTok{C[}\DecValTok{1}\NormalTok{]) }\OperatorTok{+}\NormalTok{ B[}\DecValTok{0}\NormalTok{]}\OperatorTok{*}\NormalTok{(C[}\DecValTok{1}\NormalTok{]}\OperatorTok{{-}}\NormalTok{A[}\DecValTok{1}\NormalTok{]) }\OperatorTok{+}\NormalTok{ C[}\DecValTok{0}\NormalTok{]}\OperatorTok{*}\NormalTok{(A[}\DecValTok{1}\NormalTok{]}\OperatorTok{{-}}\NormalTok{B[}\DecValTok{1}\NormalTok{]))}\OperatorTok{/}\DecValTok{2}\NormalTok{)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Perimeter:"}\NormalTok{, }\BuiltInTok{round}\NormalTok{(perimeter,}\DecValTok{2}\NormalTok{), }\StringTok{"Area:"}\NormalTok{, area)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{5. Algebra as Language - The Grammar of the
 Unknown}\label{algebra-as-language---the-grammar-of-the-unknown}
 
@@ -7795,7 +7928,7 @@ centuries, algebra became a language for patterns. Letters replaced
 numbers, and reasoning replaced repetition. To solve was to translate -
 from mystery into form.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -7811,6 +7944,17 @@ from mystery into form.
   Equations became a universal language of relation.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Solve ax + b = c for x (algebra as a recipe).}
+\NormalTok{a,b,c }\OperatorTok{=} \DecValTok{7}\NormalTok{, }\OperatorTok{{-}}\DecValTok{5}\NormalTok{, }\DecValTok{23}   \CommentTok{\# 7x {-} 5 = 23}
+\NormalTok{x }\OperatorTok{=}\NormalTok{ (c }\OperatorTok{{-}}\NormalTok{ b)}\OperatorTok{/}\NormalTok{a}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"x ="}\NormalTok{, x)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{6. The Algorithmic Mind - Rules, Steps, and
 Certainty}\label{the-algorithmic-mind---rules-steps-and-certainty}
 
@@ -7820,7 +7964,7 @@ ritual. They embodied the idea that thinking could follow rules. From
 Babylonian tables to Al-Khwarizmi's texts, algorithms promised certainty
 through process. The mind could delegate reasoning to method.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -7836,6 +7980,18 @@ through process. The mind could delegate reasoning to method.
   The idea of method laid the groundwork for computation.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Euclid\textquotesingle{}s algorithm: repeat until remainder is zero.}
+\KeywordTok{def}\NormalTok{ gcd(a,b):}
+    \ControlFlowTok{while}\NormalTok{ b: a,b }\OperatorTok{=}\NormalTok{ b, a}\OperatorTok{\%}\NormalTok{b}
+    \ControlFlowTok{return}\NormalTok{ a}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"gcd(840, 612) ="}\NormalTok{, gcd(}\DecValTok{840}\NormalTok{,}\DecValTok{612}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{7. Zero and Infinity - Taming the
 Void}\label{zero-and-infinity---taming-the-void}
 
@@ -7846,7 +8002,7 @@ Ancient cultures struggled with both: how to name nothing, how to grasp
 the endless. When accepted, they completed the number line - anchoring
 the void and extending beyond it.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -7862,6 +8018,22 @@ the void and extending beyond it.
   Understanding them reshaped philosophy and science alike.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Zero as placeholder in base{-}10; partial sums growing without bound.}
+\NormalTok{digits }\OperatorTok{=}\NormalTok{ [}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{4}\NormalTok{]  }\CommentTok{\# "1024"}
+\NormalTok{value }\OperatorTok{=} \BuiltInTok{sum}\NormalTok{(d}\OperatorTok{*}\DecValTok{10}\ErrorTok{p} \ControlFlowTok{for}\NormalTok{ p,d }\KeywordTok{in} \BuiltInTok{enumerate}\NormalTok{(}\BuiltInTok{reversed}\NormalTok{(digits)))}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Value of digits [1,0,2,4]:"}\NormalTok{, value)}
+
+\NormalTok{s, n }\OperatorTok{=} \FloatTok{0.0}\NormalTok{, }\DecValTok{1}       \CommentTok{\# Harmonic partial sums hint at divergence (toward infinity).}
+\ControlFlowTok{for}\NormalTok{ \_ }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{6}\NormalTok{):}
+\NormalTok{    s }\OperatorTok{+=} \DecValTok{1}\OperatorTok{/}\NormalTok{n}\OperatorTok{;}\NormalTok{ n }\OperatorTok{+=} \DecValTok{1}
+    \BuiltInTok{print}\NormalTok{(}\StringTok{"Partial sum:"}\NormalTok{, }\BuiltInTok{round}\NormalTok{(s,}\DecValTok{4}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{8. The Logic of Proof - From Belief to
 Knowledge}\label{the-logic-of-proof---from-belief-to-knowledge}
 
@@ -7871,7 +8043,7 @@ assent. The Greeks formalized it, turning geometry into a theater of
 logic. Each statement followed from what came before, all grounded in
 clear assumptions. Truth was no longer decreed; it was demonstrated.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -7887,6 +8059,18 @@ clear assumptions. Truth was no longer decreed; it was demonstrated.
   Mathematics became a republic governed by reason.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Sum of first n odd numbers equals n\^{}2 (verified for small n).}
+\KeywordTok{def}\NormalTok{ ok(n): }\ControlFlowTok{return} \BuiltInTok{sum}\NormalTok{(}\DecValTok{2}\OperatorTok{*}\NormalTok{k}\OperatorTok{{-}}\DecValTok{1} \ControlFlowTok{for}\NormalTok{ k }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{1}\NormalTok{,n}\OperatorTok{+}\DecValTok{1}\NormalTok{)) }\OperatorTok{==}\NormalTok{ n}\OperatorTok{*}\NormalTok{n}
+\ControlFlowTok{for}\NormalTok{ n }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{11}\NormalTok{):}
+    \ControlFlowTok{assert}\NormalTok{ ok(n)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Checked n=1..10: sum of odds = n\^{}2"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{9. The Clockwork Universe - Nature as
 Equation}\label{the-clockwork-universe---nature-as-equation}
 
@@ -7897,7 +8081,7 @@ and Newton would describe the cosmos itself as a grand mechanism, its
 gears turning by measurable laws. The world became a system, and
 mathematics its grammar.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -7913,6 +8097,22 @@ mathematics its grammar.
   The cosmos became intelligible through number.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Constant acceleration: s = s0 + v0*t + 0.5*a*t\^{}2 (discrete simulation vs formula).}
+\NormalTok{g }\OperatorTok{=} \OperatorTok{{-}}\FloatTok{9.8}\OperatorTok{;}\NormalTok{ dt }\OperatorTok{=} \FloatTok{0.1}\OperatorTok{;}\NormalTok{ t }\OperatorTok{=} \FloatTok{0.0}
+\NormalTok{s, v }\OperatorTok{=} \FloatTok{100.0}\NormalTok{, }\FloatTok{0.0}   \CommentTok{\# height (m), initial velocity}
+\ControlFlowTok{for}\NormalTok{ \_ }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{10}\NormalTok{):  }\CommentTok{\# simulate 1 second}
+\NormalTok{    s }\OperatorTok{+=}\NormalTok{ v}\OperatorTok{*}\NormalTok{dt }\OperatorTok{+} \FloatTok{0.5}\OperatorTok{*}\NormalTok{g}\OperatorTok{*}\NormalTok{dt}\OperatorTok{*}\NormalTok{dt}
+\NormalTok{    v }\OperatorTok{+=}\NormalTok{ g}\OperatorTok{*}\NormalTok{dt}
+\NormalTok{    t }\OperatorTok{+=}\NormalTok{ dt}
+\NormalTok{formula }\OperatorTok{=} \DecValTok{100} \OperatorTok{+} \DecValTok{0}\OperatorTok{*}\NormalTok{t }\OperatorTok{+} \FloatTok{0.5}\OperatorTok{*}\NormalTok{g}\OperatorTok{*}\NormalTok{(t2)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Simulated height:"}\NormalTok{, }\BuiltInTok{round}\NormalTok{(s,}\DecValTok{3}\NormalTok{), }\StringTok{"Formula height:"}\NormalTok{, }\BuiltInTok{round}\NormalTok{(formula,}\DecValTok{3}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{10. The Logic of Certainty - Proof as
 Power}\label{the-logic-of-certainty---proof-as-power}
 
@@ -7923,7 +8123,7 @@ certainty shaped philosophy, science, and technology. In a world of
 doubt, mathematics became the model of clarity - where every claim
 could, in principle, be shown.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -7939,8 +8139,22 @@ could, in principle, be shown.
   The pursuit of proof defined the spirit of reason.
 \end{itemize}
 
-\subsection{Chapter 2. The Age of Reason: Mathematics becomes a
-Language}\label{chapter-2.-the-age-of-reason-mathematics-becomes-a-language}
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Structural property checked exhaustively over a small range.}
+\KeywordTok{def}\NormalTok{ is\_even(n): }\ControlFlowTok{return}\NormalTok{ n }\OperatorTok{\%} \DecValTok{2} \OperatorTok{==} \DecValTok{0}
+\ControlFlowTok{for}\NormalTok{ a }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{20}\NormalTok{,}\DecValTok{2}\NormalTok{):}
+    \ControlFlowTok{for}\NormalTok{ b }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{20}\NormalTok{,}\DecValTok{2}\NormalTok{):}
+        \ControlFlowTok{assert}\NormalTok{ is\_even(a}\OperatorTok{+}\NormalTok{b)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Verified: even + even = even (0..18)"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{\texorpdfstring{\href{https://little-book-of.github.io/maths/books/en-US/chronicles-2.html}{Chapter
+2. The Age of Reason: Mathematics becomes a
+Language}}{Chapter 2. The Age of Reason: Mathematics becomes a Language}}\label{chapter-2.-the-age-of-reason-mathematics-becomes-a-language}
 
 \subsubsection{11. Descartes' Grid - Merging Shape and
 Symbol}\label{descartes-grid---merging-shape-and-symbol}
@@ -7952,7 +8166,7 @@ allowed shapes to be analyzed with arithmetic and formulas to be seen as
 pictures. Mathematics gained a new language - one where sight and symbol
 spoke as one.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -7968,6 +8182,18 @@ spoke as one.
   Mathematics became both spatial and abstract.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Plot points on a coordinate plane: algebra meets geometry.}
+\NormalTok{points }\OperatorTok{=}\NormalTok{ [(}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{), (}\DecValTok{3}\NormalTok{, }\DecValTok{4}\NormalTok{), (}\OperatorTok{{-}}\DecValTok{2}\NormalTok{, }\DecValTok{1}\NormalTok{)]}
+\ControlFlowTok{for}\NormalTok{ x, y }\KeywordTok{in}\NormalTok{ points:}
+\NormalTok{    eq }\OperatorTok{=} \SpecialStringTok{f"y = }\SpecialCharTok{\{}\NormalTok{y}\SpecialCharTok{\}}\SpecialStringTok{ when x = }\SpecialCharTok{\{}\NormalTok{x}\SpecialCharTok{\}}\SpecialStringTok{"}
+    \BuiltInTok{print}\NormalTok{(eq)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{12. Newton's Laws - The Universe as
 Formula}\label{newtons-laws---the-universe-as-formula}
 
@@ -7977,7 +8203,7 @@ of laws expressed in number. With calculus, he described how things
 change; with physics, he revealed that change itself obeys rule. The
 universe, once a mystery, could now be written as mathematics.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -7993,6 +8219,17 @@ universe, once a mystery, could now be written as mathematics.
   Science gained precision through mathematics.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# F = m * a : motion from force}
+\NormalTok{m, a }\OperatorTok{=} \FloatTok{5.0}\NormalTok{, }\FloatTok{2.0}
+\NormalTok{F }\OperatorTok{=}\NormalTok{ m }\OperatorTok{*}\NormalTok{ a}
+\BuiltInTok{print}\NormalTok{(}\SpecialStringTok{f"Force = }\SpecialCharTok{\{}\NormalTok{F}\SpecialCharTok{\}}\SpecialStringTok{ N"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{13. Leibniz and the Infinite - The Art of the
 Differential}\label{leibniz-and-the-infinite---the-art-of-the-differential}
 
@@ -8003,7 +8240,7 @@ differences. Beyond mechanics, he dreamed of a ``universal calculus'' -
 a symbolic logic to solve all reasoning. In his vision, thought itself
 could be computed.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8019,6 +8256,18 @@ could be computed.
   The dream of mechanical reasoning began.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Approximate derivative: slope from tiny steps}
+\KeywordTok{def}\NormalTok{ f(x): }\ControlFlowTok{return}\NormalTok{ x2}
+\NormalTok{x, dx }\OperatorTok{=} \FloatTok{2.0}\NormalTok{, }\FloatTok{1e{-}5}
+\NormalTok{dfdx }\OperatorTok{=}\NormalTok{ (f(x}\OperatorTok{+}\NormalTok{dx) }\OperatorTok{{-}}\NormalTok{ f(x)) }\OperatorTok{/}\NormalTok{ dx}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"f\textquotesingle{}(2) ≈"}\NormalTok{, }\BuiltInTok{round}\NormalTok{(dfdx, }\DecValTok{4}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{14. Euler's Vision - The Web of
 Relations}\label{eulers-vision---the-web-of-relations}
 
@@ -8029,7 +8278,7 @@ patterns in everything from bridges to stars. Through symbols and
 clarity, Euler showed that mathematics was not a set of tricks, but a
 unified language of structure.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8045,6 +8294,16 @@ unified language of structure.
   Mathematics emerged as a connected whole.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Euler\textquotesingle{}s formula for planar graphs: V {-} E + F = 2}
+\NormalTok{V, E, F }\OperatorTok{=} \DecValTok{5}\NormalTok{, }\DecValTok{8}\NormalTok{, }\DecValTok{5}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"V {-} E + F ="}\NormalTok{, V }\OperatorTok{{-}}\NormalTok{ E }\OperatorTok{+}\NormalTok{ F)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{15. Gauss and the Hidden Order - The Birth of Number
 Theory}\label{gauss-and-the-hidden-order---the-birth-of-number-theory}
 
@@ -8054,7 +8313,7 @@ with precision. His \emph{Disquisitiones Arithmeticae} turned curiosity
 into science - making number theory a field of its own. To study
 integers was to uncover the architecture of arithmetic itself.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8070,6 +8329,17 @@ integers was to uncover the architecture of arithmetic itself.
   Arithmetic matured into a theoretical science.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Sum of first n integers: n*(n+1)//2}
+\NormalTok{n }\OperatorTok{=} \DecValTok{100}
+\NormalTok{s }\OperatorTok{=}\NormalTok{ n}\OperatorTok{*}\NormalTok{(n}\OperatorTok{+}\DecValTok{1}\NormalTok{)}\OperatorTok{//}\DecValTok{2}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Sum 1..100 ="}\NormalTok{, s)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{16. The Geometry of Curvature - Space Bends
 Thought}\label{the-geometry-of-curvature---space-bends-thought}
 
@@ -8080,7 +8350,7 @@ dimensions. Curvature became a measure of deviation - how lines bend,
 how space itself can twist. Later, these ideas would reshape physics and
 our view of the cosmos.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8096,6 +8366,18 @@ our view of the cosmos.
   The groundwork for relativity was laid.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Circle vs. sphere curvature example}
+\ImportTok{import}\NormalTok{ math}
+\NormalTok{r\_circle }\OperatorTok{=} \DecValTok{1}
+\NormalTok{k\_circle }\OperatorTok{=} \DecValTok{1} \OperatorTok{/}\NormalTok{ r\_circle  }\CommentTok{\# curvature}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Curvature of circle (r=1):"}\NormalTok{, k\_circle)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{17. Probability and Uncertainty - Measuring the
 Unknown}\label{probability-and-uncertainty---measuring-the-unknown}
 
@@ -8105,7 +8387,7 @@ expectation. Pascal, Fermat, and later Laplace showed that randomness
 obeys laws when viewed in large numbers. By quantifying uncertainty,
 mathematics gave reason a way to guide risk and belief.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8121,6 +8403,18 @@ mathematics gave reason a way to guide risk and belief.
   Decision-making became a science of odds.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Simulate coin tosses}
+\ImportTok{import}\NormalTok{ random}
+\NormalTok{trials }\OperatorTok{=} \DecValTok{10000}
+\NormalTok{heads }\OperatorTok{=} \BuiltInTok{sum}\NormalTok{(random.choice([}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{]) }\ControlFlowTok{for}\NormalTok{ \_ }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(trials))}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"P(heads) ≈"}\NormalTok{, heads }\OperatorTok{/}\NormalTok{ trials)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{18. Fourier and the Song of the World - Waves, Heat, and
 Harmony}\label{fourier-and-the-song-of-the-world---waves-heat-and-harmony}
 
@@ -8130,7 +8424,7 @@ analysis turned vibration into arithmetic, showing how harmony underlies
 even noise. From music to signal processing, his insight revealed that
 the world's movements could be written as sums of simple oscillations.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8146,6 +8440,17 @@ the world's movements could be written as sums of simple oscillations.
   Modern data and image science trace back to this idea.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Add two sine waves: complex motion from harmony}
+\ImportTok{import}\NormalTok{ math}
+\NormalTok{signal }\OperatorTok{=}\NormalTok{ [math.sin(t) }\OperatorTok{+} \FloatTok{0.5}\OperatorTok{*}\NormalTok{math.sin(}\DecValTok{3}\OperatorTok{*}\NormalTok{t) }\ControlFlowTok{for}\NormalTok{ t }\KeywordTok{in}\NormalTok{ [i}\OperatorTok{*}\FloatTok{0.1} \ControlFlowTok{for}\NormalTok{ i }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{10}\NormalTok{)]]}
+\BuiltInTok{print}\NormalTok{([}\BuiltInTok{round}\NormalTok{(x,}\DecValTok{2}\NormalTok{) }\ControlFlowTok{for}\NormalTok{ x }\KeywordTok{in}\NormalTok{ signal])}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{19. Non-Euclidean Spaces - Parallel Worlds of
 Geometry}\label{non-euclidean-spaces---parallel-worlds-of-geometry}
 
@@ -8156,7 +8461,7 @@ beautiful, and strange. Space itself could be hyperbolic, spherical, or
 flat. Geometry became plural - not a mirror of nature, but a creation of
 reason.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8172,6 +8477,16 @@ reason.
   The idea prepared mathematics for relativity.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Triangle angle sum \textless{} 180° (hyperbolic hint, approximate)}
+\NormalTok{angles }\OperatorTok{=}\NormalTok{ [}\DecValTok{50}\NormalTok{, }\DecValTok{60}\NormalTok{, }\DecValTok{60}\NormalTok{]}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Sum of angles:"}\NormalTok{, }\BuiltInTok{sum}\NormalTok{(angles))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{20. The Dream of Unification - Mathematics as
 Cosmos}\label{the-dream-of-unification---mathematics-as-cosmos}
 
@@ -8182,7 +8497,7 @@ In symmetries, transformations, and invariants, mathematicians glimpsed
 unity. The dream was not of simplification, but of connection - a cosmos
 where every truth reflects another.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8198,8 +8513,21 @@ where every truth reflects another.
   The whole is more intelligible than its parts.
 \end{itemize}
 
-\subsection{Chapter 3. The Engine of Calculation: Machines of
-Thought}\label{chapter-3.-the-engine-of-calculation-machines-of-thought}
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# One formula links many: symmetry of (a+b)\^{}2}
+\NormalTok{a, b }\OperatorTok{=} \DecValTok{2}\NormalTok{, }\DecValTok{3}
+\NormalTok{lhs }\OperatorTok{=}\NormalTok{ (a }\OperatorTok{+}\NormalTok{ b)}\DecValTok{2}
+\NormalTok{rhs }\OperatorTok{=}\NormalTok{ a2 }\OperatorTok{+} \DecValTok{2}\OperatorTok{*}\NormalTok{a}\OperatorTok{*}\NormalTok{b }\OperatorTok{+}\NormalTok{ b2}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Equal:"}\NormalTok{, lhs }\OperatorTok{==}\NormalTok{ rhs)}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{\texorpdfstring{\href{https://little-book-of.github.io/maths/books/en-US/chronicles-3.html}{Chapter
+3. The Engine of Calculation: Machines of
+Thought}}{Chapter 3. The Engine of Calculation: Machines of Thought}}\label{chapter-3.-the-engine-of-calculation-machines-of-thought}
 
 \subsubsection{21. Napier's Bones and Pascal's Wheels - The First
 Mechanical
@@ -8212,7 +8540,7 @@ Pascal built a machine of gears and dials to add and subtract with
 precision. These early devices transformed thought into motion - the
 first step toward automating reason itself.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8228,6 +8556,21 @@ first step toward automating reason itself.
   The dream of mechanized reasoning began in wood and brass.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Multiplication via repeated addition: the heart of early calculators}
+\KeywordTok{def}\NormalTok{ multiply(a, b):}
+\NormalTok{    result }\OperatorTok{=} \DecValTok{0}
+    \ControlFlowTok{for}\NormalTok{ \_ }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(b):}
+\NormalTok{        result }\OperatorTok{+=}\NormalTok{ a}
+    \ControlFlowTok{return}\NormalTok{ result}
+
+\BuiltInTok{print}\NormalTok{(}\StringTok{"6 × 7 ="}\NormalTok{, multiply(}\DecValTok{6}\NormalTok{, }\DecValTok{7}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{22. Leibniz's Dream Machine - Calculating All
 Truth}\label{leibnizs-dream-machine---calculating-all-truth}
 
@@ -8238,7 +8581,7 @@ symbolic language in which every thought could be computed. ``Let us
 calculate,'' he said - and settle disputes by logic, not debate. Though
 unrealized, his dream foretold symbolic logic and modern computing.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8254,6 +8597,18 @@ unrealized, his dream foretold symbolic logic and modern computing.
   The idea linked thought with automation.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Logic by computation: truth{-}table reasoning}
+\NormalTok{A, B }\OperatorTok{=} \VariableTok{True}\NormalTok{, }\VariableTok{False}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"A AND B ="}\NormalTok{, A }\KeywordTok{and}\NormalTok{ B)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"A OR  B ="}\NormalTok{, A }\KeywordTok{or}\NormalTok{ B)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"NOT A  ="}\NormalTok{, }\KeywordTok{not}\NormalTok{ A)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{23. The Age of Tables - Computation as
 Empire}\label{the-age-of-tables---computation-as-empire}
 
@@ -8265,7 +8620,7 @@ Empires mapped their worlds through mathematics, and errors could steer
 ships or fortunes astray. The quest for accuracy fueled the
 mechanization of thought.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8281,6 +8636,16 @@ mechanization of thought.
   Computation became a foundation of empire and science.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Lookup table: precomputed answers, fast reference}
+\NormalTok{squares }\OperatorTok{=}\NormalTok{ \{n: n}\OperatorTok{*}\NormalTok{n }\ControlFlowTok{for}\NormalTok{ n }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{11}\NormalTok{)\}}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Square of 9:"}\NormalTok{, squares[}\DecValTok{9}\NormalTok{])}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{24. Babbage and Lovelace - The Analytical Engine
 Awakens}\label{babbage-and-lovelace---the-analytical-engine-awakens}
 
@@ -8291,7 +8656,7 @@ foreshadowed the modern computer. Ada Lovelace, translating and
 expanding his vision, saw its true potential - that it might ``compose
 music'' or ``weave patterns,'' processing symbols beyond number.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8307,6 +8672,18 @@ music'' or ``weave patterns,'' processing symbols beyond number.
   The Analytical Engine prefigured digital computers.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Programmatic loops \& memory: computing a sequence}
+\NormalTok{memory }\OperatorTok{=}\NormalTok{ []}
+\ControlFlowTok{for}\NormalTok{ n }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{6}\NormalTok{):}
+\NormalTok{    memory.append(n}\OperatorTok{*}\NormalTok{n)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Squares stored:"}\NormalTok{, memory)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{25. Boole's Logic - Thinking in
 Algebra}\label{booles-logic---thinking-in-algebra}
 
@@ -8317,7 +8694,7 @@ mathematics. Truth became something to manipulate, not merely ponder. A
 century later, his logic would guide the circuits of every computer,
 proving that thought could be built from switches.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8333,6 +8710,19 @@ proving that thought could be built from switches.
   Logic entered the realm of calculation.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Boolean algebra in code}
+\KeywordTok{def}\NormalTok{ bool\_add(a, b): }\ControlFlowTok{return}\NormalTok{ a }\KeywordTok{or}\NormalTok{ b}
+\KeywordTok{def}\NormalTok{ bool\_mul(a, b): }\ControlFlowTok{return}\NormalTok{ a }\KeywordTok{and}\NormalTok{ b}
+\NormalTok{A, B }\OperatorTok{=} \VariableTok{True}\NormalTok{, }\VariableTok{False}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"A + B ="}\NormalTok{, bool\_add(A, B))}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"A * B ="}\NormalTok{, bool\_mul(A, B))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{26. The Telegraphic World - Encoding Thought in
 Signal}\label{the-telegraphic-world---encoding-thought-in-signal}
 
@@ -8343,7 +8733,7 @@ Communication now required encoding, transmission, and decoding: the
 foundation of all digital exchange. The telegraph taught civilization
 how to speak in signals.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8359,6 +8749,18 @@ how to speak in signals.
   The logic of signals foreshadowed digital systems.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Encode a message in Morse{-}like code}
+\NormalTok{morse }\OperatorTok{=}\NormalTok{ \{}\StringTok{\textquotesingle{}A\textquotesingle{}}\NormalTok{: }\StringTok{\textquotesingle{}.{-}\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}B\textquotesingle{}}\NormalTok{: }\StringTok{\textquotesingle{}{-}...\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}C\textquotesingle{}}\NormalTok{: }\StringTok{\textquotesingle{}{-}.{-}.\textquotesingle{}}\NormalTok{\}}
+\NormalTok{msg }\OperatorTok{=} \StringTok{"ABC"}
+\NormalTok{encoded }\OperatorTok{=} \StringTok{\textquotesingle{} \textquotesingle{}}\NormalTok{.join(morse[c] }\ControlFlowTok{for}\NormalTok{ c }\KeywordTok{in}\NormalTok{ msg)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Encoded:"}\NormalTok{, encoded)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{27. Hilbert's Program - Mathematics on
 Trial}\label{hilberts-program---mathematics-on-trial}
 
@@ -8369,7 +8771,7 @@ mechanical foundation. This \emph{Program} promised certainty, turning
 mathematics into a closed, perfect system. It became the stage upon
 which the limits of reason would soon be revealed.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8385,6 +8787,17 @@ which the limits of reason would soon be revealed.
   The quest for certainty set the stage for Gödel.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Axioms and derivation — proving all from few}
+\NormalTok{axioms }\OperatorTok{=}\NormalTok{ [}\StringTok{"A implies B"}\NormalTok{, }\StringTok{"A"}\NormalTok{]}
+\NormalTok{theorem }\OperatorTok{=} \StringTok{"B"}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"If"}\NormalTok{, axioms, }\StringTok{"then"}\NormalTok{, theorem)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{28. Gödel's Shadow - The Limits of
 Proof}\label{guxf6dels-shadow---the-limits-of-proof}
 
@@ -8395,7 +8808,7 @@ of reach. Mathematics, once seen as a fortress of certainty, now carried
 humility - reason has boundaries, and some truths lie beyond formal
 capture.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8411,17 +8824,27 @@ capture.
   The infinite complexity of truth endures.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# A statement referring to itself (simplified)}
+\NormalTok{statement }\OperatorTok{=} \StringTok{"This statement cannot be proven."}
+\BuiltInTok{print}\NormalTok{(statement)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{29. Turing's Machine - The Birth of the Algorithmic
 Mind}\label{turings-machine---the-birth-of-the-algorithmic-mind}
 
 Alan Turing sought to understand what it means to ``compute.'' He
 imagined a simple device - a tape, a head, a set of rules - that could
-simulate any process of calculation. The \textbf{Turing machine} became
-the model for all computers: logic, memory, and procedure woven
-together. With it, he showed that some problems are decidable - and
-others forever beyond reach.
+simulate any process of calculation. The Turing machine became the model
+for all computers: logic, memory, and procedure woven together. With it,
+he showed that some problems are decidable - and others forever beyond
+reach.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8437,17 +8860,28 @@ others forever beyond reach.
   The abstract model became the blueprint of computing.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# A simple state machine doubling bits (conceptual)}
+\NormalTok{tape }\OperatorTok{=} \BuiltInTok{list}\NormalTok{(}\StringTok{"1011"}\NormalTok{)}
+\ControlFlowTok{for}\NormalTok{ i, bit }\KeywordTok{in} \BuiltInTok{enumerate}\NormalTok{(tape):}
+\NormalTok{    tape[i] }\OperatorTok{=}\NormalTok{ bit }\OperatorTok{*} \DecValTok{2}  \CommentTok{\# double symbol}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Output tape:"}\NormalTok{, }\StringTok{\textquotesingle{}\textquotesingle{}}\NormalTok{.join(tape))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{30. Von Neumann's Architecture - Memory and
 Control}\label{von-neumanns-architecture---memory-and-control}
 
 After the war, John von Neumann designed a machine that could store both
 data and instructions - uniting memory and logic in one structure. This
-\textbf{architecture} became the template for modern computers. With
-binary at its core and sequential control at its heart, the computer was
-no longer a calculator but a programmable engine - a mind made of
-circuits.
+architecture became the template for modern computers. With binary at
+its core and sequential control at its heart, the computer was no longer
+a calculator but a programmable engine - a mind made of circuits.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8463,8 +8897,21 @@ circuits.
   Modern computing descends from von Neumann's blueprint.
 \end{itemize}
 
-\subsection{Chapter 4. The Data Revolution: From Observation to
-Model}\label{chapter-4.-the-data-revolution-from-observation-to-model}
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Store both program and data together}
+\NormalTok{memory }\OperatorTok{=}\NormalTok{ \{}\StringTok{"data"}\NormalTok{: [}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{], }\StringTok{"instructions"}\NormalTok{: [}\StringTok{"sum"}\NormalTok{]\}}
+\ControlFlowTok{if} \StringTok{"sum"} \KeywordTok{in}\NormalTok{ memory[}\StringTok{"instructions"}\NormalTok{]:}
+\NormalTok{    result }\OperatorTok{=} \BuiltInTok{sum}\NormalTok{(memory[}\StringTok{"data"}\NormalTok{])}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Sum ="}\NormalTok{, result)}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{\texorpdfstring{\href{https://little-book-of.github.io/maths/books/en-US/chronicles-4.html}{Chapter
+4. The Data Revolution: From Observation to
+Model}}{Chapter 4. The Data Revolution: From Observation to Model}}\label{chapter-4.-the-data-revolution-from-observation-to-model}
 
 \subsubsection{31. The Birth of Statistics - Counting
 Society}\label{the-birth-of-statistics---counting-society}
@@ -8472,11 +8919,11 @@ Society}\label{the-birth-of-statistics---counting-society}
 As cities grew and empires expanded, rulers needed to know the shape of
 their populations - births, deaths, harvests, trade. Counting people
 became counting patterns. Out of censuses and ledgers emerged a new
-science: \textbf{statistics}, the art of describing the many through
-number. By measuring society, humans began to see not just individuals
-but trends, probabilities, and laws of large numbers.
+science: statistics, the art of describing the many through number. By
+measuring society, humans began to see not just individuals but trends,
+probabilities, and laws of large numbers.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8492,16 +8939,27 @@ but trends, probabilities, and laws of large numbers.
   Counting populations birthed the science of inference.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Summarize data with mean — society measured through number}
+\NormalTok{ages }\OperatorTok{=}\NormalTok{ [}\DecValTok{21}\NormalTok{, }\DecValTok{23}\NormalTok{, }\DecValTok{25}\NormalTok{, }\DecValTok{28}\NormalTok{, }\DecValTok{22}\NormalTok{, }\DecValTok{27}\NormalTok{, }\DecValTok{24}\NormalTok{]}
+\NormalTok{mean }\OperatorTok{=} \BuiltInTok{sum}\NormalTok{(ages) }\OperatorTok{/} \BuiltInTok{len}\NormalTok{(ages)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Average age:"}\NormalTok{, }\BuiltInTok{round}\NormalTok{(mean, }\DecValTok{2}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{32. The Normal Curve - Order in
 Chaos}\label{the-normal-curve---order-in-chaos}
 
-Amid the mess of data, a shape kept returning: the \textbf{bell curve}.
-Errors, heights, incomes - all seemed to cluster around a mean, fading
+Amid the mess of data, a shape kept returning: the bell curve. Errors,
+heights, incomes - all seemed to cluster around a mean, fading
 symmetrically toward extremes. Discovered by Gauss and refined by
 Laplace, the normal distribution revealed order within chance. Variation
 was not noise but structure; randomness itself had geometry.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8517,17 +8975,27 @@ was not noise but structure; randomness itself had geometry.
   Probability and geometry intertwine in data.
 \end{itemize}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Simulate bell{-}shaped distribution from averages (Central Limit Theorem)}
+\ImportTok{import}\NormalTok{ random}
+\NormalTok{samples }\OperatorTok{=}\NormalTok{ [}\BuiltInTok{sum}\NormalTok{(random.random() }\ControlFlowTok{for}\NormalTok{ \_ }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{12}\NormalTok{)) }\ControlFlowTok{for}\NormalTok{ \_ }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{10000}\NormalTok{)]}
+\NormalTok{mean }\OperatorTok{=} \BuiltInTok{sum}\NormalTok{(samples)}\OperatorTok{/}\BuiltInTok{len}\NormalTok{(samples)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Approx. mean:"}\NormalTok{, }\BuiltInTok{round}\NormalTok{(mean, }\DecValTok{2}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{33. Correlation and Causation - Discovering Hidden
 Links}\label{correlation-and-causation---discovering-hidden-links}
 
 Francis Galton, studying heredity, noticed patterns: tall parents often
-had tall children. He invented \textbf{correlation} to measure such
+had tall children. He invented correlation to measure such
 relationships. But correlation is not cause - two things may move
 together yet stem from another source. Still, by mapping association,
 statisticians learned to uncover hidden structures - how variables
 dance, even when reason is unseen.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8543,17 +9011,29 @@ dance, even when reason is unseen.
   The language of connection emerged from data.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Simple correlation between two variables}
+\ImportTok{import}\NormalTok{ statistics}
+\NormalTok{x }\OperatorTok{=}\NormalTok{ [}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{,}\DecValTok{4}\NormalTok{,}\DecValTok{5}\NormalTok{]}
+\NormalTok{y }\OperatorTok{=}\NormalTok{ [}\DecValTok{2}\NormalTok{,}\DecValTok{4}\NormalTok{,}\DecValTok{6}\NormalTok{,}\DecValTok{8}\NormalTok{,}\DecValTok{10}\NormalTok{]}
+\NormalTok{r }\OperatorTok{=}\NormalTok{ statistics.correlation(x, y)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Correlation:"}\NormalTok{, }\BuiltInTok{round}\NormalTok{(r, }\DecValTok{2}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{34. Regression and Forecast - Seeing Through
 Data}\label{regression-and-forecast---seeing-through-data}
 
 Galton also observed that traits tend to ``regress'' toward the mean.
-From this, \textbf{regression analysis} was born - fitting lines through
-clouds of points to predict one measure from another. Regression turned
-description into \textbf{forecast}, allowing data to speak of the
-unseen. The slope of a line became a story: how one thing changes with
-another.
+From this, regression analysis was born - fitting lines through clouds
+of points to predict one measure from another. Regression turned
+description into forecast, allowing data to speak of the unseen. The
+slope of a line became a story: how one thing changes with another.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8569,16 +9049,29 @@ another.
   Data begins to tell the future as well as the past.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Fit line y = a*x + b via least squares}
+\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
+\NormalTok{x }\OperatorTok{=}\NormalTok{ np.array([}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{,}\DecValTok{4}\NormalTok{,}\DecValTok{5}\NormalTok{])}
+\NormalTok{y }\OperatorTok{=}\NormalTok{ np.array([}\DecValTok{2}\NormalTok{,}\DecValTok{4}\NormalTok{,}\DecValTok{5}\NormalTok{,}\DecValTok{4}\NormalTok{,}\DecValTok{5}\NormalTok{])}
+\NormalTok{a, b }\OperatorTok{=}\NormalTok{ np.polyfit(x, y, }\DecValTok{1}\NormalTok{)}
+\BuiltInTok{print}\NormalTok{(}\SpecialStringTok{f"y = }\SpecialCharTok{\{}\NormalTok{a}\SpecialCharTok{:.2f\}}\SpecialStringTok{x + }\SpecialCharTok{\{}\NormalTok{b}\SpecialCharTok{:.2f\}}\SpecialStringTok{"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{35. Sampling and Inference - The Science of the
 Small}\label{sampling-and-inference---the-science-of-the-small}
 
 No census can capture all. Instead, we sample - drawing part to know the
-whole. The rise of \textbf{inferential statistics} taught how to reason
-from the few to the many. With careful selection and probability, small
-sets could mirror large truths. Confidence intervals, hypothesis tests -
+whole. The rise of inferential statistics taught how to reason from the
+few to the many. With careful selection and probability, small sets
+could mirror large truths. Confidence intervals, hypothesis tests -
 these gave science a framework to trust limited data.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8594,17 +9087,29 @@ these gave science a framework to trust limited data.
   Science learns to generalize with rigor.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Estimate population mean from sample}
+\ImportTok{import}\NormalTok{ random}
+\NormalTok{population }\OperatorTok{=} \BuiltInTok{list}\NormalTok{(}\BuiltInTok{range}\NormalTok{(}\DecValTok{100}\NormalTok{))}
+\NormalTok{sample }\OperatorTok{=}\NormalTok{ random.sample(population, }\DecValTok{10}\NormalTok{)}
+\NormalTok{estimate }\OperatorTok{=} \BuiltInTok{sum}\NormalTok{(sample)}\OperatorTok{/}\BuiltInTok{len}\NormalTok{(sample)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Sample mean ≈"}\NormalTok{, }\BuiltInTok{round}\NormalTok{(estimate,}\DecValTok{2}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{36. Information Theory - Entropy and
 Meaning}\label{information-theory---entropy-and-meaning}
 
-Claude Shannon, studying communication, asked: how much
-\textbf{information} is in a message? His answer - measured in bits -
-redefined knowledge as reduction of uncertainty. Entropy became the
-measure of surprise, coding the unpredictable. From telegraphs to
-computers, information theory revealed that data has structure, cost,
-and meaning.
+Claude Shannon, studying communication, asked: how much information is
+in a message? His answer - measured in bits - redefined knowledge as
+reduction of uncertainty. Entropy became the measure of surprise, coding
+the unpredictable. From telegraphs to computers, information theory
+revealed that data has structure, cost, and meaning.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8620,17 +9125,29 @@ and meaning.
   Data became a mathematical substance.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Shannon entropy for a small distribution}
+\ImportTok{import}\NormalTok{ math}
+\NormalTok{p }\OperatorTok{=}\NormalTok{ [}\FloatTok{0.5}\NormalTok{, }\FloatTok{0.25}\NormalTok{, }\FloatTok{0.25}\NormalTok{]}
+\NormalTok{H }\OperatorTok{=} \OperatorTok{{-}}\BuiltInTok{sum}\NormalTok{(pi}\OperatorTok{*}\NormalTok{math.log2(pi) }\ControlFlowTok{for}\NormalTok{ pi }\KeywordTok{in}\NormalTok{ p)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Entropy (bits):"}\NormalTok{, }\BuiltInTok{round}\NormalTok{(H,}\DecValTok{2}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{37. Cybernetics - Feedback and
 Control}\label{cybernetics---feedback-and-control}
 
-Norbert Wiener saw machines and organisms alike guided by
-\textbf{feedback} - loops of action and correction. Whether a thermostat
-or a living cell, stability arose from response. Cybernetics united
-control, communication, and computation, offering a new view: systems as
+Norbert Wiener saw machines and organisms alike guided by feedback -
+loops of action and correction. Whether a thermostat or a living cell,
+stability arose from response. Cybernetics united control,
+communication, and computation, offering a new view: systems as
 self-regulating minds. The world became a web of signals steering toward
 balance.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8646,17 +9163,29 @@ balance.
   Intelligence was redefined as adaptation.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Simple thermostat: feedback keeps system stable}
+\NormalTok{target, temp }\OperatorTok{=} \DecValTok{22}\NormalTok{, }\DecValTok{25}
+\ControlFlowTok{for}\NormalTok{ \_ }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{5}\NormalTok{):}
+    \ControlFlowTok{if}\NormalTok{ temp }\OperatorTok{\textgreater{}}\NormalTok{ target: temp }\OperatorTok{{-}=} \DecValTok{1}
+    \ControlFlowTok{elif}\NormalTok{ temp }\OperatorTok{\textless{}}\NormalTok{ target: temp }\OperatorTok{+=} \DecValTok{1}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Final temperature:"}\NormalTok{, temp)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{38. Game Theory - Strategy as
 Science}\label{game-theory---strategy-as-science}
 
 In games of war, trade, or politics, each move depends on another. John
-von Neumann and Oskar Morgenstern formalized this dance in \textbf{game
-theory}, where choices seek balance in conflict and cooperation.
-Rational actors became equations; strategy, a solution. From economics
-to biology, game theory taught that reason lives not in isolation but
-interaction.
+von Neumann and Oskar Morgenstern formalized this dance in game theory,
+where choices seek balance in conflict and cooperation. Rational actors
+became equations; strategy, a solution. From economics to biology, game
+theory taught that reason lives not in isolation but interaction.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8672,6 +9201,17 @@ interaction.
   Strategy links logic with behavior.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Prisoner\textquotesingle{}s Dilemma payoff matrix}
+\NormalTok{payoff }\OperatorTok{=}\NormalTok{ \{(}\StringTok{"C"}\NormalTok{,}\StringTok{"C"}\NormalTok{):(}\DecValTok{3}\NormalTok{,}\DecValTok{3}\NormalTok{), (}\StringTok{"C"}\NormalTok{,}\StringTok{"D"}\NormalTok{):(}\DecValTok{0}\NormalTok{,}\DecValTok{5}\NormalTok{), (}\StringTok{"D"}\NormalTok{,}\StringTok{"C"}\NormalTok{):(}\DecValTok{5}\NormalTok{,}\DecValTok{0}\NormalTok{), (}\StringTok{"D"}\NormalTok{,}\StringTok{"D"}\NormalTok{):(}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{)\}}
+\NormalTok{A, B }\OperatorTok{=} \StringTok{"D"}\NormalTok{, }\StringTok{"D"}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Payoffs:"}\NormalTok{, payoff[(A,B)])}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{39. Shannon's Code - Compressing the
 World}\label{shannons-code---compressing-the-world}
 
@@ -8682,7 +9222,7 @@ transmission efficient and error-resistant. Information could now be
 stored, sent, and recovered faithfully - the blueprint of the digital
 age.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8698,6 +9238,18 @@ age.
   Communication became engineering.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Simple prefix code dictionary}
+\NormalTok{codes }\OperatorTok{=}\NormalTok{ \{}\StringTok{\textquotesingle{}A\textquotesingle{}}\NormalTok{:}\StringTok{\textquotesingle{}0\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}B\textquotesingle{}}\NormalTok{:}\StringTok{\textquotesingle{}10\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}C\textquotesingle{}}\NormalTok{:}\StringTok{\textquotesingle{}11\textquotesingle{}}\NormalTok{\}}
+\NormalTok{msg }\OperatorTok{=} \StringTok{"ABAC"}
+\NormalTok{encoded }\OperatorTok{=} \StringTok{\textquotesingle{}\textquotesingle{}}\NormalTok{.join(codes[c] }\ControlFlowTok{for}\NormalTok{ c }\KeywordTok{in}\NormalTok{ msg)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Encoded:"}\NormalTok{, encoded)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{40. The Bayesian Turn - Belief as
 Mathematics}\label{the-bayesian-turn---belief-as-mathematics}
 
@@ -8707,7 +9259,7 @@ reasoning made uncertainty dynamic - learning from data, one observation
 at a time. In a world awash with information, it became a philosophy of
 adaptive understanding, blending logic with experience.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8723,20 +9275,32 @@ adaptive understanding, blending logic with experience.
   Bayesianism unites reasoning, data, and doubt.
 \end{itemize}
 
-\subsection{Chapter 4. The Age of Systems: Networks, Patterns, and
-Chaos}\label{chapter-4.-the-age-of-systems-networks-patterns-and-chaos}
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Bayes\textquotesingle{} rule: P(H|E) = P(E|H)P(H)/P(E)}
+\NormalTok{P\_H, P\_EH, P\_E }\OperatorTok{=} \FloatTok{0.3}\NormalTok{, }\FloatTok{0.8}\NormalTok{, }\FloatTok{0.5}
+\NormalTok{P\_H\_given\_E }\OperatorTok{=}\NormalTok{ P\_EH }\OperatorTok{*}\NormalTok{ P\_H }\OperatorTok{/}\NormalTok{ P\_E}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Updated belief:"}\NormalTok{, }\BuiltInTok{round}\NormalTok{(P\_H\_given\_E, }\DecValTok{2}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{\texorpdfstring{\href{https://little-book-of.github.io/maths/books/en-US/chronicles-5.html}{Chapter
+5. The Age of Systems: Networks, Patterns, and
+Chaos}}{Chapter 5. The Age of Systems: Networks, Patterns, and Chaos}}\label{chapter-5.-the-age-of-systems-networks-patterns-and-chaos}
 
 \subsubsection{41. Dynamical Systems - The Geometry of
 Time}\label{dynamical-systems---the-geometry-of-time}
 
 From the swing of a pendulum to the orbit of a planet, motion unfolds in
-patterns. \textbf{Dynamical systems theory} studies how things change -
-not just where they are, but how they move. Each rule of evolution draws
-a trajectory through time, a geometry of transformation. Some systems
+patterns. Dynamical systems theory studies how things change - not just
+where they are, but how they move. Each rule of evolution draws a
+trajectory through time, a geometry of transformation. Some systems
 settle, some repeat, some wander forever. The laws of motion became maps
 of behavior.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8752,17 +9316,28 @@ of behavior.
   Time itself becomes a landscape to explore.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Logistic map: simple rule, complex behavior}
+\NormalTok{r, x }\OperatorTok{=} \FloatTok{3.7}\NormalTok{, }\FloatTok{0.5}
+\ControlFlowTok{for}\NormalTok{ \_ }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{10}\NormalTok{):}
+\NormalTok{    x }\OperatorTok{=}\NormalTok{ r }\OperatorTok{*}\NormalTok{ x }\OperatorTok{*}\NormalTok{ (}\DecValTok{1} \OperatorTok{{-}}\NormalTok{ x)}
+    \BuiltInTok{print}\NormalTok{(}\BuiltInTok{round}\NormalTok{(x, }\DecValTok{4}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{42. Fractals and Self-Similarity - Infinity in Plain
 Sight}\label{fractals-and-self-similarity---infinity-in-plain-sight}
 
 Nature's outlines are rough - coastlines, clouds, trees - yet in their
-irregularity hides pattern. Benoît Mandelbrot revealed
-\textbf{fractals}, shapes that repeat at every scale, where the small
-mirrors the whole. These infinite details showed that geometry need not
-be smooth to be precise. The mathematics of roughness gave form to
-chaos.
+irregularity hides pattern. Benoît Mandelbrot revealed fractals, shapes
+that repeat at every scale, where the small mirrors the whole. These
+infinite details showed that geometry need not be smooth to be precise.
+The mathematics of roughness gave form to chaos.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8778,16 +9353,28 @@ chaos.
   Infinity can live in the finite.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Koch curve: each segment spawns 4 smaller ones (length growth)}
+\NormalTok{length, levels }\OperatorTok{=} \FloatTok{1.0}\NormalTok{, }\DecValTok{3}
+\ControlFlowTok{for}\NormalTok{ \_ }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(levels):}
+\NormalTok{    length }\OperatorTok{*=} \DecValTok{4}\OperatorTok{/}\DecValTok{3}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Length after 3 iterations:"}\NormalTok{, }\BuiltInTok{round}\NormalTok{(length, }\DecValTok{3}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{43. Catastrophe and Bifurcation - The Logic of Sudden
 Change}\label{catastrophe-and-bifurcation---the-logic-of-sudden-change}
 
-Most change is gradual - until it isn't. \textbf{Bifurcation theory}
-studies how systems shift abruptly when parameters cross thresholds. A
-calm river turns turbulent; a market crashes; a mood swings. These
-``catastrophes'' are not random but structured - geometry explaining
-tipping points. Continuity, it turns out, can birth discontinuity.
+Most change is gradual - until it isn't. Bifurcation theory studies how
+systems shift abruptly when parameters cross thresholds. A calm river
+turns turbulent; a market crashes; a mood swings. These ``catastrophes''
+are not random but structured - geometry explaining tipping points.
+Continuity, it turns out, can birth discontinuity.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8803,16 +9390,29 @@ tipping points. Continuity, it turns out, can birth discontinuity.
   Predicting tipping points becomes a science.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Logistic bifurcation: small r{-}changes, big behavior shifts}
+\KeywordTok{def}\NormalTok{ step(r, x}\OperatorTok{=}\FloatTok{0.5}\NormalTok{, n}\OperatorTok{=}\DecValTok{50}\NormalTok{):}
+    \ControlFlowTok{for}\NormalTok{ \_ }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(n): x }\OperatorTok{=}\NormalTok{ r}\OperatorTok{*}\NormalTok{x}\OperatorTok{*}\NormalTok{(}\DecValTok{1}\OperatorTok{{-}}\NormalTok{x)}
+    \ControlFlowTok{return}\NormalTok{ x}
+\ControlFlowTok{for}\NormalTok{ r }\KeywordTok{in}\NormalTok{ [}\FloatTok{2.5}\NormalTok{, }\FloatTok{3.0}\NormalTok{, }\FloatTok{3.5}\NormalTok{, }\FloatTok{3.9}\NormalTok{]:}
+    \BuiltInTok{print}\NormalTok{(}\SpecialStringTok{f"r=}\SpecialCharTok{\{}\NormalTok{r}\SpecialCharTok{\}}\SpecialStringTok{: x≈}\SpecialCharTok{\{}\BuiltInTok{round}\NormalTok{(step(r),}\DecValTok{3}\NormalTok{)}\SpecialCharTok{\}}\SpecialStringTok{"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{44. The Rise of Networks - Nodes, Links, and Power
 Laws}\label{the-rise-of-networks---nodes-links-and-power-laws}
 
 Beneath cities, cells, and the internet lies a common structure: the
-\textbf{network}. Each system connects nodes through links - people,
-neurons, websites - forming webs of relation. From graph theory to
-scale-free networks, mathematics revealed patterns of clustering, hubs,
-and resilience. The shape of connection defines the flow of influence.
+network. Each system connects nodes through links - people, neurons,
+websites - forming webs of relation. From graph theory to scale-free
+networks, mathematics revealed patterns of clustering, hubs, and
+resilience. The shape of connection defines the flow of influence.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8828,17 +9428,31 @@ and resilience. The shape of connection defines the flow of influence.
   Structure determines robustness and spread.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Simple graph: count node degrees}
+\NormalTok{edges }\OperatorTok{=}\NormalTok{ [(}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{),(}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{),(}\DecValTok{3}\NormalTok{,}\DecValTok{1}\NormalTok{),(}\DecValTok{3}\NormalTok{,}\DecValTok{4}\NormalTok{)]}
+\NormalTok{degrees }\OperatorTok{=}\NormalTok{ \{\}}
+\ControlFlowTok{for}\NormalTok{ a,b }\KeywordTok{in}\NormalTok{ edges:}
+\NormalTok{    degrees[a] }\OperatorTok{=}\NormalTok{ degrees.get(a,}\DecValTok{0}\NormalTok{)}\OperatorTok{+}\DecValTok{1}
+\NormalTok{    degrees[b] }\OperatorTok{=}\NormalTok{ degrees.get(b,}\DecValTok{0}\NormalTok{)}\OperatorTok{+}\DecValTok{1}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Degrees:"}\NormalTok{, degrees)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{45. Cellular Automata - Order from
 Rule}\label{cellular-automata---order-from-rule}
 
 John von Neumann imagined a world of cells, each obeying simple local
 laws. When repeated across a grid, these rules birthed astonishing
 complexity - patterns that grow, move, even reproduce. Later, John
-Conway's \textbf{Game of Life} popularized this vision: computation
-without computer, emergence from iteration. Life, it seemed, might arise
-from logic alone.
+Conway's Game of Life popularized this vision: computation without
+computer, emergence from iteration. Life, it seemed, might arise from
+logic alone.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8854,16 +9468,29 @@ from logic alone.
   Artificial worlds reveal natural principles.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Rule 90 (XOR of neighbors): 1D automaton}
+\NormalTok{cells }\OperatorTok{=}\NormalTok{ [}\DecValTok{0}\NormalTok{]}\OperatorTok{*}\DecValTok{7} \OperatorTok{+}\NormalTok{ [}\DecValTok{1}\NormalTok{] }\OperatorTok{+}\NormalTok{ [}\DecValTok{0}\NormalTok{]}\OperatorTok{*}\DecValTok{7}
+\ControlFlowTok{for}\NormalTok{ \_ }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{5}\NormalTok{):}
+    \BuiltInTok{print}\NormalTok{(}\StringTok{""}\NormalTok{.join(}\StringTok{"█"} \ControlFlowTok{if}\NormalTok{ c }\ControlFlowTok{else} \StringTok{" "} \ControlFlowTok{for}\NormalTok{ c }\KeywordTok{in}\NormalTok{ cells))}
+\NormalTok{    cells }\OperatorTok{=}\NormalTok{ [cells[i}\OperatorTok{{-}}\DecValTok{1}\NormalTok{]}\OperatorTok{\^{}}\NormalTok{cells[i}\OperatorTok{+}\DecValTok{1}\NormalTok{] }\ControlFlowTok{for}\NormalTok{ i }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{1}\NormalTok{,}\BuiltInTok{len}\NormalTok{(cells)}\OperatorTok{{-}}\DecValTok{1}\NormalTok{)]}
+\NormalTok{    cells }\OperatorTok{=}\NormalTok{ [}\DecValTok{0}\NormalTok{]}\OperatorTok{+}\NormalTok{cells}\OperatorTok{+}\NormalTok{[}\DecValTok{0}\NormalTok{]}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{46. Complexity Science - The Edge of
 Chaos}\label{complexity-science---the-edge-of-chaos}
 
-Between order and disorder lies a fertile zone - the \textbf{edge of
-chaos}, where systems adapt, learn, and evolve. Complexity science
-studies how simple agents - ants, traders, neurons - generate collective
+Between order and disorder lies a fertile zone - the edge of chaos,
+where systems adapt, learn, and evolve. Complexity science studies how
+simple agents - ants, traders, neurons - generate collective
 intelligence. No one commands; yet structure arises. It is a science of
 interaction, where emergence replaces design.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8879,16 +9506,29 @@ interaction, where emergence replaces design.
   Understanding wholes requires more than summing parts.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Ant{-}like agents leaving pheromone trails (toy model)}
+\NormalTok{grid }\OperatorTok{=}\NormalTok{ [}\DecValTok{0}\NormalTok{]}\OperatorTok{*}\DecValTok{10}
+\ControlFlowTok{for}\NormalTok{ step }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{10}\NormalTok{):}
+\NormalTok{    pos }\OperatorTok{=}\NormalTok{ step }\OperatorTok{\%} \DecValTok{10}
+\NormalTok{    grid[pos] }\OperatorTok{+=} \DecValTok{1}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Trail:"}\NormalTok{, grid)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{47. Graph Theory - Mapping
 Relation}\label{graph-theory---mapping-relation}
 
 Leonhard Euler began graph theory by tracing bridges in Königsberg. From
-paths and cycles grew a new mathematics - one of \textbf{connections}.
-Graphs abstract away matter, keeping only relation. Whether in
-molecules, maps, or minds, structure determines possibility. To solve a
-problem is to see how its parts are linked.
+paths and cycles grew a new mathematics - one of connections. Graphs
+abstract away matter, keeping only relation. Whether in molecules, maps,
+or minds, structure determines possibility. To solve a problem is to see
+how its parts are linked.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8904,16 +9544,27 @@ problem is to see how its parts are linked.
   Topology begins with the pattern of links.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Euler path test: all vertices even degree}
+\NormalTok{graph }\OperatorTok{=}\NormalTok{ \{}\DecValTok{1}\NormalTok{:[}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{],}\DecValTok{2}\NormalTok{:[}\DecValTok{1}\NormalTok{,}\DecValTok{3}\NormalTok{],}\DecValTok{3}\NormalTok{:[}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{]\}}
+\NormalTok{even }\OperatorTok{=} \BuiltInTok{all}\NormalTok{(}\BuiltInTok{len}\NormalTok{(v)}\OperatorTok{\%}\DecValTok{2}\OperatorTok{==}\DecValTok{0} \ControlFlowTok{for}\NormalTok{ v }\KeywordTok{in}\NormalTok{ graph.values())}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Eulerian?"}\NormalTok{, even)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{48. Percolation and Phase Transition - From Local to
 Global}\label{percolation-and-phase-transition---from-local-to-global}
 
-Drip by drip, drop by drop - at some point, the flow begins.
-\textbf{Percolation theory} studies how local connections create global
-pathways. Whether water through soil or rumor through society, the shift
-from scattered to connected follows sharp thresholds. Like phase
-transitions in physics, small changes can unleash sweeping order.
+Drip by drip, drop by drop - at some point, the flow begins. Percolation
+theory studies how local connections create global pathways. Whether
+water through soil or rumor through society, the shift from scattered to
+connected follows sharp thresholds. Like phase transitions in physics,
+small changes can unleash sweeping order.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8929,16 +9580,27 @@ transitions in physics, small changes can unleash sweeping order.
   Emergence can be quantified through thresholds.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Threshold model: connected if probability \textgreater{} 0.5}
+\ImportTok{import}\NormalTok{ random}
+\NormalTok{sites }\OperatorTok{=}\NormalTok{ [random.random()}\OperatorTok{\textgreater{}}\FloatTok{0.5} \ControlFlowTok{for}\NormalTok{ \_ }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{20}\NormalTok{)]}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Connected cluster fraction:"}\NormalTok{, }\BuiltInTok{sum}\NormalTok{(sites)}\OperatorTok{/}\BuiltInTok{len}\NormalTok{(sites))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{49. Nonlinear Dynamics - Beyond
 Predictability}\label{nonlinear-dynamics---beyond-predictability}
 
-Not all systems follow straight lines. In \textbf{nonlinear dynamics},
-effects aren't proportional to causes; small inputs may yield vast
-consequences. Weather, ecology, economy - each dances to sensitive
-dependence, where the flap of a wing may stir a storm. Prediction gives
-way to pattern, and determinism coexists with surprise.
+Not all systems follow straight lines. In nonlinear dynamics, effects
+aren't proportional to causes; small inputs may yield vast consequences.
+Weather, ecology, economy - each dances to sensitive dependence, where
+the flap of a wing may stir a storm. Prediction gives way to pattern,
+and determinism coexists with surprise.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8954,16 +9616,28 @@ way to pattern, and determinism coexists with surprise.
   Control becomes about shaping tendencies, not outcomes.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Double pendulum surrogate: sensitive dependence}
+\ImportTok{import}\NormalTok{ math}
+\KeywordTok{def}\NormalTok{ step(a,b): }\ControlFlowTok{return}\NormalTok{ a }\OperatorTok{+}\NormalTok{ math.sin(b), b }\OperatorTok{+}\NormalTok{ math.sin(a)}
+\NormalTok{a,b }\OperatorTok{=} \FloatTok{0.1}\NormalTok{,}\FloatTok{0.1}
+\ControlFlowTok{for}\NormalTok{ \_ }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{5}\NormalTok{): a,b }\OperatorTok{=}\NormalTok{ step(a,b)}\OperatorTok{;} \BuiltInTok{print}\NormalTok{(}\BuiltInTok{round}\NormalTok{(a,}\DecValTok{3}\NormalTok{), }\BuiltInTok{round}\NormalTok{(b,}\DecValTok{3}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{50. Emergence - Wholes Greater Than
 Parts}\label{emergence---wholes-greater-than-parts}
 
-Take many parts, add relation - and something new appears.
-\textbf{Emergence} is when collective behavior transcends its pieces:
-ants form colonies, neurons create thought, equations birth shape. The
-whole cannot be reduced to the sum; it has properties all its own.
-Mathematics began to study not only construction, but creation.
+Take many parts, add relation - and something new appears. Emergence is
+when collective behavior transcends its pieces: ants form colonies,
+neurons create thought, equations birth shape. The whole cannot be
+reduced to the sum; it has properties all its own. Mathematics began to
+study not only construction, but creation.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -8979,20 +9653,35 @@ Mathematics began to study not only construction, but creation.
   Wholes can be more than their parts.
 \end{itemize}
 
-\subsection{Chapter 6. The Age of Data Systems: Memory, Flow, and
-Computation}\label{chapter-6.-the-age-of-data-systems-memory-flow-and-computation}
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Boids{-}like flock: align average direction}
+\ImportTok{import}\NormalTok{ random}
+\NormalTok{dirs }\OperatorTok{=}\NormalTok{ [random.uniform(}\OperatorTok{{-}}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{) }\ControlFlowTok{for}\NormalTok{ \_ }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{5}\NormalTok{)]}
+\NormalTok{avg }\OperatorTok{=} \BuiltInTok{sum}\NormalTok{(dirs)}\OperatorTok{/}\BuiltInTok{len}\NormalTok{(dirs)}
+\NormalTok{aligned }\OperatorTok{=}\NormalTok{ [}\FloatTok{0.8}\OperatorTok{*}\NormalTok{d }\OperatorTok{+} \FloatTok{0.2}\OperatorTok{*}\NormalTok{avg }\ControlFlowTok{for}\NormalTok{ d }\KeywordTok{in}\NormalTok{ dirs]}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Before:"}\NormalTok{, [}\BuiltInTok{round}\NormalTok{(d,}\DecValTok{2}\NormalTok{) }\ControlFlowTok{for}\NormalTok{ d }\KeywordTok{in}\NormalTok{ dirs])}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"After :"}\NormalTok{, [}\BuiltInTok{round}\NormalTok{(d,}\DecValTok{2}\NormalTok{) }\ControlFlowTok{for}\NormalTok{ d }\KeywordTok{in}\NormalTok{ aligned])}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{\texorpdfstring{\href{https://little-book-of.github.io/maths/books/en-US/chronicles-6.html}{Chapter
+6. The Age of Data Systems: Memory, Flow, and
+Computation}}{Chapter 6. The Age of Data Systems: Memory, Flow, and Computation}}\label{chapter-6.-the-age-of-data-systems-memory-flow-and-computation}
 
 \subsubsection{51. Databases - The Mathematics of
 Memory}\label{databases---the-mathematics-of-memory}
 
 Civilization has always depended on memory - ledgers, scrolls, archives
 - places where truth could be stored outside the mind. As data grew,
-memory needed method. \textbf{Databases} became that method: systems for
+memory needed method. Databases became that method: systems for
 organizing, retrieving, and preserving knowledge. Every table, key, and
 relation captures a promise - that what was once known can be known
 again.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9008,16 +9697,31 @@ again.
   Reliable storage sustains civilization's continuity.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Store and query structured records}
+\NormalTok{db }\OperatorTok{=}\NormalTok{ [}
+\NormalTok{    \{}\StringTok{"id"}\NormalTok{:}\DecValTok{1}\NormalTok{,}\StringTok{"name"}\NormalTok{:}\StringTok{"Alice"}\NormalTok{,}\StringTok{"score"}\NormalTok{:}\DecValTok{92}\NormalTok{\},}
+\NormalTok{    \{}\StringTok{"id"}\NormalTok{:}\DecValTok{2}\NormalTok{,}\StringTok{"name"}\NormalTok{:}\StringTok{"Bob"}\NormalTok{,}\StringTok{"score"}\NormalTok{:}\DecValTok{85}\NormalTok{\},}
+\NormalTok{    \{}\StringTok{"id"}\NormalTok{:}\DecValTok{3}\NormalTok{,}\StringTok{"name"}\NormalTok{:}\StringTok{"Cara"}\NormalTok{,}\StringTok{"score"}\NormalTok{:}\DecValTok{88}\NormalTok{\},}
+\NormalTok{]}
+\NormalTok{results }\OperatorTok{=}\NormalTok{ [r }\ControlFlowTok{for}\NormalTok{ r }\KeywordTok{in}\NormalTok{ db }\ControlFlowTok{if}\NormalTok{ r[}\StringTok{"score"}\NormalTok{]}\OperatorTok{\textgreater{}}\DecValTok{87}\NormalTok{]}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"High scores:"}\NormalTok{, results)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{52. Relational Models - Order in
 Information}\label{relational-models---order-in-information}
 
-E. F. Codd envisioned data not as files, but as \textbf{relations} -
-tables linked by logic. In his relational model, information is a set of
-tuples governed by algebra. Queries became expressions; structure became
+E. F. Codd envisioned data not as files, but as relations - tables
+linked by logic. In his relational model, information is a set of tuples
+governed by algebra. Queries became expressions; structure became
 language. By turning storage into mathematics, he gave data both rigor
 and flexibility - a foundation for modern information systems.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9033,17 +9737,28 @@ and flexibility - a foundation for modern information systems.
   Structure brings both simplicity and power.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Two tables joined by key}
+\NormalTok{students }\OperatorTok{=}\NormalTok{ \{}\DecValTok{1}\NormalTok{:}\StringTok{"Alice"}\NormalTok{, }\DecValTok{2}\NormalTok{:}\StringTok{"Bob"}\NormalTok{\}}
+\NormalTok{grades   }\OperatorTok{=}\NormalTok{ \{}\DecValTok{1}\NormalTok{:}\StringTok{"A"}\NormalTok{, }\DecValTok{2}\NormalTok{:}\StringTok{"B"}\NormalTok{\}}
+\NormalTok{join }\OperatorTok{=}\NormalTok{ \{students[k]: grades[k] }\ControlFlowTok{for}\NormalTok{ k }\KeywordTok{in}\NormalTok{ students\}}
+\BuiltInTok{print}\NormalTok{(join)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{53. Transactions - The Logic of
 Consistency}\label{transactions---the-logic-of-consistency}
 
 In shared systems, many users write at once. To keep truth stable,
-operations must behave like one: \textbf{atomic}, \textbf{consistent},
-\textbf{isolated}, \textbf{durable} - the ACID principles. A transaction
-is a promise that either all steps happen or none do. By enforcing
-logical integrity, databases earned trust - mathematics guarding memory
-from contradiction.
+operations must behave like one: atomic, consistent, isolated, durable -
+the ACID principles. A transaction is a promise that either all steps
+happen or none do. By enforcing logical integrity, databases earned
+trust - mathematics guarding memory from contradiction.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9059,17 +9774,32 @@ from contradiction.
   Durability preserves results beyond failure.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# All{-}or{-}nothing update (simulate rollback on error)}
+\NormalTok{bank }\OperatorTok{=}\NormalTok{ \{}\StringTok{"A"}\NormalTok{:}\DecValTok{100}\NormalTok{, }\StringTok{"B"}\NormalTok{:}\DecValTok{50}\NormalTok{\}}
+\ControlFlowTok{try}\NormalTok{:}
+\NormalTok{    bank[}\StringTok{"A"}\NormalTok{] }\OperatorTok{{-}=} \DecValTok{30}
+    \DecValTok{1}\OperatorTok{/}\DecValTok{0}                     \CommentTok{\# fail mid{-}way}
+\NormalTok{    bank[}\StringTok{"B"}\NormalTok{] }\OperatorTok{+=} \DecValTok{30}
+\ControlFlowTok{except}\NormalTok{:}
+\NormalTok{    bank }\OperatorTok{=}\NormalTok{ \{}\StringTok{"A"}\NormalTok{:}\DecValTok{100}\NormalTok{,}\StringTok{"B"}\NormalTok{:}\DecValTok{50}\NormalTok{\} }\CommentTok{\# rollback}
+\BuiltInTok{print}\NormalTok{(bank)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{54. Distributed Systems - Agreement Across
 Distance}\label{distributed-systems---agreement-across-distance}
 
 As networks spread, memory fragmented across machines. How can many
-nodes act as one mind? \textbf{Distributed systems} answer through
-algorithms of agreement - consensus amid latency and loss. Concepts like
-replication, partitioning, and quorum allow truth to survive distance.
-Coordination became mathematics: time, order, and communication bound by
-logic.
+nodes act as one mind? Distributed systems answer through algorithms of
+agreement - consensus amid latency and loss. Concepts like replication,
+partitioning, and quorum allow truth to survive distance. Coordination
+became mathematics: time, order, and communication bound by logic.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9085,16 +9815,27 @@ logic.
   Algorithms like Paxos and Raft formalize agreement.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Majority vote consensus}
+\NormalTok{votes }\OperatorTok{=}\NormalTok{ [}\StringTok{"yes"}\NormalTok{,}\StringTok{"yes"}\NormalTok{,}\StringTok{"no"}\NormalTok{,}\StringTok{"yes"}\NormalTok{,}\StringTok{"no"}\NormalTok{]}
+\NormalTok{decision }\OperatorTok{=} \BuiltInTok{max}\NormalTok{(}\BuiltInTok{set}\NormalTok{(votes), key}\OperatorTok{=}\NormalTok{votes.count)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Consensus:"}\NormalTok{, decision)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{55. Concurrency - Time in Parallel
 Worlds}\label{concurrency---time-in-parallel-worlds}
 
-In the digital realm, many actions unfold at once. \textbf{Concurrency}
-manages these parallel paths, ensuring coherence when order is
-uncertain. Locks, semaphores, and timestamps coordinate the dance. The
-challenge is not speed but simultaneity - how to keep shared truth whole
-when time diverges.
+In the digital realm, many actions unfold at once. Concurrency manages
+these parallel paths, ensuring coherence when order is uncertain. Locks,
+semaphores, and timestamps coordinate the dance. The challenge is not
+speed but simultaneity - how to keep shared truth whole when time
+diverges.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9110,16 +9851,32 @@ when time diverges.
   Parallelism demands careful reasoning about time.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ threading}
+\NormalTok{count }\OperatorTok{=} \DecValTok{0}
+\KeywordTok{def}\NormalTok{ task(): }
+    \KeywordTok{global}\NormalTok{ count}
+    \ControlFlowTok{for}\NormalTok{ \_ }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{1000}\NormalTok{): count }\OperatorTok{+=} \DecValTok{1}
+
+\NormalTok{threads }\OperatorTok{=}\NormalTok{ [threading.Thread(target}\OperatorTok{=}\NormalTok{task) }\ControlFlowTok{for}\NormalTok{ \_ }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{5}\NormalTok{)]}
+\NormalTok{[t.start() }\ControlFlowTok{for}\NormalTok{ t }\KeywordTok{in}\NormalTok{ threads]}\OperatorTok{;}\NormalTok{ [t.join() }\ControlFlowTok{for}\NormalTok{ t }\KeywordTok{in}\NormalTok{ threads]}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Count (race condition!):"}\NormalTok{, count)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{56. Storage and Streams - The Duality of
 Data}\label{storage-and-streams---the-duality-of-data}
 
-Data rests and data flows. \textbf{Storage} holds the past;
-\textbf{streams} carry the present. Together they mirror thought -
-memory and perception intertwined. Modern systems merge both: databases
-that remember and react. The dual nature of data - persistent and
-real-time - reflects the twin needs of knowledge and awareness.
+Data rests and data flows. Storage holds the past; streams carry the
+present. Together they mirror thought - memory and perception
+intertwined. Modern systems merge both: databases that remember and
+react. The dual nature of data - persistent and real-time - reflects the
+twin needs of knowledge and awareness.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9135,16 +9892,32 @@ real-time - reflects the twin needs of knowledge and awareness.
   Systems balance stability with responsiveness.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Snapshot vs. live feed}
+\NormalTok{log }\OperatorTok{=}\NormalTok{ []}
+\KeywordTok{def}\NormalTok{ stream(n):}
+    \ControlFlowTok{for}\NormalTok{ i }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(n):}
+\NormalTok{        log.append(i)}
+        \ControlFlowTok{yield}\NormalTok{ i}
+
+\ControlFlowTok{for}\NormalTok{ x }\KeywordTok{in}\NormalTok{ stream(}\DecValTok{5}\NormalTok{): }\BuiltInTok{print}\NormalTok{(}\StringTok{"Now:"}\NormalTok{, x)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Stored:"}\NormalTok{, log)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{57. Indexing and Search - Finding in
 Infinity}\label{indexing-and-search---finding-in-infinity}
 
-Information without access is silence. \textbf{Indexes} turn vast data
-into navigable terrain, guiding queries straight to their targets.
-Trees, hashes, and inverted lists transform brute force into insight.
-Search algorithms, built on these maps, let users ask and instantly
-know. The art of indexing is the geometry of discovery.
+Information without access is silence. Indexes turn vast data into
+navigable terrain, guiding queries straight to their targets. Trees,
+hashes, and inverted lists transform brute force into insight. Search
+algorithms, built on these maps, let users ask and instantly know. The
+art of indexing is the geometry of discovery.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9160,16 +9933,28 @@ know. The art of indexing is the geometry of discovery.
   Querying became navigation through knowledge.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Simple index for fast lookup}
+\NormalTok{data }\OperatorTok{=}\NormalTok{ [}\StringTok{"apple"}\NormalTok{,}\StringTok{"banana"}\NormalTok{,}\StringTok{"apricot"}\NormalTok{,}\StringTok{"berry"}\NormalTok{]}
+\NormalTok{index }\OperatorTok{=}\NormalTok{ \{word[}\DecValTok{0}\NormalTok{]: [] }\ControlFlowTok{for}\NormalTok{ word }\KeywordTok{in}\NormalTok{ data\}}
+\ControlFlowTok{for}\NormalTok{ w }\KeywordTok{in}\NormalTok{ data: index[w[}\DecValTok{0}\NormalTok{]].append(w)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"b{-}words:"}\NormalTok{, index[}\StringTok{"b"}\NormalTok{])}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{58. Compression and Encoding - Efficiency as
 Art}\label{compression-and-encoding---efficiency-as-art}
 
-Every bit carries cost. \textbf{Compression} squeezes redundancy;
-\textbf{encoding} ensures meaning survives transmission. From Huffman
-codes to entropy bounds, mathematics refines representation. The goal is
-elegance - to say more with less, to preserve essence without waste. In
-a finite world, efficiency is beauty.
+Every bit carries cost. Compression squeezes redundancy; encoding
+ensures meaning survives transmission. From Huffman codes to entropy
+bounds, mathematics refines representation. The goal is elegance - to
+say more with less, to preserve essence without waste. In a finite
+world, efficiency is beauty.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9185,16 +9970,33 @@ a finite world, efficiency is beauty.
   Efficient representation underlies digital progress.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Run{-}length encoding}
+\KeywordTok{def}\NormalTok{ compress(s):}
+\NormalTok{    out, last, cnt }\OperatorTok{=}\NormalTok{ [], s[}\DecValTok{0}\NormalTok{], }\DecValTok{1}
+    \ControlFlowTok{for}\NormalTok{ c }\KeywordTok{in}\NormalTok{ s[}\DecValTok{1}\NormalTok{:]:}
+        \ControlFlowTok{if}\NormalTok{ c}\OperatorTok{==}\NormalTok{last: cnt}\OperatorTok{+=}\DecValTok{1}
+        \ControlFlowTok{else}\NormalTok{: out.append(}\SpecialStringTok{f"}\SpecialCharTok{\{}\NormalTok{last}\SpecialCharTok{\}\{}\NormalTok{cnt}\SpecialCharTok{\}}\SpecialStringTok{"}\NormalTok{)}\OperatorTok{;}\NormalTok{ last,cnt}\OperatorTok{=}\NormalTok{c,}\DecValTok{1}
+\NormalTok{    out.append(}\SpecialStringTok{f"}\SpecialCharTok{\{}\NormalTok{last}\SpecialCharTok{\}\{}\NormalTok{cnt}\SpecialCharTok{\}}\SpecialStringTok{"}\NormalTok{)}
+    \ControlFlowTok{return} \StringTok{""}\NormalTok{.join(out)}
+
+\BuiltInTok{print}\NormalTok{(compress(}\StringTok{"aaabbcccc"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{59. Fault Tolerance - The Algebra of
 Failure}\label{fault-tolerance---the-algebra-of-failure}
 
-No system is perfect; machines crash, messages vanish. \textbf{Fault
-tolerance} ensures that despite errors, the whole endures. Replication,
+No system is perfect; machines crash, messages vanish. Fault tolerance
+ensures that despite errors, the whole endures. Replication,
 checkpointing, and consensus repair what breaks. Like algebra, it
 balances equations - loss on one side matched by recovery on the other.
 Resilience became a discipline of invariants.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9210,6 +10012,20 @@ Resilience became a discipline of invariants.
   Reliability is engineered, not assumed.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Retry on failure}
+\ImportTok{import}\NormalTok{ random}
+\ControlFlowTok{for}\NormalTok{ attempt }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{3}\NormalTok{):}
+    \ControlFlowTok{if}\NormalTok{ random.random()}\OperatorTok{\textless{}}\FloatTok{0.5}\NormalTok{:}
+        \BuiltInTok{print}\NormalTok{(}\StringTok{"Success on try"}\NormalTok{, attempt}\OperatorTok{+}\DecValTok{1}\NormalTok{)}\OperatorTok{;} \ControlFlowTok{break}
+\ControlFlowTok{else}\NormalTok{:}
+    \BuiltInTok{print}\NormalTok{(}\StringTok{"All retries failed"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{60. Data Systems as Civilization - Memory Engine of
 Mind}\label{data-systems-as-civilization---memory-engine-of-mind}
 
@@ -9219,7 +10035,7 @@ fragment of collective thought. As memory externalized, culture gained
 permanence. In code and schema, civilization built a second brain - one
 that remembers for all.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9235,21 +10051,35 @@ that remembers for all.
   To tend data is to sustain civilization itself.
 \end{itemize}
 
-\subsection{Chapter 7. Computation and Abstraction: The Modern
-Foundations}\label{chapter-7.-computation-and-abstraction-the-modern-foundations}
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Shared knowledge base}
+\NormalTok{world\_memory }\OperatorTok{=}\NormalTok{ \{\}}
+\KeywordTok{def}\NormalTok{ remember(key, value): world\_memory[key]}\OperatorTok{=}\NormalTok{value}
+\KeywordTok{def}\NormalTok{ recall(key): }\ControlFlowTok{return}\NormalTok{ world\_memory.get(key,}\StringTok{"(forgotten)"}\NormalTok{)}
+
+\NormalTok{remember(}\StringTok{"law"}\NormalTok{,}\StringTok{"E=mc\^{}2"}\NormalTok{)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Civilization recalls:"}\NormalTok{, recall(}\StringTok{"law"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{\texorpdfstring{\href{https://little-book-of.github.io/maths/books/en-US/chronicles-7.html}{Chapter
+7. Computation and Abstraction: The Modern
+Foundations}}{Chapter 7. Computation and Abstraction: The Modern Foundations}}\label{chapter-7.-computation-and-abstraction-the-modern-foundations}
 
 \subsubsection{61. Set Theory - The Universe in a
 Collection}\label{set-theory---the-universe-in-a-collection}
 
 At the dawn of modern mathematics, Georg Cantor asked a simple question:
-what \emph{is} a number? His answer began with \textbf{sets} -
-collections of things, gathered under one idea. From this seed grew a
-new foundation: everything in mathematics, from numbers to spaces, could
-be built from sets. Infinity became countable, structure became
-collection. To define was to group, and grouping became the language of
-truth.
+what \emph{is} a number? His answer began with sets - collections of
+things, gathered under one idea. From this seed grew a new foundation:
+everything in mathematics, from numbers to spaces, could be built from
+sets. Infinity became countable, structure became collection. To define
+was to group, and grouping became the language of truth.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9265,18 +10095,30 @@ truth.
   The set became the basic unit of abstraction.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{A }\OperatorTok{=}\NormalTok{ \{}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{3}\NormalTok{\}}
+\NormalTok{B }\OperatorTok{=}\NormalTok{ \{}\DecValTok{3}\NormalTok{, }\DecValTok{4}\NormalTok{, }\DecValTok{5}\NormalTok{\}}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Union:"}\NormalTok{, A }\OperatorTok{|}\NormalTok{ B)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Intersection:"}\NormalTok{, A }\OperatorTok{\&}\NormalTok{ B)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Difference:"}\NormalTok{, A }\OperatorTok{{-}}\NormalTok{ B)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{62. Category Theory - Relations over
 Things}\label{category-theory---relations-over-things}
 
-Where set theory studied \emph{elements}, \textbf{category theory}
-studied \emph{relations}. Born in the mid-20th century, it treated
-functions, not objects, as first-class citizens. A \textbf{category} is
-a world of arrows - mappings between structures - revealing deep
-analogies across fields. Through composition and abstraction, categories
-unified algebra, topology, and logic. Mathematics began to speak of form
-itself, not substance.
+Where set theory studied \emph{elements}, category theory studied
+\emph{relations}. Born in the mid-20th century, it treated functions,
+not objects, as first-class citizens. A category is a world of arrows -
+mappings between structures - revealing deep analogies across fields.
+Through composition and abstraction, categories unified algebra,
+topology, and logic. Mathematics began to speak of form itself, not
+substance.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9292,17 +10134,29 @@ itself, not substance.
   Category theory unifies mathematics through analogy.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Arrows (morphisms) composing}
+\NormalTok{f }\OperatorTok{=} \KeywordTok{lambda}\NormalTok{ x: x }\OperatorTok{+} \DecValTok{1}
+\NormalTok{g }\OperatorTok{=} \KeywordTok{lambda}\NormalTok{ x: x }\OperatorTok{*} \DecValTok{2}
+\NormalTok{h }\OperatorTok{=} \KeywordTok{lambda}\NormalTok{ x: f(g(x))  }\CommentTok{\# composition f ∘ g}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"h(3) ="}\NormalTok{, h(}\DecValTok{3}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{63. Type Theory - Proofs as
 Programs}\label{type-theory---proofs-as-programs}
 
-In type theory, every term has a \textbf{type}, and every proof
-corresponds to a \textbf{program}. What began as a foundation for logic
-became a bridge to computing. By assigning meaning to form, type theory
-ensures correctness by construction. Systems like Martin-Löf's
-intuitionistic logic and the Curry--Howard correspondence reveal a deep
-symmetry: to prove is to compute.
+In type theory, every term has a type, and every proof corresponds to a
+program. What began as a foundation for logic became a bridge to
+computing. By assigning meaning to form, type theory ensures correctness
+by construction. Systems like Martin-Löf's intuitionistic logic and the
+Curry--Howard correspondence reveal a deep symmetry: to prove is to
+compute.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9318,17 +10172,29 @@ symmetry: to prove is to compute.
   Programming and reasoning converge in the same language.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Simple typed function: int → int}
+\KeywordTok{def}\NormalTok{ square(x: }\BuiltInTok{int}\NormalTok{) }\OperatorTok{{-}\textgreater{}} \BuiltInTok{int}\NormalTok{:}
+    \ControlFlowTok{return}\NormalTok{ x }\OperatorTok{*}\NormalTok{ x}
+
+\BuiltInTok{print}\NormalTok{(square(}\DecValTok{4}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{64. Model Theory - Mathematics Reflecting
 Itself}\label{model-theory---mathematics-reflecting-itself}
 
-\textbf{Model theory} studies how abstract theories find homes in
-structures. A model is a world where axioms hold true. By comparing what
-is said to what exists, mathematicians explored the gap between syntax
-(symbols) and semantics (meaning). Logic thus became a mirror: every
-system can be interpreted, every truth contextual. Mathematics learned
-to see itself from outside.
+Model theory studies how abstract theories find homes in structures. A
+model is a world where axioms hold true. By comparing what is said to
+what exists, mathematicians explored the gap between syntax (symbols)
+and semantics (meaning). Logic thus became a mirror: every system can be
+interpreted, every truth contextual. Mathematics learned to see itself
+from outside.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9344,16 +10210,29 @@ to see itself from outside.
   Mathematics gained self-awareness through reflection.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Axioms hold inside a model (integers under +)}
+\NormalTok{axioms }\OperatorTok{=}\NormalTok{ [}
+    \StringTok{"a + b = b + a"}\NormalTok{,}
+    \StringTok{"(a + b) + c = a + (b + c)"}\NormalTok{,}
+\NormalTok{]}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Model: integers with + satisfy axioms {-}\textgreater{} True"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{65. Lambda Calculus - The Algebra of
 Computation}\label{lambda-calculus---the-algebra-of-computation}
 
-Alonzo Church sought the essence of procedure and found it in
-\textbf{lambda calculus} - a language built from functions alone. With
-simple rules - abstraction, application, substitution - he captured the
-logic of computation. Every modern programming language inherits its
-spirit. What began as pure logic became the heartbeat of software.
+Alonzo Church sought the essence of procedure and found it in lambda
+calculus - a language built from functions alone. With simple rules -
+abstraction, application, substitution - he captured the logic of
+computation. Every modern programming language inherits its spirit. What
+began as pure logic became the heartbeat of software.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9369,17 +10248,27 @@ spirit. What began as pure logic became the heartbeat of software.
   Programming derives from mathematical simplicity.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# (λx. x+1)(5)}
+\NormalTok{increment }\OperatorTok{=} \KeywordTok{lambda}\NormalTok{ x: x }\OperatorTok{+} \DecValTok{1}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Result:"}\NormalTok{, increment(}\DecValTok{5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{66. Formal Systems - Language as
 Law}\label{formal-systems---language-as-law}
 
-A \textbf{formal system} is a world built from symbols and rules -
-axioms as laws, inference as motion. From Euclid to Hilbert, mathematics
-sought to make thought explicit, turning intuition into syntax. In such
-systems, every truth must be derived; nothing is assumed. Formalization
-brought rigor, but also revealed limits: logic can model itself, but not
-contain all truth.
+A formal system is a world built from symbols and rules - axioms as
+laws, inference as motion. From Euclid to Hilbert, mathematics sought to
+make thought explicit, turning intuition into syntax. In such systems,
+every truth must be derived; nothing is assumed. Formalization brought
+rigor, but also revealed limits: logic can model itself, but not contain
+all truth.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9395,16 +10284,27 @@ contain all truth.
   Clarity invites both precision and paradox.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{axioms }\OperatorTok{=}\NormalTok{ \{}\StringTok{"A"}\NormalTok{, }\StringTok{"A→B"}\NormalTok{\}}
+\NormalTok{rules }\OperatorTok{=} \KeywordTok{lambda}\NormalTok{ a,b: b }\ControlFlowTok{if}\NormalTok{ (a}\OperatorTok{==}\StringTok{"A"} \KeywordTok{and}\NormalTok{ b}\OperatorTok{==}\StringTok{"B"}\NormalTok{) }\ControlFlowTok{else} \VariableTok{None}
+\NormalTok{theorem }\OperatorTok{=}\NormalTok{ rules(}\StringTok{"A"}\NormalTok{,}\StringTok{"B"}\NormalTok{)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Derived:"}\NormalTok{, theorem)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{67. Complexity Classes - The Cost of
 Solving}\label{complexity-classes---the-cost-of-solving}
 
-Not all solvable problems are equal. \textbf{Complexity theory} measures
-the \emph{effort} required - time, space, resources. Classes like P, NP,
-and EXP chart the landscape of difficulty. Beyond ``can it be done?''
-lies ``how hard is it?'' Mathematics became economics of computation - a
+Not all solvable problems are equal. Complexity theory measures the
+\emph{effort} required - time, space, resources. Classes like P, NP, and
+EXP chart the landscape of difficulty. Beyond ``can it be done?'' lies
+``how hard is it?'' Mathematics became economics of computation - a
 science of trade-offs and impossibility.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9420,16 +10320,30 @@ science of trade-offs and impossibility.
   Efficiency, not just solvability, defines possibility.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ time}
+\KeywordTok{def}\NormalTok{ exponential(n):}
+    \ControlFlowTok{if}\NormalTok{ n}\OperatorTok{\textless{}=}\DecValTok{1}\NormalTok{: }\ControlFlowTok{return} \DecValTok{1}
+    \ControlFlowTok{return}\NormalTok{ exponential(n}\OperatorTok{{-}}\DecValTok{1}\NormalTok{)}\OperatorTok{+}\NormalTok{exponential(n}\OperatorTok{{-}}\DecValTok{2}\NormalTok{)}
+
+\NormalTok{start}\OperatorTok{=}\NormalTok{time.time()}\OperatorTok{;}\NormalTok{ exponential(}\DecValTok{25}\NormalTok{)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Time \textasciitilde{} exponential, seconds:"}\NormalTok{, }\BuiltInTok{round}\NormalTok{(time.time()}\OperatorTok{{-}}\NormalTok{start,}\DecValTok{2}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{68. Automata - Machines that
 Recognize}\label{automata---machines-that-recognize}
 
-An \textbf{automaton} is a simple abstract machine - states,
-transitions, and input. From finite automata to pushdown and Turing
-machines, they classify what languages can be recognized. Born from
-linguistics and logic, automata theory revealed hierarchy in
-computation. Machines became grammars, and grammars, machines.
+An automaton is a simple abstract machine - states, transitions, and
+input. From finite automata to pushdown and Turing machines, they
+classify what languages can be recognized. Born from linguistics and
+logic, automata theory revealed hierarchy in computation. Machines
+became grammars, and grammars, machines.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9445,17 +10359,28 @@ computation. Machines became grammars, and grammars, machines.
   Computation and language share one structure.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# DFA recognizing binary strings with even number of 1s}
+\NormalTok{state }\OperatorTok{=} \DecValTok{0}
+\ControlFlowTok{for}\NormalTok{ bit }\KeywordTok{in} \StringTok{"10110"}\NormalTok{:}
+    \ControlFlowTok{if}\NormalTok{ bit}\OperatorTok{==}\StringTok{"1"}\NormalTok{: state }\OperatorTok{\^{}=} \DecValTok{1}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Accept?"}\NormalTok{ , state}\OperatorTok{==}\DecValTok{0}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{69. The Church--Turing Thesis - Mind as
 Mechanism}\label{the-churchturing-thesis---mind-as-mechanism}
 
 Church and Turing, working separately, arrived at the same vision: all
-effective computation is equivalent. The \textbf{Church--Turing Thesis}
-proposes that anything computable can be performed by a Turing machine.
-Thought, when formalized, is algorithm. This bold equivalence bridged
-logic, machinery, and mind - defining the limits of what can ever be
-done.
+effective computation is equivalent. The Church--Turing Thesis proposes
+that anything computable can be performed by a Turing machine. Thought,
+when formalized, is algorithm. This bold equivalence bridged logic,
+machinery, and mind - defining the limits of what can ever be done.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9471,6 +10396,17 @@ done.
   Human and machine thought share logical essence.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Any effective procedure can be simulated (factorial)}
+\KeywordTok{def}\NormalTok{ factorial(n):}
+    \ControlFlowTok{return} \DecValTok{1} \ControlFlowTok{if}\NormalTok{ n}\OperatorTok{\textless{}=}\DecValTok{1} \ControlFlowTok{else}\NormalTok{ n}\OperatorTok{*}\NormalTok{factorial(n}\OperatorTok{{-}}\DecValTok{1}\NormalTok{)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Factorial(5) ="}\NormalTok{, factorial(}\DecValTok{5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{70. The Dream of Completeness - And Its
 Undoing}\label{the-dream-of-completeness---and-its-undoing}
 
@@ -9480,7 +10416,7 @@ unprovable, some questions unsolvable. The search for totality gave way
 to humility: mathematics is vast, but never whole. Completeness remained
 a guiding star - unreachable, yet illuminating the path.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9496,21 +10432,33 @@ a guiding star - unreachable, yet illuminating the path.
   The dream persists - to understand the infinite within the finite.
 \end{itemize}
 
-\subsection{Chapter 8. The Architecture of Learning: From Statistics to
-Intelligence}\label{chapter-8.-the-architecture-of-learning-from-statistics-to-intelligence}
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Some truths can’t be derived within their own rules (illustration)}
+\NormalTok{axioms }\OperatorTok{=}\NormalTok{ \{}\StringTok{"A→B"}\NormalTok{\}}
+\NormalTok{theorem }\OperatorTok{=} \StringTok{"A"}  \CommentTok{\# needs assumption beyond system}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Provable within system?"}\NormalTok{, theorem }\KeywordTok{in}\NormalTok{ axioms)}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{\texorpdfstring{\href{https://little-book-of.github.io/maths/books/en-US/chronicles-8.html}{Chapter
+8. The Architecture of Learning: From Statistics to
+Intelligence}}{Chapter 8. The Architecture of Learning: From Statistics to Intelligence}}\label{chapter-8.-the-architecture-of-learning-from-statistics-to-intelligence}
 
 \subsubsection{71. Perceptrons and Neurons - Mathematics of
 Thought}\label{perceptrons-and-neurons---mathematics-of-thought}
 
 In the mid-20th century, scientists began to ask whether the brain's
-workings could be captured in mathematics. The \textbf{perceptron}, a
-simplified neuron introduced by Frank Rosenblatt, offered a first model:
-inputs weighted, summed, and compared to a threshold. It learned by
-adjusting its weights - a mechanical echo of biological learning. Though
-limited, it marked a profound idea: that intelligence might be built
-from networks of simple units.
+workings could be captured in mathematics. The perceptron, a simplified
+neuron introduced by Frank Rosenblatt, offered a first model: inputs
+weighted, summed, and compared to a threshold. It learned by adjusting
+its weights - a mechanical echo of biological learning. Though limited,
+it marked a profound idea: that intelligence might be built from
+networks of simple units.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9526,17 +10474,30 @@ from networks of simple units.
   Artificial intelligence began as imitation of biology.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Simple perceptron: weighted sum + threshold}
+\NormalTok{inputs  }\OperatorTok{=}\NormalTok{ [}\DecValTok{1}\NormalTok{, }\DecValTok{0}\NormalTok{, }\DecValTok{1}\NormalTok{]}
+\NormalTok{weights }\OperatorTok{=}\NormalTok{ [}\FloatTok{0.6}\NormalTok{, }\FloatTok{0.2}\NormalTok{, }\FloatTok{0.4}\NormalTok{]}
+\NormalTok{bias }\OperatorTok{=} \OperatorTok{{-}}\FloatTok{0.5}
+\NormalTok{output }\OperatorTok{=} \DecValTok{1} \ControlFlowTok{if} \BuiltInTok{sum}\NormalTok{(i}\OperatorTok{*}\NormalTok{w }\ControlFlowTok{for}\NormalTok{ i,w }\KeywordTok{in} \BuiltInTok{zip}\NormalTok{(inputs,weights)) }\OperatorTok{+}\NormalTok{ bias }\OperatorTok{\textgreater{}} \DecValTok{0} \ControlFlowTok{else} \DecValTok{0}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Fire?"}\NormalTok{, output)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{72. Gradient Descent - Learning by
 Error}\label{gradient-descent---learning-by-error}
 
-To learn, a system must know how wrong it is. \textbf{Gradient descent}
-turned this into a method: compute error, follow the slope of steepest
-descent, repeat until minimal. Each step refines the model's
-understanding, reducing loss by iteration. This simple rule - move
-downhill - became the heartbeat of machine learning, guiding everything
-from linear regression to deep networks.
+To learn, a system must know how wrong it is. Gradient descent turned
+this into a method: compute error, follow the slope of steepest descent,
+repeat until minimal. Each step refines the model's understanding,
+reducing loss by iteration. This simple rule - move downhill - became
+the heartbeat of machine learning, guiding everything from linear
+regression to deep networks.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9552,17 +10513,30 @@ from linear regression to deep networks.
   The method unites calculus with adaptation.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Minimize f(x)=x\^{}2 by stepping down its slope}
+\NormalTok{x, lr }\OperatorTok{=} \FloatTok{5.0}\NormalTok{, }\FloatTok{0.1}
+\ControlFlowTok{for}\NormalTok{ \_ }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{10}\NormalTok{):}
+\NormalTok{    grad }\OperatorTok{=} \DecValTok{2}\OperatorTok{*}\NormalTok{x}
+\NormalTok{    x }\OperatorTok{{-}=}\NormalTok{ lr }\OperatorTok{*}\NormalTok{ grad}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"x ≈"}\NormalTok{, }\BuiltInTok{round}\NormalTok{(x, }\DecValTok{4}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{73. Backpropagation - Memory in
 Motion}\label{backpropagation---memory-in-motion}
 
 In layered networks, learning requires more than local updates.
-\textbf{Backpropagation} allowed errors to flow backward - credit and
-blame assigned to each weight along the path. By chaining derivatives,
-the algorithm made deep learning feasible. What once seemed opaque - how
-to teach many layers at once - became tractable through calculus in
+Backpropagation allowed errors to flow backward - credit and blame
+assigned to each weight along the path. By chaining derivatives, the
+algorithm made deep learning feasible. What once seemed opaque - how to
+teach many layers at once - became tractable through calculus in
 reverse.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9578,17 +10552,33 @@ reverse.
   Differentiation became the logic of intelligence.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Two{-}layer net, one weight update}
+\NormalTok{x, y\_true }\OperatorTok{=} \FloatTok{2.0}\NormalTok{, }\FloatTok{8.0}
+\NormalTok{w1, w2 }\OperatorTok{=} \FloatTok{1.0}\NormalTok{, }\FloatTok{2.0}
+\NormalTok{y\_pred }\OperatorTok{=}\NormalTok{ w2 }\OperatorTok{*}\NormalTok{ (w1 }\OperatorTok{*}\NormalTok{ x)}
+\NormalTok{error }\OperatorTok{=}\NormalTok{ (y\_pred }\OperatorTok{{-}}\NormalTok{ y\_true)}
+\NormalTok{dw2 }\OperatorTok{=}\NormalTok{ error }\OperatorTok{*}\NormalTok{ (w1 }\OperatorTok{*}\NormalTok{ x)}
+\NormalTok{dw1 }\OperatorTok{=}\NormalTok{ error }\OperatorTok{*}\NormalTok{ w2 }\OperatorTok{*}\NormalTok{ x}
+\NormalTok{w1, w2 }\OperatorTok{=}\NormalTok{ w1 }\OperatorTok{{-}} \FloatTok{0.01}\OperatorTok{*}\NormalTok{dw1, w2 }\OperatorTok{{-}} \FloatTok{0.01}\OperatorTok{*}\NormalTok{dw2}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Updated weights:"}\NormalTok{, }\BuiltInTok{round}\NormalTok{(w1,}\DecValTok{3}\NormalTok{), }\BuiltInTok{round}\NormalTok{(w2,}\DecValTok{3}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{74. Kernel Methods - From Dot to
 Dimension}\label{kernel-methods---from-dot-to-dimension}
 
-Some patterns are invisible in their native form. \textbf{Kernel
-methods} lift data into higher dimensions, where linear boundaries
-suffice. The ``kernel trick'' computes similarity in that space without
-ever leaving the original - a clever illusion of complexity. Algorithms
-like the Support Vector Machine (SVM) showed that geometry, not
-guessing, underlies classification.
+Some patterns are invisible in their native form. Kernel methods lift
+data into higher dimensions, where linear boundaries suffice. The
+``kernel trick'' computes similarity in that space without ever leaving
+the original - a clever illusion of complexity. Algorithms like the
+Support Vector Machine (SVM) showed that geometry, not guessing,
+underlies classification.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9604,17 +10594,29 @@ guessing, underlies classification.
   Dimensionality can clarify rather than confuse.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Kernel trick: similarity without explicit mapping}
+\ImportTok{import}\NormalTok{ math}
+\KeywordTok{def}\NormalTok{ rbf\_kernel(x, y, gamma}\OperatorTok{=}\FloatTok{0.5}\NormalTok{):}
+    \ControlFlowTok{return}\NormalTok{ math.exp(}\OperatorTok{{-}}\NormalTok{gamma}\OperatorTok{*}\NormalTok{(x}\OperatorTok{{-}}\NormalTok{y)}\OperatorTok{**}\DecValTok{2}\NormalTok{)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Similarity:"}\NormalTok{, }\BuiltInTok{round}\NormalTok{(rbf\_kernel(}\FloatTok{2.0}\NormalTok{, }\FloatTok{2.5}\NormalTok{), }\DecValTok{3}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{75. Decision Trees and Forests - Branches of
 Knowledge}\label{decision-trees-and-forests---branches-of-knowledge}
 
-Learning can also be structured as choice. \textbf{Decision trees} split
-data by questions - ``greater than?'', ``equal to?'' - forming a map of
-if-then logic. Each path leads to a conclusion; each branch captures a
-distinction. Combining many trees yields a \textbf{forest}, where
-collective judgment outperforms any single one. Simplicity,
-multiplicity, and clarity converge.
+Learning can also be structured as choice. Decision trees split data by
+questions - ``greater than?'', ``equal to?'' - forming a map of if-then
+logic. Each path leads to a conclusion; each branch captures a
+distinction. Combining many trees yields a forest, where collective
+judgment outperforms any single one. Simplicity, multiplicity, and
+clarity converge.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9630,16 +10632,32 @@ multiplicity, and clarity converge.
   Collective reasoning improves reliability.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Simple threshold tree}
+\NormalTok{x }\OperatorTok{=} \DecValTok{7}
+\ControlFlowTok{if}\NormalTok{ x }\OperatorTok{\textless{}} \DecValTok{5}\NormalTok{:}
+\NormalTok{    label }\OperatorTok{=} \StringTok{"Small"}
+\ControlFlowTok{elif}\NormalTok{ x }\OperatorTok{\textless{}} \DecValTok{10}\NormalTok{:}
+\NormalTok{    label }\OperatorTok{=} \StringTok{"Medium"}
+\ControlFlowTok{else}\NormalTok{:}
+\NormalTok{    label }\OperatorTok{=} \StringTok{"Large"}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Class:"}\NormalTok{, label)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{76. Clustering - Order Without
 Labels}\label{clustering---order-without-labels}
 
-Sometimes we do not know the categories - we seek them.
-\textbf{Clustering} discovers structure in unlabeled data, grouping
-points by proximity or similarity. Methods like k-means and hierarchical
-clustering reveal patterns hidden in noise. It is learning by looking -
-seeing shape without name, forming order before definition.
+Sometimes we do not know the categories - we seek them. Clustering
+discovers structure in unlabeled data, grouping points by proximity or
+similarity. Methods like k-means and hierarchical clustering reveal
+patterns hidden in noise. It is learning by looking - seeing shape
+without name, forming order before definition.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9656,16 +10674,31 @@ seeing shape without name, forming order before definition.
   Structure can precede meaning.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Group by nearest center (1{-}D k{-}means, one iteration)}
+\NormalTok{points }\OperatorTok{=}\NormalTok{ [}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{8}\NormalTok{,}\DecValTok{9}\NormalTok{]}
+\NormalTok{centers }\OperatorTok{=}\NormalTok{ [}\DecValTok{2}\NormalTok{,}\DecValTok{8}\NormalTok{]}
+\NormalTok{clusters }\OperatorTok{=}\NormalTok{ \{c: [] }\ControlFlowTok{for}\NormalTok{ c }\KeywordTok{in}\NormalTok{ centers\}}
+\ControlFlowTok{for}\NormalTok{ p }\KeywordTok{in}\NormalTok{ points:}
+\NormalTok{    nearest }\OperatorTok{=} \BuiltInTok{min}\NormalTok{(centers, key}\OperatorTok{=}\KeywordTok{lambda}\NormalTok{ c:}\BuiltInTok{abs}\NormalTok{(p}\OperatorTok{{-}}\NormalTok{c))}
+\NormalTok{    clusters[nearest].append(p)}
+\BuiltInTok{print}\NormalTok{(clusters)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{77. Dimensionality Reduction - Seeing the
 Invisible}\label{dimensionality-reduction---seeing-the-invisible}
 
 High-dimensional data hides patterns behind countless variables.
-\textbf{Dimensionality reduction} finds simpler views - projections
-where structure stands clear. Techniques like PCA and t-SNE compress
-without erasing essence, turning complexity into clarity. To understand,
-one must first see; to see, one must simplify.
+Dimensionality reduction finds simpler views - projections where
+structure stands clear. Techniques like PCA and t-SNE compress without
+erasing essence, turning complexity into clarity. To understand, one
+must first see; to see, one must simplify.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9681,16 +10714,27 @@ one must first see; to see, one must simplify.
   Simplicity exposes underlying form.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Project 3D to 2D (drop least{-}varying axis)}
+\NormalTok{data3d }\OperatorTok{=}\NormalTok{ [(}\DecValTok{2}\NormalTok{,}\DecValTok{5}\NormalTok{,}\DecValTok{1}\NormalTok{),(}\DecValTok{3}\NormalTok{,}\DecValTok{6}\NormalTok{,}\DecValTok{1}\NormalTok{),(}\DecValTok{4}\NormalTok{,}\DecValTok{7}\NormalTok{,}\DecValTok{1}\NormalTok{)]}
+\NormalTok{data2d }\OperatorTok{=}\NormalTok{ [(x,y) }\ControlFlowTok{for}\NormalTok{ x,y,\_ }\KeywordTok{in}\NormalTok{ data3d]}
+\BuiltInTok{print}\NormalTok{(data2d)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{78. Probabilistic Graphical Models - Knowledge as
 Network}\label{probabilistic-graphical-models---knowledge-as-network}
 
-Reality is uncertain, but dependencies can be mapped. \textbf{Graphical
-models} represent variables as nodes and relations as edges, binding
-probability to structure. Bayesian networks and Markov models make
-reasoning explicit - how one fact informs another. Uncertainty becomes
-navigable when drawn as a graph.
+Reality is uncertain, but dependencies can be mapped. Graphical models
+represent variables as nodes and relations as edges, binding probability
+to structure. Bayesian networks and Markov models make reasoning
+explicit - how one fact informs another. Uncertainty becomes navigable
+when drawn as a graph.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9706,17 +10750,28 @@ navigable when drawn as a graph.
   Probability gains geometry through graphs.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Simple Bayesian net: Rain → WetGrass}
+\NormalTok{P\_rain }\OperatorTok{=} \FloatTok{0.3}
+\NormalTok{P\_wet\_given\_rain }\OperatorTok{=} \FloatTok{0.9}
+\NormalTok{P\_wet }\OperatorTok{=}\NormalTok{ P\_rain}\OperatorTok{*}\NormalTok{P\_wet\_given\_rain }\OperatorTok{+}\NormalTok{ (}\DecValTok{1}\OperatorTok{{-}}\NormalTok{P\_rain)}\OperatorTok{*}\FloatTok{0.1}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"P(WetGrass) ="}\NormalTok{, }\BuiltInTok{round}\NormalTok{(P\_wet,}\DecValTok{2}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{79. Optimization - The Art of
 Adjustment}\label{optimization---the-art-of-adjustment}
 
 Every learner seeks balance - between fit and generality, speed and
-accuracy. \textbf{Optimization} formalizes this pursuit: minimize loss,
-maximize reward. From convex analysis to stochastic methods, it is the
-craft of improvement. In mathematics and machine learning alike,
-progress means tuning, refining, converging - finding the best among the
-possible.
+accuracy. Optimization formalizes this pursuit: minimize loss, maximize
+reward. From convex analysis to stochastic methods, it is the craft of
+improvement. In mathematics and machine learning alike, progress means
+tuning, refining, converging - finding the best among the possible.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9733,16 +10788,30 @@ possible.
   Learning is continuous correction toward better.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Hill{-}climb maximize f(x)={-}(x{-}3)\^{}2+9}
+\NormalTok{f }\OperatorTok{=} \KeywordTok{lambda}\NormalTok{ x: }\OperatorTok{{-}}\NormalTok{(x}\OperatorTok{{-}}\DecValTok{3}\NormalTok{)}\OperatorTok{**}\DecValTok{2} \OperatorTok{+} \DecValTok{9}
+\NormalTok{x }\OperatorTok{=} \DecValTok{0}
+\ControlFlowTok{for}\NormalTok{ \_ }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{6}\NormalTok{):}
+\NormalTok{    step }\OperatorTok{=} \FloatTok{0.5} \ControlFlowTok{if}\NormalTok{ f(x}\OperatorTok{+}\FloatTok{0.5}\NormalTok{)}\OperatorTok{\textgreater{}}\NormalTok{f(x}\OperatorTok{{-}}\FloatTok{0.5}\NormalTok{) }\ControlFlowTok{else} \OperatorTok{{-}}\FloatTok{0.5}
+\NormalTok{    x }\OperatorTok{+=}\NormalTok{ step}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Best x ≈"}\NormalTok{, x)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{80. Learning Theory - Boundaries of
 Generalization}\label{learning-theory---boundaries-of-generalization}
 
 A model's worth lies not in fitting data, but in predicting the unseen.
-\textbf{Statistical learning theory} asks why learning works - and when
-it fails. Concepts like VC dimension and regularization measure capacity
-and control overfitting. Between memorization and ignorance lies
-\textbf{generalization}, the mark of true understanding.
+Statistical learning theory asks why learning works - and when it fails.
+Concepts like VC dimension and regularization measure capacity and
+control overfitting. Between memorization and ignorance lies
+generalization, the mark of true understanding.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9758,21 +10827,34 @@ and control overfitting. Between memorization and ignorance lies
   Generalization is learning's ultimate test.
 \end{itemize}
 
-\subsection{Chapter 9. Deep Structures and Synthetic
-Minds}\label{chapter-9.-deep-structures-and-synthetic-minds}
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Fit line through two points, test new one}
+\NormalTok{x1,y1,x2,y2 }\OperatorTok{=} \DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{3}\NormalTok{,}\DecValTok{3}
+\NormalTok{slope }\OperatorTok{=}\NormalTok{ (y2}\OperatorTok{{-}}\NormalTok{y1)}\OperatorTok{/}\NormalTok{(x2}\OperatorTok{{-}}\NormalTok{x1)}
+\NormalTok{predict }\OperatorTok{=} \KeywordTok{lambda}\NormalTok{ x: y1 }\OperatorTok{+}\NormalTok{ slope}\OperatorTok{*}\NormalTok{(x}\OperatorTok{{-}}\NormalTok{x1)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Prediction at x=4:"}\NormalTok{, predict(}\DecValTok{4}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{\texorpdfstring{\href{https://little-book-of.github.io/maths/books/en-US/chronicles-9.html}{Chapter
+9. Deep Structures and Synthetic
+Minds}}{Chapter 9. Deep Structures and Synthetic Minds}}\label{chapter-9.-deep-structures-and-synthetic-minds}
 
 \subsubsection{81. Symbolic AI - Logic in
 Code}\label{symbolic-ai---logic-in-code}
 
 In the early quest for artificial intelligence, reasoning was modeled
-after mathematics itself. \textbf{Symbolic AI} treated thought as
-manipulation of symbols - facts, rules, and relationships. Programs like
-expert systems used logic to infer conclusions from premises.
-Intelligence, it was believed, lay in explicit knowledge and precise
-deduction. Though brittle in the face of ambiguity, symbolic AI gave
-machines the first language of thought.
+after mathematics itself. Symbolic AI treated thought as manipulation of
+symbols - facts, rules, and relationships. Programs like expert systems
+used logic to infer conclusions from premises. Intelligence, it was
+believed, lay in explicit knowledge and precise deduction. Though
+brittle in the face of ambiguity, symbolic AI gave machines the first
+language of thought.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9788,18 +10870,34 @@ machines the first language of thought.
   Weakness: rigidity and poor handling of uncertainty.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Rule{-}based reasoning}
+\NormalTok{facts }\OperatorTok{=}\NormalTok{ \{}\StringTok{"rain"}\NormalTok{: }\VariableTok{True}\NormalTok{\}}
+\NormalTok{rules }\OperatorTok{=}\NormalTok{ [(}\StringTok{"rain"}\NormalTok{, }\StringTok{"wet\_ground"}\NormalTok{)]}
+
+\ControlFlowTok{for}\NormalTok{ a,b }\KeywordTok{in}\NormalTok{ rules:}
+    \ControlFlowTok{if}\NormalTok{ facts.get(a):}
+\NormalTok{        facts[b] }\OperatorTok{=} \VariableTok{True}
+
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Wet ground?"}\NormalTok{, facts[}\StringTok{"wet\_ground"}\NormalTok{])}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{82. Expert Systems - Encoding Human
 Judgment}\label{expert-systems---encoding-human-judgment}
 
 In medicine, engineering, and law, knowledge could be written as
-``if--then'' rules. \textbf{Expert systems} sought to capture human
+``if--then'' rules. Expert systems sought to capture human
 decision-making in code. A knowledge base stored facts; an inference
 engine applied logic. These systems diagnosed diseases, advised
 investments, scheduled factories - narrow minds, yet powerful within
 their bounds. But their dependence on hand-crafted rules revealed a
 limit: knowledge is vast, and experience cannot always be scripted.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9815,17 +10913,31 @@ limit: knowledge is vast, and experience cannot always be scripted.
   Showed both promise and constraint of symbolic reasoning.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Tiny medical expert system}
+\KeywordTok{def}\NormalTok{ diagnose(temp, cough):}
+    \ControlFlowTok{if}\NormalTok{ temp}\OperatorTok{\textgreater{}}\DecValTok{38} \KeywordTok{and}\NormalTok{ cough: }\ControlFlowTok{return} \StringTok{"Flu"}
+    \ControlFlowTok{if}\NormalTok{ cough:             }\ControlFlowTok{return} \StringTok{"Cold"}
+    \ControlFlowTok{return} \StringTok{"Healthy"}
+
+\BuiltInTok{print}\NormalTok{(diagnose(}\DecValTok{39}\NormalTok{, }\VariableTok{True}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{83. Neural Renaissance - From Connection to
 Cognition}\label{neural-renaissance---from-connection-to-cognition}
 
 After decades of dormancy, artificial neurons returned with power
 renewed. Advances in computation, data, and algorithms revived the
-field. \textbf{Deep neural networks} - many layers of simple units -
-could now learn representations automatically. Vision, speech, and
-language yielded to training rather than programming. The connectionist
-dream - cognition from collective adjustment - began to come true.
+field. Deep neural networks - many layers of simple units - could now
+learn representations automatically. Vision, speech, and language
+yielded to training rather than programming. The connectionist dream -
+cognition from collective adjustment - began to come true.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9841,17 +10953,31 @@ dream - cognition from collective adjustment - began to come true.
   Success across perception, language, and control.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Two{-}layer mini{-}network (no learning)}
+\ImportTok{import}\NormalTok{ math}
+\NormalTok{x }\OperatorTok{=}\NormalTok{ [}\FloatTok{1.0}\NormalTok{, }\FloatTok{0.5}\NormalTok{]}
+\NormalTok{w1 }\OperatorTok{=}\NormalTok{ [[}\FloatTok{0.2}\NormalTok{,}\FloatTok{0.8}\NormalTok{],[}\FloatTok{0.6}\NormalTok{,}\FloatTok{0.4}\NormalTok{]]}
+\NormalTok{h }\OperatorTok{=}\NormalTok{ [math.tanh(}\BuiltInTok{sum}\NormalTok{(a}\OperatorTok{*}\NormalTok{b }\ControlFlowTok{for}\NormalTok{ a,b }\KeywordTok{in} \BuiltInTok{zip}\NormalTok{(x,row))) }\ControlFlowTok{for}\NormalTok{ row }\KeywordTok{in}\NormalTok{ w1]}
+\NormalTok{out }\OperatorTok{=} \BuiltInTok{sum}\NormalTok{(h)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Output:"}\NormalTok{, }\BuiltInTok{round}\NormalTok{(out,}\DecValTok{3}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{84. Hybrid Models - Symbols Meet
 Signals}\label{hybrid-models---symbols-meet-signals}
 
-Pure logic was too rigid; pure learning, too opaque. \textbf{Hybrid
-models} seek to combine the two - the clarity of symbols with the
-flexibility of statistics. Neural-symbolic systems reason over learned
-representations; structured priors guide data-driven inference. Together
-they promise understanding that is both expressive and grounded -
-machines that can learn and explain.
+Pure logic was too rigid; pure learning, too opaque. Hybrid models seek
+to combine the two - the clarity of symbols with the flexibility of
+statistics. Neural-symbolic systems reason over learned representations;
+structured priors guide data-driven inference. Together they promise
+understanding that is both expressive and grounded - machines that can
+learn and explain.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9867,17 +10993,29 @@ machines that can learn and explain.
   Toward AI that both knows and understands.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Combine neural score with symbolic rule}
+\NormalTok{neural }\OperatorTok{=} \FloatTok{0.7}
+\NormalTok{symbolic }\OperatorTok{=} \FloatTok{1.0} \ControlFlowTok{if} \StringTok{"cat"} \KeywordTok{in}\NormalTok{ [}\StringTok{"cat"}\NormalTok{,}\StringTok{"fur"}\NormalTok{] }\ControlFlowTok{else} \FloatTok{0.0}
+\NormalTok{confidence }\OperatorTok{=} \FloatTok{0.6}\OperatorTok{*}\NormalTok{neural }\OperatorTok{+} \FloatTok{0.4}\OperatorTok{*}\NormalTok{symbolic}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Combined confidence:"}\NormalTok{, }\BuiltInTok{round}\NormalTok{(confidence,}\DecValTok{2}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{85. Language Models - The Grammar of
 Thought}\label{language-models---the-grammar-of-thought}
 
 Language, humanity's greatest tool, became the key to teaching machines.
-\textbf{Language models} learn by predicting words, absorbing patterns
-of grammar, meaning, and context. From simple n-grams to transformers
-with billions of parameters, they capture not only syntax but subtlety.
-In their vast text, machines found a mirror of thought - and a medium
-for reasoning through words.
+Language models learn by predicting words, absorbing patterns of
+grammar, meaning, and context. From simple n-grams to transformers with
+billions of parameters, they capture not only syntax but subtlety. In
+their vast text, machines found a mirror of thought - and a medium for
+reasoning through words.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9893,17 +11031,29 @@ for reasoning through words.
   Language emerges as a path to intelligence.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Next{-}word prediction toy}
+\ImportTok{import}\NormalTok{ random}
+\NormalTok{pairs }\OperatorTok{=}\NormalTok{ \{(}\StringTok{"I"}\NormalTok{,}\StringTok{"love"}\NormalTok{):}\StringTok{"math"}\NormalTok{, (}\StringTok{"I"}\NormalTok{,}\StringTok{"hate"}\NormalTok{):}\StringTok{"bugs"}\NormalTok{\}}
+\NormalTok{context }\OperatorTok{=}\NormalTok{ (}\StringTok{"I"}\NormalTok{,}\StringTok{"love"}\NormalTok{)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Next word:"}\NormalTok{, pairs.get(context, random.choice([}\StringTok{"data"}\NormalTok{,}\StringTok{"AI"}\NormalTok{,}\StringTok{"life"}\NormalTok{])))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{86. Agents and Environments - Reason in
 Action}\label{agents-and-environments---reason-in-action}
 
-Intelligence unfolds not in silence, but in interaction. \textbf{Agents}
-perceive, decide, and act within \textbf{environments}. From
-reinforcement learning to autonomous systems, behavior is guided by
-feedback - reward and consequence. Each step refines strategy, shaping
-knowledge through experience. To be intelligent is not only to think,
-but to adapt while moving.
+Intelligence unfolds not in silence, but in interaction. Agents
+perceive, decide, and act within environments. From reinforcement
+learning to autonomous systems, behavior is guided by feedback - reward
+and consequence. Each step refines strategy, shaping knowledge through
+experience. To be intelligent is not only to think, but to adapt while
+moving.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9919,17 +11069,29 @@ but to adapt while moving.
   Intelligence emerges from continual interaction.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Rewarded movement toward goal}
+\NormalTok{pos, goal }\OperatorTok{=} \DecValTok{0}\NormalTok{, }\DecValTok{5}
+\ControlFlowTok{for}\NormalTok{ \_ }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{5}\NormalTok{):}
+\NormalTok{    pos }\OperatorTok{+=} \DecValTok{1}
+\NormalTok{    reward }\OperatorTok{=} \DecValTok{1} \ControlFlowTok{if}\NormalTok{ pos}\OperatorTok{==}\NormalTok{goal }\ControlFlowTok{else} \DecValTok{0}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Reached:"}\NormalTok{, pos}\OperatorTok{==}\NormalTok{goal, }\StringTok{"Reward:"}\NormalTok{, reward)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{87. Ethics of Algorithms - When Logic Meets
 Life}\label{ethics-of-algorithms---when-logic-meets-life}
 
 As algorithms began to govern loans, jobs, and justice, their neutrality
-proved illusion. \textbf{Ethics in AI} confronts questions of fairness,
-bias, and accountability. Who decides what a model should optimize - and
-who bears its errors? Mathematics meets morality when equations affect
-lives. Designing systems responsibly means embedding values, not just
-logic.
+proved illusion. Ethics in AI confronts questions of fairness, bias, and
+accountability. Who decides what a model should optimize - and who bears
+its errors? Mathematics meets morality when equations affect lives.
+Designing systems responsibly means embedding values, not just logic.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9945,18 +11107,28 @@ logic.
   Technology shapes, and is shaped by, human values.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Check dataset balance}
+\NormalTok{data }\OperatorTok{=}\NormalTok{ [}\StringTok{"A"}\NormalTok{,}\StringTok{"A"}\NormalTok{,}\StringTok{"A"}\NormalTok{,}\StringTok{"B"}\NormalTok{]}
+\NormalTok{bias }\OperatorTok{=}\NormalTok{ data.count(}\StringTok{"A"}\NormalTok{)}\OperatorTok{/}\BuiltInTok{len}\NormalTok{(data)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Bias toward A:"}\NormalTok{, }\BuiltInTok{round}\NormalTok{(bias,}\DecValTok{2}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{88. Alignment - Teaching Machines to
 Value}\label{alignment---teaching-machines-to-value}
 
 To align AI with human intention is to ensure power serves purpose.
-\textbf{Alignment} studies how to build systems that pursue goals
-consistent with ours - robustly, even under uncertainty. Reward
-modeling, constitutional training, and interpretability seek to tether
-intelligence to ethics. The question is no longer whether machines can
-think, but whether they \emph{should} - and how we ensure they think
-\emph{well}.
+Alignment studies how to build systems that pursue goals consistent with
+ours - robustly, even under uncertainty. Reward modeling, constitutional
+training, and interpretability seek to tether intelligence to ethics.
+The question is no longer whether machines can think, but whether they
+\emph{should} - and how we ensure they think \emph{well}.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9972,17 +11144,28 @@ think, but whether they \emph{should} - and how we ensure they think
   Control becomes a moral, not just technical, challenge.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Penalize harmful action}
+\NormalTok{actions }\OperatorTok{=}\NormalTok{ \{}\StringTok{"help"}\NormalTok{: }\OperatorTok{+}\DecValTok{1}\NormalTok{, }\StringTok{"harm"}\NormalTok{: }\OperatorTok{{-}}\DecValTok{10}\NormalTok{\}}
+\NormalTok{policy }\OperatorTok{=} \BuiltInTok{max}\NormalTok{(actions, key}\OperatorTok{=}\NormalTok{actions.get)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Chosen action:"}\NormalTok{, policy)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{89. Interpretability - Seeing the Hidden
 Layers}\label{interpretability---seeing-the-hidden-layers}
 
-As models grew deep, their reasoning turned opaque.
-\textbf{Interpretability} seeks light - tools and methods to reveal what
-networks have learned. Visualization, attribution, and probing expose
-structure beneath complexity. Understanding is not mere curiosity; it is
-safety, trust, and progress. To read the mind of a machine is to bridge
-intuition and algorithm.
+As models grew deep, their reasoning turned opaque. Interpretability
+seeks light - tools and methods to reveal what networks have learned.
+Visualization, attribution, and probing expose structure beneath
+complexity. Understanding is not mere curiosity; it is safety, trust,
+and progress. To read the mind of a machine is to bridge intuition and
+algorithm.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -9998,17 +11181,27 @@ intuition and algorithm.
   Insight is the compass of responsible innovation.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Feature importance via simple weights}
+\NormalTok{weights }\OperatorTok{=}\NormalTok{ \{}\StringTok{"age"}\NormalTok{:}\FloatTok{0.6}\NormalTok{,}\StringTok{"income"}\NormalTok{:}\FloatTok{0.3}\NormalTok{,}\StringTok{"zipcode"}\NormalTok{:}\FloatTok{0.1}\NormalTok{\}}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Most influential:"}\NormalTok{, }\BuiltInTok{max}\NormalTok{(weights,key}\OperatorTok{=}\NormalTok{weights.get))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{90. Emergence of Mind - When Pattern Becomes
 Thought}\label{emergence-of-mind---when-pattern-becomes-thought}
 
-From countless connections arises coherence. \textbf{Emergence} in AI
-marks when scale and structure yield new capacities - abstraction,
-reasoning, creativity. No single rule explains it; the system itself
-becomes the explanation. As models grow, they begin to surprise -
-exhibiting glimpses of understanding not coded but cultivated.
-Intelligence, it seems, is not built but grown.
+From countless connections arises coherence. Emergence in AI marks when
+scale and structure yield new capacities - abstraction, reasoning,
+creativity. No single rule explains it; the system itself becomes the
+explanation. As models grow, they begin to surprise - exhibiting
+glimpses of understanding not coded but cultivated. Intelligence, it
+seems, is not built but grown.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -10024,9 +11217,20 @@ Intelligence, it seems, is not built but grown.
   Thought itself may be a collective property of pattern.
 \end{itemize}
 
-\subsection{Chapter 10. The Horizon of Intelligence: Mathematics in the
-Age of
-Mind}\label{chapter-10.-the-horizon-of-intelligence-mathematics-in-the-age-of-mind}
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Collective average produces new property}
+\NormalTok{neurons }\OperatorTok{=}\NormalTok{ [}\FloatTok{0.2}\NormalTok{,}\FloatTok{0.8}\NormalTok{,}\FloatTok{0.6}\NormalTok{,}\FloatTok{0.4}\NormalTok{]}
+\NormalTok{mind\_state }\OperatorTok{=} \BuiltInTok{sum}\NormalTok{(neurons)}\OperatorTok{/}\BuiltInTok{len}\NormalTok{(neurons)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Global activity (emergent):"}\NormalTok{, }\BuiltInTok{round}\NormalTok{(mind\_state,}\DecValTok{2}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{\texorpdfstring{\href{https://little-book-of.github.io/maths/books/en-US/chronicles-10.html}{Chapter
+10. The Horizon of Intelligence: Mathematics in the Age of
+Mind}}{Chapter 10. The Horizon of Intelligence: Mathematics in the Age of Mind}}\label{chapter-10.-the-horizon-of-intelligence-mathematics-in-the-age-of-mind}
 
 \subsubsection{91. Mathematics as Mirror - The World Reflected in
 Law}\label{mathematics-as-mirror---the-world-reflected-in-law}
@@ -10039,7 +11243,7 @@ study number is to study necessity; to reason in symbol is to glimpse
 the architecture of the cosmos. Yet the mirror also reveals us - the
 patterns we impose, the models we choose, the logic we live by.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -10055,6 +11259,17 @@ patterns we impose, the models we choose, the logic we live by.
   To understand math is to understand how we understand.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Gravity: F = G * m1 * m2 / r\^{}2}
+\NormalTok{G, m1, m2, r }\OperatorTok{=} \FloatTok{6.67e{-}11}\NormalTok{, }\FloatTok{5.97e24}\NormalTok{, }\FloatTok{7.35e22}\NormalTok{, }\FloatTok{3.84e8}
+\NormalTok{F }\OperatorTok{=}\NormalTok{ G }\OperatorTok{*}\NormalTok{ m1 }\OperatorTok{*}\NormalTok{ m2 }\OperatorTok{/}\NormalTok{ r}\OperatorTok{**}\DecValTok{2}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Force (N):"}\NormalTok{, }\BuiltInTok{round}\NormalTok{(F, }\DecValTok{2}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{92. Computation as Culture - The Algorithmic
 Civilization}\label{computation-as-culture---the-algorithmic-civilization}
 
@@ -10065,7 +11280,7 @@ itself. The logic of code - conditional, recursive, iterative - has
 become the logic of life. To live in an algorithmic civilization is to
 be both its author and its subject.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -10081,17 +11296,28 @@ be both its author and its subject.
   Civilization now evolves through digital infrastructure.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Recommendation by popularity}
+\NormalTok{articles }\OperatorTok{=}\NormalTok{ \{}\StringTok{"math"}\NormalTok{:}\DecValTok{120}\NormalTok{,}\StringTok{"art"}\NormalTok{:}\DecValTok{95}\NormalTok{,}\StringTok{"history"}\NormalTok{:}\DecValTok{40}\NormalTok{\}}
+\NormalTok{feed }\OperatorTok{=} \BuiltInTok{sorted}\NormalTok{(articles,key}\OperatorTok{=}\NormalTok{articles.get,reverse}\OperatorTok{=}\VariableTok{True}\NormalTok{)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Curated feed:"}\NormalTok{, feed)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{93. Data as Memory - The Archive of
 Humanity}\label{data-as-memory---the-archive-of-humanity}
 
 Every click, text, and transaction becomes inscription. Data is the
-\textbf{memory} of modern civilization - vast, persistent, searchable.
-It remembers what we forget, but not always what we value. As archives
+memory of modern civilization - vast, persistent, searchable. It
+remembers what we forget, but not always what we value. As archives
 expand, the challenge shifts from collecting to curating - from having
 everything to knowing what matters. In this sea of memory, meaning must
 be found, not stored.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -10107,17 +11333,29 @@ be found, not stored.
   Knowledge is selection - remembering wisely, not merely well.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Append events to a log}
+\NormalTok{log }\OperatorTok{=}\NormalTok{ []}
+\KeywordTok{def}\NormalTok{ record(event): log.append(event)}
+\NormalTok{record(}\StringTok{"born"}\NormalTok{)}\OperatorTok{;}\NormalTok{ record(}\StringTok{"learned"}\NormalTok{)}\OperatorTok{;}\NormalTok{ record(}\StringTok{"created"}\NormalTok{)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Archive:"}\NormalTok{, log)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{94. Models as Metaphor - Seeing Through
 Abstraction}\label{models-as-metaphor---seeing-through-abstraction}
 
 Every model is a lens: it clarifies some truths while blurring others.
-In science, art, and computation alike, \textbf{models} are metaphors -
+In science, art, and computation alike, models are metaphors -
 simplified worlds built to reveal patterns. Their power lies not in
 perfection, but in perspective. By choosing what to ignore, we learn
 what to see. Mathematics teaches humility: all representation is
 partial, yet through it, understanding grows.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -10133,16 +11371,26 @@ partial, yet through it, understanding grows.
   Seeing through models means seeing both their truth and their limits.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Linear model as simplified world}
+\NormalTok{f }\OperatorTok{=} \KeywordTok{lambda}\NormalTok{ x: }\DecValTok{2}\OperatorTok{*}\NormalTok{x }\OperatorTok{+} \DecValTok{1}
+\ControlFlowTok{for}\NormalTok{ x }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{3}\NormalTok{): }\BuiltInTok{print}\NormalTok{(}\SpecialStringTok{f"x=}\SpecialCharTok{\{}\NormalTok{x}\SpecialCharTok{\}}\SpecialStringTok{ → y=}\SpecialCharTok{\{}\NormalTok{f(x)}\SpecialCharTok{\}}\SpecialStringTok{"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{95. The Limits of Prediction - Chaos, Chance, and
 Choice}\label{the-limits-of-prediction---chaos-chance-and-choice}
 
-Even with perfect data, the future resists capture. \textbf{Chaos} hides
-in sensitivity; \textbf{chance} lurks in probability; \textbf{choice}
-bends paths unforeseen. Mathematics has mapped uncertainty, yet cannot
-abolish it. Forecasts refine, but never guarantee. Between determinism
-and freedom lies the living present - where prediction meets humility.
+Even with perfect data, the future resists capture. Chaos hides in
+sensitivity; chance lurks in probability; choice bends paths unforeseen.
+Mathematics has mapped uncertainty, yet cannot abolish it. Forecasts
+refine, but never guarantee. Between determinism and freedom lies the
+living present - where prediction meets humility.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -10158,6 +11406,19 @@ and freedom lies the living present - where prediction meets humility.
   Uncertainty is not failure but feature - a horizon of possibility.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Sensitive dependence on initial condition}
+\NormalTok{x1, x2, r }\OperatorTok{=} \FloatTok{0.5}\NormalTok{, }\FloatTok{0.5001}\NormalTok{, }\FloatTok{3.9}
+\ControlFlowTok{for}\NormalTok{ \_ }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{10}\NormalTok{):}
+\NormalTok{    x1 }\OperatorTok{=}\NormalTok{ r}\OperatorTok{*}\NormalTok{x1}\OperatorTok{*}\NormalTok{(}\DecValTok{1}\OperatorTok{{-}}\NormalTok{x1)}
+\NormalTok{    x2 }\OperatorTok{=}\NormalTok{ r}\OperatorTok{*}\NormalTok{x2}\OperatorTok{*}\NormalTok{(}\DecValTok{1}\OperatorTok{{-}}\NormalTok{x2)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Difference after 10 steps:"}\NormalTok{, }\BuiltInTok{abs}\NormalTok{(x1}\OperatorTok{{-}}\NormalTok{x2))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{96. The Philosophy of Number - From Counting to
 Knowing}\label{the-philosophy-of-number---from-counting-to-knowing}
 
@@ -10168,7 +11429,7 @@ extended what could be known. In the philosophy of number lies a deeper
 question: is mathematics discovered or invented - and who, then, is
 counting whom?
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -10184,6 +11445,19 @@ counting whom?
   Number bridges existence and idea.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Build number systems stepwise}
+\NormalTok{N }\OperatorTok{=}\NormalTok{ \{}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{\}}
+\NormalTok{Z }\OperatorTok{=}\NormalTok{ N.union(\{}\OperatorTok{{-}}\NormalTok{n }\ControlFlowTok{for}\NormalTok{ n }\KeywordTok{in}\NormalTok{ N\})}
+\NormalTok{R }\OperatorTok{=}\NormalTok{ \{n}\OperatorTok{/}\DecValTok{2} \ControlFlowTok{for}\NormalTok{ n }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\OperatorTok{{-}}\DecValTok{4}\NormalTok{,}\DecValTok{5}\NormalTok{)\}}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Integers:"}\NormalTok{, Z)}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Rationals:"}\NormalTok{, R)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{97. The Ethics of Knowledge - Bias, Truth, and
 Power}\label{the-ethics-of-knowledge---bias-truth-and-power}
 
@@ -10193,7 +11467,7 @@ access, and agency become moral ones. Who owns information? Who decides
 truth? The ethics of knowledge reminds us that wisdom requires more than
 accuracy - it requires justice.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -10209,17 +11483,28 @@ accuracy - it requires justice.
   Knowledge serves best when guided by conscience.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Check data representation}
+\NormalTok{dataset }\OperatorTok{=}\NormalTok{ \{}\StringTok{"groupA"}\NormalTok{:}\DecValTok{80}\NormalTok{, }\StringTok{"groupB"}\NormalTok{:}\DecValTok{20}\NormalTok{\}}
+\NormalTok{fairness }\OperatorTok{=} \BuiltInTok{min}\NormalTok{(dataset.values())}\OperatorTok{/}\BuiltInTok{max}\NormalTok{(dataset.values())}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Representation ratio:"}\NormalTok{, }\BuiltInTok{round}\NormalTok{(fairness,}\DecValTok{2}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{98. The Future of Proof - Machines of
 Understanding}\label{the-future-of-proof---machines-of-understanding}
 
 For millennia, proof was the mathematician's craft - a human dialogue
 with logic. Now, machines assist: checking steps, finding lemmas, even
-proposing conjectures. \textbf{Automated reasoning} expands what can be
-proved, but shifts what proof means. When understanding is shared
-between human and machine, certainty becomes collaboration - rigor
-intertwined with creativity.
+proposing conjectures. Automated reasoning expands what can be proved,
+but shifts what proof means. When understanding is shared between human
+and machine, certainty becomes collaboration - rigor intertwined with
+creativity.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -10235,6 +11520,16 @@ intertwined with creativity.
   Truth remains humanly meaningful, even when machine-found.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Automated check of a simple theorem}
+\ControlFlowTok{assert} \BuiltInTok{all}\NormalTok{(a}\OperatorTok{+}\NormalTok{b}\OperatorTok{==}\NormalTok{b}\OperatorTok{+}\NormalTok{a }\ControlFlowTok{for}\NormalTok{ a }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{3}\NormalTok{) }\ControlFlowTok{for}\NormalTok{ b }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{3}\NormalTok{))}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"Commutativity verified by machine."}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{99. The Language of Creation - Math as
 Thought}\label{the-language-of-creation---math-as-thought}
 
@@ -10245,7 +11540,7 @@ generate art, and symmetry writes the laws of matter. To think
 mathematically is to participate in creation - shaping reality through
 reason's imagination.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -10261,6 +11556,17 @@ reason's imagination.
   Math reveals imagination disciplined by truth.
 \end{itemize}
 
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Parametric curve creates a spiral}
+\ImportTok{import}\NormalTok{ math}
+\NormalTok{points }\OperatorTok{=}\NormalTok{ [(r}\OperatorTok{*}\NormalTok{math.cos(r), r}\OperatorTok{*}\NormalTok{math.sin(r)) }\ControlFlowTok{for}\NormalTok{ r }\KeywordTok{in}\NormalTok{ [i}\OperatorTok{*}\FloatTok{0.1} \ControlFlowTok{for}\NormalTok{ i }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{30}\NormalTok{)]]}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"First 5 points:"}\NormalTok{, [}\BuiltInTok{tuple}\NormalTok{(}\BuiltInTok{round}\NormalTok{(c,}\DecValTok{2}\NormalTok{) }\ControlFlowTok{for}\NormalTok{ c }\KeywordTok{in}\NormalTok{ p) }\ControlFlowTok{for}\NormalTok{ p }\KeywordTok{in}\NormalTok{ points[:}\DecValTok{5}\NormalTok{]])}
+\end{Highlighting}
+\end{Shaded}
+
 \subsubsection{100. The Infinite Horizon - When Knowledge Becomes
 Conscious}\label{the-infinite-horizon---when-knowledge-becomes-conscious}
 
@@ -10271,7 +11577,7 @@ infinite horizon is not a boundary, but a direction: toward deeper
 unification of logic, life, and mind. To pursue it is to continue the
 oldest human project - to make thought conscious of itself.
 
-\textbf{Key Ideas:}
+Key Ideas:
 
 \begin{itemize}
 \tightlist
@@ -10286,6 +11592,16 @@ oldest human project - to make thought conscious of itself.
 \item
   Conscious knowledge is the ultimate mirror of reason.
 \end{itemize}
+
+Tiny Code
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Self{-}model: a function describing itself}
+\KeywordTok{def}\NormalTok{ reflect(f): }\ControlFlowTok{return}\NormalTok{ f.}\VariableTok{\_\_name\_\_}
+\BuiltInTok{print}\NormalTok{(}\StringTok{"I am aware of:"}\NormalTok{, reflect(reflect))}
+\end{Highlighting}
+\end{Shaded}
 
 \bookmarksetup{startatroot}
 
@@ -21754,7 +23070,7 @@ learning - a dialogue between doubt and discovery.
 \bookmarksetup{startatroot}
 
 \chapter{Chapter 5. The Age of Systems: Networks, Patterns, and
-Chaos}\label{chapter-5.-the-age-of-systems-networks-patterns-and-chaos}
+Chaos}\label{chapter-5.-the-age-of-systems-networks-patterns-and-chaos-1}
 
 \subsection{41. Dynamical Systems - The Geometry of
 Time}\label{dynamical-systems---the-geometry-of-time-1}
