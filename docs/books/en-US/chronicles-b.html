@@ -1,0 +1,5607 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.23">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Annex B. Glossary – The Little Chronicles of Mathematics, and the Mind of Machines (TLC3M)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../books/en-US/chronicles-c.html" rel="next">
+<link href="../../books/en-US/chronicles-a.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-27c261d06b905028a18691de25d09dde.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../books/en-US/chronicles-b.html"><span class="chapter-title">Annex B. Glossary</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../../index.html" class="sidebar-logo-link">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">The Little Chronicles of Mathematics, and the Mind of Machines (TLC3M)</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Content</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../books/en-US/tales.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Tales</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../books/en-US/ideas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Ideas</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../books/en-US/chronicles-1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chapter 1. Pebbles and shadows: The birth of number</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../books/en-US/chronicles-2.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chapter 2. The Age of Reason: Mathematics becomes a language</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../books/en-US/chronicles-3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chapter 3. The Engine of Calculation: Machines of Thought</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../books/en-US/chronicles-4.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chapter 4. The Data Revolution: From Observation to Model</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../books/en-US/chronicles-5.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chapter 5. The Age of Systems: Networks, Patterns, and Chaos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../books/en-US/chronicles-6.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chapter 6. The Age of Data: Memory, Flow and Computation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../books/en-US/chronicles-7.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chapter 7. Computationand Abstraction: The Modern Foundations</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../books/en-US/chronicles-8.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chapter 8. The Architecture of Learning: From Statistics to Intelligence</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../books/en-US/chronicles-9.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chapter 9. Deep Structures and Synthetic Minds</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../books/en-US/chronicles-10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chapter 10. The Horizon of Intelligence: Mathematics in the Age of Mind</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../books/en-US/chronicles-a.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Annex A. Mathematical Timeline: 40 Milestones in 4000 Years</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../books/en-US/chronicles-b.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Annex B. Glossary</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../books/en-US/chronicles-c.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Annex C. Portraits of Thinkers</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#b1.-number-quantity" id="toc-b1.-number-quantity" class="nav-link active" data-scroll-target="#b1.-number-quantity">B1. Number &amp; Quantity</a></li>
+  <li><a href="#b2.-shape-space" id="toc-b2.-shape-space" class="nav-link" data-scroll-target="#b2.-shape-space">B2. Shape &amp; Space</a></li>
+  <li><a href="#b3.-motion-change" id="toc-b3.-motion-change" class="nav-link" data-scroll-target="#b3.-motion-change">B3. Motion &amp; Change</a></li>
+  <li><a href="#b4.-logic-proof" id="toc-b4.-logic-proof" class="nav-link" data-scroll-target="#b4.-logic-proof">B4. Logic &amp; Proof</a></li>
+  <li><a href="#b5.-data-probability" id="toc-b5.-data-probability" class="nav-link" data-scroll-target="#b5.-data-probability">B5. Data &amp; Probability</a></li>
+  <li><a href="#b6.-computation-language" id="toc-b6.-computation-language" class="nav-link" data-scroll-target="#b6.-computation-language">B6. Computation &amp; Language</a></li>
+  <li><a href="#b7.-systems-networks" id="toc-b7.-systems-networks" class="nav-link" data-scroll-target="#b7.-systems-networks">B7. Systems &amp; Networks</a></li>
+  <li><a href="#b8.-learning-intelligence" id="toc-b8.-learning-intelligence" class="nav-link" data-scroll-target="#b8.-learning-intelligence">B8. Learning &amp; Intelligence</a></li>
+  <li><a href="#b9.-philosophy-foundations" id="toc-b9.-philosophy-foundations" class="nav-link" data-scroll-target="#b9.-philosophy-foundations">B9. Philosophy &amp; Foundations</a></li>
+  <li><a href="#b10.-future-horizon" id="toc-b10.-future-horizon" class="nav-link" data-scroll-target="#b10.-future-horizon">B10. Future &amp; Horizon</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Annex B. Glossary</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="b1.-number-quantity" class="level3">
+<h3 class="anchored" data-anchor-id="b1.-number-quantity">B1. Number &amp; Quantity</h3>
+<p><em>The birth of mathematics begins with the act of distinguishing one from many — counting, measuring, comparing. This cluster gathers the foundational notions that made quantity visible and manipulable, transforming gestures into arithmetic and thought into algebra.</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 34%">
+<col style="width: 24%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition</th>
+<th>Context</th>
+<th>Modern Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Number</td>
+<td>An abstract concept representing quantity, order, or measure; the foundation of mathematics.</td>
+<td>Emerged from counting tangible objects in early agrarian societies.</td>
+<td>Basis of all mathematical systems; integers, rationals, reals, complexes, etc.</td>
+</tr>
+<tr class="even">
+<td>Natural Number</td>
+<td>The set of counting numbers (1, 2, 3, …), used to enumerate objects.</td>
+<td>Rooted in primitive counting; earliest tallies and pebbles.</td>
+<td>Used in discrete mathematics, algorithms, and combinatorics.</td>
+</tr>
+<tr class="odd">
+<td>Integer</td>
+<td>Whole numbers including negatives, zero, and positives (…, -2, -1, 0, 1, 2, …).</td>
+<td>Invented to represent debts, opposites, and direction.</td>
+<td>Ubiquitous in programming, number theory, and algebra.</td>
+</tr>
+<tr class="even">
+<td>Rational Number</td>
+<td>A number expressible as a ratio of two integers ( <span class="math inline">\(\frac{p}{q}\)</span> ).</td>
+<td>Developed by Greek geometers to describe ratios.</td>
+<td>Forms the basis for fractions, proportions, and rates.</td>
+</tr>
+<tr class="odd">
+<td>Irrational Number</td>
+<td>A number that cannot be expressed as a fraction (e.g., √2, π).</td>
+<td>Shocked the Pythagoreans, revealing limits of ratio.</td>
+<td>Central in analysis, geometry, and transcendental number theory.</td>
+</tr>
+<tr class="even">
+<td>Real Number</td>
+<td>All rational and irrational numbers forming a continuous line.</td>
+<td>Codified in calculus to measure continuous quantities.</td>
+<td>Foundation of real analysis, geometry, and physics.</td>
+</tr>
+<tr class="odd">
+<td>Complex Number</td>
+<td>Numbers of the form ( a + bi ), where ( <span class="math inline">\(i = \sqrt{-1}\)</span> ).</td>
+<td>Introduced to solve quadratic equations with no real roots.</td>
+<td>Essential in signal processing, quantum physics, and control theory.</td>
+</tr>
+<tr class="even">
+<td>Imaginary Unit (i)</td>
+<td>Symbol representing √-1, enabling the extension of real numbers.</td>
+<td>Proposed by Bombelli in the 16th century.</td>
+<td>Used in complex analysis and electrical engineering.</td>
+</tr>
+<tr class="odd">
+<td>Prime Number</td>
+<td>An integer greater than 1 with no divisors other than 1 and itself.</td>
+<td>Studied since Euclid; the “atoms” of arithmetic.</td>
+<td>Vital in cryptography, number theory, and primality testing.</td>
+</tr>
+<tr class="even">
+<td>Composite Number</td>
+<td>An integer with divisors other than 1 and itself.</td>
+<td>Opposite of prime; reveals factor structure.</td>
+<td>Used in factorization algorithms and encryption.</td>
+</tr>
+<tr class="odd">
+<td>Divisibility</td>
+<td>A number ( a ) divides ( b ) if ( b = ka ) for some integer ( k ).</td>
+<td>Root of modular arithmetic and gcd concepts.</td>
+<td>Used in computer arithmetic and modular systems.</td>
+</tr>
+<tr class="even">
+<td>Greatest Common Divisor (GCD)</td>
+<td>The largest number dividing two integers without remainder.</td>
+<td>Defined by Euclid’s algorithm (c.&nbsp;300 BCE).</td>
+<td>Fundamental in simplification, modular arithmetic, cryptography.</td>
+</tr>
+<tr class="odd">
+<td>Least Common Multiple (LCM)</td>
+<td>The smallest positive number divisible by two integers.</td>
+<td>Ancient tool for synchronizing cycles.</td>
+<td>Used in calendar systems, scheduling, and discrete math.</td>
+</tr>
+<tr class="even">
+<td>Even / Odd</td>
+<td>Numbers divisible or not divisible by 2.</td>
+<td>Among earliest classifications of integers.</td>
+<td>Used in parity checks, algorithms, and number theory.</td>
+</tr>
+<tr class="odd">
+<td>Absolute Value</td>
+<td>The distance of a number from zero on the number line.</td>
+<td>Geometric measure of magnitude without direction.</td>
+<td>Used in analysis, optimization, and metrics.</td>
+</tr>
+<tr class="even">
+<td>Zero (0)</td>
+<td>Symbol representing nothingness, yet marking place and balance.</td>
+<td>Invented in India; transmitted via Arabic scholarship.</td>
+<td>Core to positional notation, algebra, and computation.</td>
+</tr>
+<tr class="odd">
+<td>Infinity (∞)</td>
+<td>Concept of boundlessness; larger than any finite quantity.</td>
+<td>Explored by Greeks; formalized in calculus and set theory.</td>
+<td>Used in limits, cardinalities, and projective geometry.</td>
+</tr>
+<tr class="even">
+<td>Negative Number</td>
+<td>Numbers less than zero, representing absence or debt.</td>
+<td>Controversial until Renaissance; accepted by Descartes.</td>
+<td>Used in algebra, finance, and coordinate geometry.</td>
+</tr>
+<tr class="odd">
+<td>Ordinal Number</td>
+<td>Number expressing position or order (first, second, third…).</td>
+<td>Emerged in ranking and sequences.</td>
+<td>Used in combinatorics, order theory, and programming.</td>
+</tr>
+<tr class="even">
+<td>Cardinal Number</td>
+<td>Number expressing quantity (how many).</td>
+<td>Ancient concept linked to counting and measure.</td>
+<td>Basis for set cardinality, combinatorics, and data models.</td>
+</tr>
+<tr class="odd">
+<td>Ratio</td>
+<td>A relation comparing two quantities by division.</td>
+<td>Core of Greek proportion theory.</td>
+<td>Used in scaling, probability, and statistics.</td>
+</tr>
+<tr class="even">
+<td>Proportion</td>
+<td>Equality between two ratios.</td>
+<td>Key in similar triangles and harmony theory.</td>
+<td>Central to physics, finance, and model calibration.</td>
+</tr>
+<tr class="odd">
+<td>Fraction</td>
+<td>A part of a whole, expressed as ( <span class="math inline">\(\frac{p}{q}\)</span> ).</td>
+<td>Developed in Egypt and Babylon; refined by Greeks.</td>
+<td>Used in arithmetic, rational approximations, and computing.</td>
+</tr>
+<tr class="even">
+<td>Decimal System</td>
+<td>Base-10 positional numeral system.</td>
+<td>Originated in India; spread through Arabic notation.</td>
+<td>Universal in measurement, computation, and education.</td>
+</tr>
+<tr class="odd">
+<td>Positional Notation</td>
+<td>System where value depends on position (e.g., 10^n).</td>
+<td>Enabled by zero; revolutionized arithmetic.</td>
+<td>Foundation of all modern number systems and computing.</td>
+</tr>
+<tr class="even">
+<td>Base / Radix</td>
+<td>The number of unique digits in a numeral system.</td>
+<td>From base-10 (decimal) to base-2 (binary).</td>
+<td>Used in programming, encoding, and digital systems.</td>
+</tr>
+<tr class="odd">
+<td>Binary Number</td>
+<td>Numbers expressed in base-2 (0,1).</td>
+<td>Revived by Leibniz; cornerstone of computation.</td>
+<td>Fundamental to digital logic and machine representation.</td>
+</tr>
+<tr class="even">
+<td>Hexadecimal Number</td>
+<td>Base-16 numeral system (0–9, A–F).</td>
+<td>Introduced in computing for compactness.</td>
+<td>Used in memory addressing, graphics, and encoding.</td>
+</tr>
+<tr class="odd">
+<td>Logarithm</td>
+<td>Inverse of exponentiation; transforms multiplication into addition.</td>
+<td>Invented by Napier to simplify calculation.</td>
+<td>Used in complexity, data scales, and growth models.</td>
+</tr>
+<tr class="even">
+<td>Exponent / Power</td>
+<td>Expresses repeated multiplication (aⁿ).</td>
+<td>Studied since medieval algebra.</td>
+<td>Used in exponential growth, compound interest, algorithms.</td>
+</tr>
+<tr class="odd">
+<td>Root / Radical</td>
+<td>Inverse of exponentiation (√x).</td>
+<td>Central in algebraic equations.</td>
+<td>Used in geometry, physics, and statistics.</td>
+</tr>
+<tr class="even">
+<td>Modulus (mod)</td>
+<td>Remainder after division; wraps numbers around a base.</td>
+<td>Originated in modular arithmetic by Gauss.</td>
+<td>Used in cryptography, hash functions, and cyclic systems.</td>
+</tr>
+<tr class="odd">
+<td>Magnitude</td>
+<td>The size or extent of a quantity.</td>
+<td>Philosophical in Greek math; geometric sense.</td>
+<td>Used in vectors, signals, and measurement theory.</td>
+</tr>
+<tr class="even">
+<td>Scalar</td>
+<td>A quantity with magnitude but no direction.</td>
+<td>Defined in vector analysis.</td>
+<td>Used in physics, ML scaling, and linear algebra.</td>
+</tr>
+<tr class="odd">
+<td>Quantity</td>
+<td>Anything that can be measured or counted.</td>
+<td>Fundamental to all measurement systems.</td>
+<td>Core concept across mathematics, science, and economics.</td>
+</tr>
+<tr class="even">
+<td>Continuum</td>
+<td>A set without gaps; infinitely divisible.</td>
+<td>Root of calculus and real analysis.</td>
+<td>Used in modeling continuous phenomena.</td>
+</tr>
+<tr class="odd">
+<td>Discrete</td>
+<td>Separate, countable units; opposite of continuous.</td>
+<td>Greek atomism → combinatorics.</td>
+<td>Used in CS, combinatorics, and probability.</td>
+</tr>
+<tr class="even">
+<td>Approximation</td>
+<td>Representation close to but not exactly equal.</td>
+<td>Practical tool since Babylonian arithmetic.</td>
+<td>Used in analysis, computation, and engineering.</td>
+</tr>
+<tr class="odd">
+<td>Significant Figures</td>
+<td>Digits expressing meaningful precision.</td>
+<td>Standardized in scientific measurement.</td>
+<td>Used in error estimation, data reporting.</td>
+</tr>
+<tr class="even">
+<td>Unit</td>
+<td>Standard of measurement (e.g., meter, second).</td>
+<td>Rooted in trade and geometry.</td>
+<td>Used in physics, data science, dimensional analysis.</td>
+</tr>
+<tr class="odd">
+<td>Dimension</td>
+<td>Direction or degree of freedom of a space.</td>
+<td>Defined by Euclid; generalized in algebra.</td>
+<td>Used in geometry, ML, and physics.</td>
+</tr>
+<tr class="even">
+<td>Scale</td>
+<td>Ratio between representation and reality.</td>
+<td>Used in maps, models, and drawings.</td>
+<td>Used in data normalization and multi-scale analysis.</td>
+</tr>
+<tr class="odd">
+<td>Order of Magnitude</td>
+<td>Power of ten approximation of size.</td>
+<td>Popularized by physics and astronomy.</td>
+<td>Used in estimation, big-O analysis.</td>
+</tr>
+<tr class="even">
+<td>Countability</td>
+<td>Property of a set being enumerable by natural numbers.</td>
+<td>Formalized by Cantor.</td>
+<td>Used in set theory, topology, logic.</td>
+</tr>
+<tr class="odd">
+<td>Uncountable Set</td>
+<td>Set with elements beyond enumeration (e.g.&nbsp;reals).</td>
+<td>Discovered by Cantor; shocked contemporaries.</td>
+<td>Used in analysis, measure theory.</td>
+</tr>
+<tr class="even">
+<td>Cardinality</td>
+<td>Measure of set size; finite or infinite.</td>
+<td>Developed by Cantor.</td>
+<td>Used in set theory, database design.</td>
+</tr>
+<tr class="odd">
+<td>Norm</td>
+<td>Function measuring size in vector spaces.</td>
+<td>From Minkowski’s geometry.</td>
+<td>Used in optimization, ML regularization.</td>
+</tr>
+<tr class="even">
+<td>Metric</td>
+<td>Function defining distance between elements.</td>
+<td>Defined in topology and geometry.</td>
+<td>Used in clustering, similarity, and metric spaces.</td>
+</tr>
+<tr class="odd">
+<td>Dimensionless Quantity</td>
+<td>Pure number without units.</td>
+<td>Used to express ratios and constants.</td>
+<td>Found in physics, finance, statistics.</td>
+</tr>
+<tr class="even">
+<td>Constant</td>
+<td>A fixed value that does not change.</td>
+<td>Appears in equations, laws, and models.</td>
+<td>π, e, c — universal constants of nature.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="b2.-shape-space" class="level3">
+<h3 class="anchored" data-anchor-id="b2.-shape-space">B2. Shape &amp; Space</h3>
+<p><em>Where number meets form — the study of extension, position, and relation. Geometry, born from the need to measure land and trace the heavens, grew into a universal language of structure. From lines and angles to manifolds and topologies, these ideas reveal how the world occupies space and how the mind perceives order.</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 34%">
+<col style="width: 27%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition</th>
+<th>Context</th>
+<th>Modern Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Point</td>
+<td>A position in space with no size, dimension, or extent.</td>
+<td>Defined by Euclid as “that which has no part.”</td>
+<td>Foundation of geometry, graph theory, and vector spaces.</td>
+</tr>
+<tr class="even">
+<td>Line</td>
+<td>A straight, one-dimensional figure extending infinitely in both directions.</td>
+<td>Central to Greek geometry; used for measuring and constructing.</td>
+<td>Used in analytic geometry, algebraic curves, and linear models.</td>
+</tr>
+<tr class="odd">
+<td>Segment</td>
+<td>A finite part of a line bounded by two endpoints.</td>
+<td>Practical in surveying and design.</td>
+<td>Used in CAD, geometry, and computational graphics.</td>
+</tr>
+<tr class="even">
+<td>Ray</td>
+<td>A part of a line that starts at a point and extends infinitely in one direction.</td>
+<td>Used in optics and geometry.</td>
+<td>Found in ray tracing, physics, and analytic geometry.</td>
+</tr>
+<tr class="odd">
+<td>Plane</td>
+<td>A flat, two-dimensional surface extending infinitely.</td>
+<td>Core of Euclidean geometry.</td>
+<td>Used in vector calculus, projections, and graphics.</td>
+</tr>
+<tr class="even">
+<td>Angle</td>
+<td>The measure of rotation between two intersecting lines.</td>
+<td>Studied by Babylonians and Greeks.</td>
+<td>Used in trigonometry, physics, and robotics.</td>
+</tr>
+<tr class="odd">
+<td>Vertex</td>
+<td>A point where lines, edges, or rays meet.</td>
+<td>Origin of geometric figures.</td>
+<td>Used in graph theory, polygons, and computer graphics.</td>
+</tr>
+<tr class="even">
+<td>Parallel</td>
+<td>Lines or planes that never meet, regardless of extension.</td>
+<td>Defined by Euclid’s fifth postulate.</td>
+<td>Used in Euclidean geometry, projections, and coordinate systems.</td>
+</tr>
+<tr class="odd">
+<td>Perpendicular</td>
+<td>Lines or planes intersecting at a right angle.</td>
+<td>Symbol of symmetry and structure.</td>
+<td>Used in design, orthogonality, and vector spaces.</td>
+</tr>
+<tr class="even">
+<td>Polygon</td>
+<td>A closed figure formed by straight line segments.</td>
+<td>Known since ancient Mesopotamia.</td>
+<td>Used in geometry, modeling, and computer graphics.</td>
+</tr>
+<tr class="odd">
+<td>Triangle</td>
+<td>The simplest polygon, defined by three sides.</td>
+<td>Studied by Egyptians, Greeks; foundation of trigonometry.</td>
+<td>Used in triangulation, physics, and finite element methods.</td>
+</tr>
+<tr class="even">
+<td>Quadrilateral</td>
+<td>Polygon with four sides (square, rectangle, parallelogram, etc.).</td>
+<td>Important in land measurement.</td>
+<td>Used in design, architecture, and computational geometry.</td>
+</tr>
+<tr class="odd">
+<td>Circle</td>
+<td>Set of points equidistant from a center.</td>
+<td>Symbol of perfection in Greek thought.</td>
+<td>Used in trigonometry, waves, and rotational dynamics.</td>
+</tr>
+<tr class="even">
+<td>Ellipse</td>
+<td>Curve formed by sum of distances to two foci being constant.</td>
+<td>Studied by Apollonius; orbits in Kepler’s laws.</td>
+<td>Used in astronomy, statistics (confidence ellipses), and design.</td>
+</tr>
+<tr class="odd">
+<td>Parabola</td>
+<td>Curve equidistant from a focus and a directrix.</td>
+<td>Linked to projectile motion.</td>
+<td>Used in physics, signal processing, and optics.</td>
+</tr>
+<tr class="even">
+<td>Hyperbola</td>
+<td>Curve with constant difference of distances to two foci.</td>
+<td>Studied in conic sections.</td>
+<td>Used in relativity, navigation, and optimization.</td>
+</tr>
+<tr class="odd">
+<td>Curve</td>
+<td>A continuous, smoothly bending line.</td>
+<td>Evolved in calculus and differential geometry.</td>
+<td>Used in motion paths, modeling, and analysis.</td>
+</tr>
+<tr class="even">
+<td>Surface</td>
+<td>A two-dimensional manifold in three-dimensional space.</td>
+<td>Studied in geometry and topology.</td>
+<td>Used in CAD, manifolds, and physical modeling.</td>
+</tr>
+<tr class="odd">
+<td>Solid</td>
+<td>Three-dimensional object with volume.</td>
+<td>Basis of solid geometry.</td>
+<td>Used in 3D modeling, physics, and architecture.</td>
+</tr>
+<tr class="even">
+<td>Polyhedron</td>
+<td>Solid bounded by polygonal faces.</td>
+<td>Studied by Plato (Platonic solids).</td>
+<td>Used in crystallography, geometry, and 3D rendering.</td>
+</tr>
+<tr class="odd">
+<td>Sphere</td>
+<td>Set of points equidistant from a center in 3D space.</td>
+<td>Ideal shape in Greek geometry.</td>
+<td>Used in physics, geometry, and computer graphics.</td>
+</tr>
+<tr class="even">
+<td>Cone</td>
+<td>Solid with a circular base tapering to a vertex.</td>
+<td>Known to ancients; used in architecture.</td>
+<td>Used in projective geometry, lighting models.</td>
+</tr>
+<tr class="odd">
+<td>Cylinder</td>
+<td>Solid with parallel circular bases.</td>
+<td>Used in volume and surface studies.</td>
+<td>Found in engineering, geometry, and fluid dynamics.</td>
+</tr>
+<tr class="even">
+<td>Torus</td>
+<td>Donut-shaped surface; product of two circles.</td>
+<td>Studied in topology and complex analysis.</td>
+<td>Used in topology, physics, and toroidal coordinates.</td>
+</tr>
+<tr class="odd">
+<td>Dimension</td>
+<td>The number of independent directions in space.</td>
+<td>Defined in Euclidean and later algebraic geometry.</td>
+<td>Used in data analysis, vector spaces, and physics.</td>
+</tr>
+<tr class="even">
+<td>Coordinate System</td>
+<td>A framework to specify position using numbers.</td>
+<td>Introduced by Descartes; unified algebra and geometry.</td>
+<td>Used in analytic geometry, physics, and GIS.</td>
+</tr>
+<tr class="odd">
+<td>Cartesian Plane</td>
+<td>Plane with perpendicular axes (x, y).</td>
+<td>From Descartes’ <em>La Géométrie</em> (1637).</td>
+<td>Standard in graphing, analytics, and geometry.</td>
+</tr>
+<tr class="even">
+<td>Polar Coordinates</td>
+<td>System using radius and angle from an origin.</td>
+<td>Useful in circular motion and complex analysis.</td>
+<td>Used in robotics, physics, and navigation.</td>
+</tr>
+<tr class="odd">
+<td>Vector</td>
+<td>A quantity with both magnitude and direction.</td>
+<td>Introduced in 19th-century physics.</td>
+<td>Used in linear algebra, graphics, ML, and mechanics.</td>
+</tr>
+<tr class="even">
+<td>Matrix</td>
+<td>Rectangular array representing linear transformations.</td>
+<td>Origin in systems of equations.</td>
+<td>Used in linear algebra, computer vision, and data science.</td>
+</tr>
+<tr class="odd">
+<td>Transformation</td>
+<td>A rule mapping points from one space to another.</td>
+<td>Central to modern geometry.</td>
+<td>Used in graphics, algebra, and ML feature spaces.</td>
+</tr>
+<tr class="even">
+<td>Symmetry</td>
+<td>Invariance under transformation (rotation, reflection, etc.).</td>
+<td>Ancient aesthetic and scientific principle.</td>
+<td>Used in physics, crystallography, and group theory.</td>
+</tr>
+<tr class="odd">
+<td>Reflection</td>
+<td>Mirroring across a line or plane.</td>
+<td>Studied in optics and geometry.</td>
+<td>Used in graphics, design, and transformations.</td>
+</tr>
+<tr class="even">
+<td>Rotation</td>
+<td>Turning around a fixed point or axis.</td>
+<td>Fundamental motion in geometry.</td>
+<td>Used in robotics, dynamics, and group theory.</td>
+</tr>
+<tr class="odd">
+<td>Translation</td>
+<td>Shifting by a fixed distance in a direction.</td>
+<td>Used in Euclidean motions.</td>
+<td>Found in geometry, kinematics, and group actions.</td>
+</tr>
+<tr class="even">
+<td>Scaling</td>
+<td>Enlarging or reducing by a factor.</td>
+<td>Rooted in proportion theory.</td>
+<td>Used in modeling, graphics, and normalization.</td>
+</tr>
+<tr class="odd">
+<td>Affine Transformation</td>
+<td>Combination of linear transformations and translation.</td>
+<td>Generalized Euclidean transformations.</td>
+<td>Used in computer vision, robotics, and geometry.</td>
+</tr>
+<tr class="even">
+<td>Euclidean Geometry</td>
+<td>Geometry based on Euclid’s axioms.</td>
+<td>Dominated for 2000 years.</td>
+<td>Still basis of school geometry and design.</td>
+</tr>
+<tr class="odd">
+<td>Non-Euclidean Geometry</td>
+<td>Geometries violating parallel postulate.</td>
+<td>Developed by Lobachevsky, Bolyai, Riemann.</td>
+<td>Used in relativity, topology, and modern physics.</td>
+</tr>
+<tr class="even">
+<td>Manifold</td>
+<td>Space locally resembling Euclidean space.</td>
+<td>Core of modern geometry and physics.</td>
+<td>Used in general relativity, topology, ML embeddings.</td>
+</tr>
+<tr class="odd">
+<td>Topology</td>
+<td>Study of properties preserved under continuous deformation.</td>
+<td>Emerged from Euler’s bridges problem.</td>
+<td>Used in data analysis, geometry, and dynamics.</td>
+</tr>
+<tr class="even">
+<td>Homeomorphism</td>
+<td>Continuous, invertible map between topological spaces.</td>
+<td>Defines topological equivalence.</td>
+<td>Used in topology, manifolds, and complex systems.</td>
+</tr>
+<tr class="odd">
+<td>Metric Space</td>
+<td>Set with a defined notion of distance.</td>
+<td>Introduced in 20th-century analysis.</td>
+<td>Used in clustering, geometry, and ML similarity.</td>
+</tr>
+<tr class="even">
+<td>Geodesic</td>
+<td>Shortest path between two points on a surface.</td>
+<td>Key in Riemannian geometry.</td>
+<td>Used in navigation, GR, and graph theory.</td>
+</tr>
+<tr class="odd">
+<td>Riemannian Geometry</td>
+<td>Geometry with curved spaces and inner products.</td>
+<td>Developed by Riemann (1854).</td>
+<td>Foundation of general relativity, modern geometry.</td>
+</tr>
+<tr class="even">
+<td>Fractal</td>
+<td>Self-similar shape repeating at every scale.</td>
+<td>Coined by Mandelbrot.</td>
+<td>Used in modeling nature, chaos, and computer art.</td>
+</tr>
+<tr class="odd">
+<td>Affine Space</td>
+<td>Space without fixed origin, emphasizing direction and ratio.</td>
+<td>Generalization of vector spaces.</td>
+<td>Used in geometry, physics, and graphics.</td>
+</tr>
+<tr class="even">
+<td>Projective Geometry</td>
+<td>Studies properties invariant under projection.</td>
+<td>Emerged from Renaissance art.</td>
+<td>Used in vision, perspective, and algebraic geometry.</td>
+</tr>
+<tr class="odd">
+<td>Convexity</td>
+<td>A set is convex if line between any two points lies inside it.</td>
+<td>Fundamental in optimization.</td>
+<td>Used in convex analysis, ML, and geometry.</td>
+</tr>
+<tr class="even">
+<td>Boundary</td>
+<td>Edge separating a set from its complement.</td>
+<td>Used in topology and analysis.</td>
+<td>Used in PDEs, geometry, and boundary-value problems.</td>
+</tr>
+<tr class="odd">
+<td>Interior / Exterior</td>
+<td>Points inside or outside a region.</td>
+<td>Defined in topology.</td>
+<td>Used in spatial analysis, geometry, and calculus.</td>
+</tr>
+<tr class="even">
+<td>Orientation</td>
+<td>Ordered arrangement of axes or surfaces.</td>
+<td>Defined in differential geometry.</td>
+<td>Used in graphics, physics, and manifolds.</td>
+</tr>
+<tr class="odd">
+<td>Volume</td>
+<td>Measure of three-dimensional extent.</td>
+<td>Studied by Archimedes.</td>
+<td>Used in integration, physics, and engineering.</td>
+</tr>
+<tr class="even">
+<td>Area</td>
+<td>Measure of two-dimensional extent.</td>
+<td>Central to geometry.</td>
+<td>Used in calculus, design, and GIS.</td>
+</tr>
+<tr class="odd">
+<td>Length</td>
+<td>Measure of one-dimensional extent.</td>
+<td>Earliest form of measure.</td>
+<td>Used in geometry, physics, and analysis.</td>
+</tr>
+<tr class="even">
+<td>Shape</td>
+<td>Geometric form of an object.</td>
+<td>Studied since antiquity.</td>
+<td>Used in computer vision, pattern recognition.</td>
+</tr>
+<tr class="odd">
+<td>Structure</td>
+<td>Arrangement and relation of parts.</td>
+<td>Philosophical in origin.</td>
+<td>Used in mathematics, architecture, and systems.</td>
+</tr>
+<tr class="even">
+<td>Space</td>
+<td>The arena in which objects and relations exist.</td>
+<td>From Euclid to Einstein.</td>
+<td>Central in physics, geometry, and data science.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="b3.-motion-change" class="level3">
+<h3 class="anchored" data-anchor-id="b3.-motion-change">B3. Motion &amp; Change</h3>
+<p><em>Mathematics becomes alive when it learns to move. From the turning of planets to the flow of rivers and the growth of populations, the study of change gave birth to calculus — the grammar of becoming. This cluster traces how motion, variation, and transformation turned static quantity into dynamic law.</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 32%">
+<col style="width: 26%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition</th>
+<th>Context</th>
+<th>Modern Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Change</td>
+<td>The variation of a quantity over time or space.</td>
+<td>Rooted in ancient observation of nature’s cycles.</td>
+<td>Fundamental in calculus, physics, and systems theory.</td>
+</tr>
+<tr class="even">
+<td>Motion</td>
+<td>Continuous change in position relative to a reference.</td>
+<td>Studied by Aristotle, revolutionized by Galileo and Newton.</td>
+<td>Used in mechanics, robotics, and animation.</td>
+</tr>
+<tr class="odd">
+<td>Rate</td>
+<td>A measure of change relative to another quantity.</td>
+<td>Derived from ratios in early science.</td>
+<td>Used in speed, growth, and reaction kinetics.</td>
+</tr>
+<tr class="even">
+<td>Velocity</td>
+<td>Rate of change of position with direction.</td>
+<td>Defined by Newtonian mechanics.</td>
+<td>Used in physics, vector calculus, and simulation.</td>
+</tr>
+<tr class="odd">
+<td>Acceleration</td>
+<td>Rate of change of velocity over time.</td>
+<td>Central in Newton’s second law.</td>
+<td>Used in physics, optimization, and signal processing.</td>
+</tr>
+<tr class="even">
+<td>Function</td>
+<td>A rule assigning each input exactly one output.</td>
+<td>Formalized by Euler and Dirichlet.</td>
+<td>Foundation of calculus, programming, and modeling.</td>
+</tr>
+<tr class="odd">
+<td>Variable</td>
+<td>A symbol representing a changing or unknown quantity.</td>
+<td>Originated in algebraic symbolism.</td>
+<td>Used in equations, models, and computation.</td>
+</tr>
+<tr class="even">
+<td>Parameter</td>
+<td>A fixed value controlling a function’s behavior.</td>
+<td>From early mechanics and geometry.</td>
+<td>Used in statistics, modeling, and optimization.</td>
+</tr>
+<tr class="odd">
+<td>Constant</td>
+<td>A fixed value that does not change within a context.</td>
+<td>Present in laws and equations.</td>
+<td>Used in physics, analysis, and computation.</td>
+</tr>
+<tr class="even">
+<td>Equation</td>
+<td>Statement asserting equality between two expressions.</td>
+<td>From Arabic “al-jabr.”</td>
+<td>Used in algebra, calculus, and physics.</td>
+</tr>
+<tr class="odd">
+<td>Identity</td>
+<td>Equation true for all variable values.</td>
+<td>Defined in algebraic structures.</td>
+<td>Used in proofs, symbolic manipulation.</td>
+</tr>
+<tr class="even">
+<td>Derivative</td>
+<td>Instantaneous rate of change of a function.</td>
+<td>Invented by Newton and Leibniz.</td>
+<td>Core of calculus, optimization, and dynamics.</td>
+</tr>
+<tr class="odd">
+<td>Differential</td>
+<td>Infinitesimal change in a variable.</td>
+<td>Origin of differential calculus.</td>
+<td>Used in equations, forms, and analysis.</td>
+</tr>
+<tr class="even">
+<td>Gradient</td>
+<td>Vector of partial derivatives indicating direction of steepest increase.</td>
+<td>Developed in vector calculus.</td>
+<td>Used in ML optimization, physics, and PDEs.</td>
+</tr>
+<tr class="odd">
+<td>Slope</td>
+<td>Measure of steepness of a line or curve at a point.</td>
+<td>Geometric root of derivative.</td>
+<td>Used in analytics, regression, and motion.</td>
+</tr>
+<tr class="even">
+<td>Integral</td>
+<td>Accumulation of quantities over an interval.</td>
+<td>Developed alongside derivatives.</td>
+<td>Used in area, volume, probability, and physics.</td>
+</tr>
+<tr class="odd">
+<td>Definite Integral</td>
+<td>Integral with specific bounds, yielding a value.</td>
+<td>Fundamental Theorem of Calculus.</td>
+<td>Used in measurement, energy, and statistics.</td>
+</tr>
+<tr class="even">
+<td>Indefinite Integral</td>
+<td>Family of functions whose derivative equals the integrand.</td>
+<td>Symbol of anti-differentiation.</td>
+<td>Used in analysis, ODE solving.</td>
+</tr>
+<tr class="odd">
+<td>Antiderivative</td>
+<td>Function whose derivative equals the original.</td>
+<td>Dual of differentiation.</td>
+<td>Used in reconstruction, motion, and energy.</td>
+</tr>
+<tr class="even">
+<td>Limit</td>
+<td>The value a function approaches as input nears a point.</td>
+<td>Foundation of analysis by Cauchy and Weierstrass.</td>
+<td>Used in calculus, convergence, and continuity.</td>
+</tr>
+<tr class="odd">
+<td>Continuity</td>
+<td>Property of a function without abrupt jumps.</td>
+<td>Formalized in 19th century.</td>
+<td>Used in analysis, modeling, and topology.</td>
+</tr>
+<tr class="even">
+<td>Discontinuity</td>
+<td>A break or jump in a function’s value.</td>
+<td>Studied in piecewise and chaotic systems.</td>
+<td>Used in control, signals, and singularities.</td>
+</tr>
+<tr class="odd">
+<td>Series</td>
+<td>Sum of a sequence of terms.</td>
+<td>Developed by Newton, Euler.</td>
+<td>Used in approximation, analysis, and algorithms.</td>
+</tr>
+<tr class="even">
+<td>Sequence</td>
+<td>Ordered list of numbers or elements.</td>
+<td>Basis for convergence theory.</td>
+<td>Used in discrete math, limits, and computation.</td>
+</tr>
+<tr class="odd">
+<td>Convergence</td>
+<td>Approach of a sequence or series toward a limit.</td>
+<td>Defined in analysis.</td>
+<td>Used in algorithms, ML, and PDEs.</td>
+</tr>
+<tr class="even">
+<td>Divergence</td>
+<td>Failure to approach a finite limit.</td>
+<td>Recognized in harmonic series.</td>
+<td>Used in vector fields, thermodynamics, and chaos.</td>
+</tr>
+<tr class="odd">
+<td>Differential Equation</td>
+<td>Equation involving derivatives of a function.</td>
+<td>Developed to describe motion, heat, waves.</td>
+<td>Used in modeling dynamic systems.</td>
+</tr>
+<tr class="even">
+<td>Ordinary Differential Equation (ODE)</td>
+<td>Differential equation in one variable.</td>
+<td>Solved by Euler, Laplace.</td>
+<td>Used in mechanics, population models.</td>
+</tr>
+<tr class="odd">
+<td>Partial Differential Equation (PDE)</td>
+<td>Involves multiple variables and partial derivatives.</td>
+<td>Describes continuous systems.</td>
+<td>Used in physics, finance, and ML.</td>
+</tr>
+<tr class="even">
+<td>Initial Condition</td>
+<td>Value specifying system state at start.</td>
+<td>Needed for unique solution.</td>
+<td>Used in simulation, modeling, and control.</td>
+</tr>
+<tr class="odd">
+<td>Boundary Condition</td>
+<td>Constraint at domain edges for differential systems.</td>
+<td>Developed in physics.</td>
+<td>Used in PDE solving, engineering, and design.</td>
+</tr>
+<tr class="even">
+<td>System Dynamics</td>
+<td>Study of behavior of complex systems over time.</td>
+<td>Emerged in control theory.</td>
+<td>Used in ecology, economics, and feedback systems.</td>
+</tr>
+<tr class="odd">
+<td>Feedback</td>
+<td>Output reintroduced as input, affecting future behavior.</td>
+<td>Studied by Norbert Wiener.</td>
+<td>Used in cybernetics, control, and learning.</td>
+</tr>
+<tr class="even">
+<td>Stability</td>
+<td>Resistance of system to perturbation.</td>
+<td>Studied in dynamical systems.</td>
+<td>Used in control, chaos, and ML training.</td>
+</tr>
+<tr class="odd">
+<td>Equilibrium</td>
+<td>State of balance with no net change.</td>
+<td>Defined in physics, economics.</td>
+<td>Used in systems analysis, optimization.</td>
+</tr>
+<tr class="even">
+<td>Attractor</td>
+<td>State or set toward which a system evolves.</td>
+<td>Discovered in chaos theory.</td>
+<td>Used in dynamical systems, ML, and physics.</td>
+</tr>
+<tr class="odd">
+<td>Flow</td>
+<td>Continuous transformation describing evolution over time.</td>
+<td>Studied in fluid mechanics, ODEs.</td>
+<td>Used in physics, graph theory, and ML.</td>
+</tr>
+<tr class="even">
+<td>Trajectory</td>
+<td>Path traced by a moving object or state.</td>
+<td>Introduced in celestial mechanics.</td>
+<td>Used in dynamics, AI, and optimization.</td>
+</tr>
+<tr class="odd">
+<td>Field</td>
+<td>Assignment of a quantity to each point in space.</td>
+<td>Concept from physics.</td>
+<td>Used in vector calculus, EM theory, ML.</td>
+</tr>
+<tr class="even">
+<td>Vector Field</td>
+<td>Function assigning vector to each point.</td>
+<td>Studied in fluid dynamics.</td>
+<td>Used in differential geometry, flow visualization.</td>
+</tr>
+<tr class="odd">
+<td>Scalar Field</td>
+<td>Function assigning scalar value to each point.</td>
+<td>Used in temperature, pressure maps.</td>
+<td>Found in physics, ML, and 3D modeling.</td>
+</tr>
+<tr class="even">
+<td>Flux</td>
+<td>Rate of flow through a surface.</td>
+<td>Defined in electromagnetism.</td>
+<td>Used in Gauss’s law, fluid dynamics.</td>
+</tr>
+<tr class="odd">
+<td>Divergence (Operator)</td>
+<td>Measure of field’s tendency to expand from a point.</td>
+<td>Defined in vector calculus.</td>
+<td>Used in continuity equations, PDEs.</td>
+</tr>
+<tr class="even">
+<td>Curl</td>
+<td>Measure of rotation in a vector field.</td>
+<td>Used in fluid mechanics.</td>
+<td>Found in electromagnetism, vector analysis.</td>
+</tr>
+<tr class="odd">
+<td>Gradient Flow</td>
+<td>Evolution following steepest descent.</td>
+<td>Used in optimization theory.</td>
+<td>Central to ML training, variational problems.</td>
+</tr>
+<tr class="even">
+<td>Oscillation</td>
+<td>Repeated variation about equilibrium.</td>
+<td>Studied in harmonic motion.</td>
+<td>Used in waves, signals, and stability.</td>
+</tr>
+<tr class="odd">
+<td>Wave</td>
+<td>Disturbance transferring energy without mass.</td>
+<td>Studied by Huygens, Fourier.</td>
+<td>Used in physics, signal processing, ML.</td>
+</tr>
+<tr class="even">
+<td>Frequency</td>
+<td>Number of cycles per unit time.</td>
+<td>Defined in harmonic analysis.</td>
+<td>Used in signals, data, and quantum systems.</td>
+</tr>
+<tr class="odd">
+<td>Amplitude</td>
+<td>Maximum displacement from equilibrium.</td>
+<td>Used in wave theory.</td>
+<td>Found in physics, engineering, and data signals.</td>
+</tr>
+<tr class="even">
+<td>Period</td>
+<td>Time for one complete cycle.</td>
+<td>Found in astronomy and mechanics.</td>
+<td>Used in oscillations, periodic functions.</td>
+</tr>
+<tr class="odd">
+<td>Phase</td>
+<td>Relative position in a cycle.</td>
+<td>Introduced in wave theory.</td>
+<td>Used in signals, interference, and control.</td>
+</tr>
+<tr class="even">
+<td>Fourier Transform</td>
+<td>Decomposes functions into frequency components.</td>
+<td>Developed by Fourier.</td>
+<td>Used in signal processing, ML, PDEs.</td>
+</tr>
+<tr class="odd">
+<td>Laplace Transform</td>
+<td>Converts differential equations to algebraic form.</td>
+<td>Introduced by Laplace.</td>
+<td>Used in control theory, signals, and systems.</td>
+</tr>
+<tr class="even">
+<td>Stochastic Process</td>
+<td>Random process evolving over time.</td>
+<td>Studied by Kolmogorov, Wiener.</td>
+<td>Used in finance, physics, and AI.</td>
+</tr>
+<tr class="odd">
+<td>Markov Chain</td>
+<td>Process where next state depends only on current.</td>
+<td>Developed by Andrey Markov.</td>
+<td>Used in statistics, ML, and modeling.</td>
+</tr>
+<tr class="even">
+<td>Diffusion</td>
+<td>Random spreading process.</td>
+<td>Described by Fick’s laws.</td>
+<td>Used in physics, ML regularization.</td>
+</tr>
+<tr class="odd">
+<td>Growth Model</td>
+<td>Mathematical description of increase over time.</td>
+<td>Used in biology and economics.</td>
+<td>Logistic, exponential, and Gompertz models.</td>
+</tr>
+<tr class="even">
+<td>Decay</td>
+<td>Decrease over time following law.</td>
+<td>Studied in radioactivity.</td>
+<td>Used in exponential decay, optimization.</td>
+</tr>
+<tr class="odd">
+<td>Chaos</td>
+<td>Deterministic unpredictability due to sensitivity to initial conditions.</td>
+<td>Popularized by Lorenz.</td>
+<td>Used in nonlinear dynamics, ML, cryptography.</td>
+</tr>
+<tr class="even">
+<td>Bifurcation</td>
+<td>Sudden change in system behavior as parameter varies.</td>
+<td>Studied in catastrophe theory.</td>
+<td>Used in dynamical systems, control, and biology.</td>
+</tr>
+<tr class="odd">
+<td>Transformation</td>
+<td>A change of variables or coordinates.</td>
+<td>Used in geometry and analysis.</td>
+<td>Found in optimization, ML, and data scaling.</td>
+</tr>
+<tr class="even">
+<td>Jacobian</td>
+<td>Matrix of partial derivatives representing local change.</td>
+<td>Defined in calculus.</td>
+<td>Used in transformations, ML backpropagation.</td>
+</tr>
+<tr class="odd">
+<td>Differentiable</td>
+<td>Smooth, with defined derivative.</td>
+<td>Foundation of calculus.</td>
+<td>Used in optimization, manifolds, and physics.</td>
+</tr>
+<tr class="even">
+<td>Smooth Function</td>
+<td>Infinitely differentiable function.</td>
+<td>Studied in real analysis.</td>
+<td>Used in geometry, PDEs, and control.</td>
+</tr>
+<tr class="odd">
+<td>Nonlinear System</td>
+<td>System not proportional to inputs.</td>
+<td>Leads to chaos, complex behavior.</td>
+<td>Used in modeling, ML, and physics.</td>
+</tr>
+<tr class="even">
+<td>Linearization</td>
+<td>Approximation of nonlinear system near a point.</td>
+<td>Developed in control theory.</td>
+<td>Used in optimization, stability, and dynamics.</td>
+</tr>
+<tr class="odd">
+<td>Perturbation</td>
+<td>Small change to study stability.</td>
+<td>Used by Poincaré.</td>
+<td>Used in mechanics, control, and asymptotics.</td>
+</tr>
+<tr class="even">
+<td>Flow Map</td>
+<td>Function mapping initial to current state.</td>
+<td>Central to dynamical systems.</td>
+<td>Used in control, simulation, and analysis.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="b4.-logic-proof" class="level3">
+<h3 class="anchored" data-anchor-id="b4.-logic-proof">B4. Logic &amp; Proof</h3>
+<p><em>At the heart of mathematics lies the quest for certainty — to distinguish truth from illusion, necessity from belief. Logic gives structure to reasoning; proof transforms intuition into knowledge. From Aristotle’s syllogisms to Gödel’s incompleteness, this cluster charts humanity’s attempt to formalize thought itself.</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 39%">
+<col style="width: 21%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition</th>
+<th>Context</th>
+<th>Modern Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Logic</td>
+<td>The formal study of reasoning and valid inference.</td>
+<td>Originated with Aristotle’s syllogisms.</td>
+<td>Foundation of mathematics, computation, and philosophy.</td>
+</tr>
+<tr class="even">
+<td>Proposition</td>
+<td>A declarative statement that is either true or false.</td>
+<td>Used in Aristotelian and propositional logic.</td>
+<td>Basis of Boolean algebra, formal verification, and logic circuits.</td>
+</tr>
+<tr class="odd">
+<td>Predicate</td>
+<td>A statement containing variables, becoming true or false once values are assigned.</td>
+<td>Introduced in predicate logic.</td>
+<td>Used in first-order logic, programming, and semantics.</td>
+</tr>
+<tr class="even">
+<td>Truth Value</td>
+<td>A binary indicator of a proposition’s truth (true/false).</td>
+<td>Formalized in Boolean systems.</td>
+<td>Used in logic circuits, programming, and proofs.</td>
+</tr>
+<tr class="odd">
+<td>Boolean Algebra</td>
+<td>Algebraic system with two values, 0 and 1, and logical operations.</td>
+<td>Created by George Boole (1847).</td>
+<td>Basis of digital logic, computing, and search algorithms.</td>
+</tr>
+<tr class="even">
+<td>Connective</td>
+<td>Symbol linking propositions (∧, ∨, ¬, →, ↔︎).</td>
+<td>Defined in propositional logic.</td>
+<td>Used in logical expressions, circuit design.</td>
+</tr>
+<tr class="odd">
+<td>Conjunction (∧)</td>
+<td>Logical AND — true only if both operands are true.</td>
+<td>Foundational logical operation.</td>
+<td>Used in conditions, filters, and logical queries.</td>
+</tr>
+<tr class="even">
+<td>Disjunction (∨)</td>
+<td>Logical OR — true if at least one operand is true.</td>
+<td>Part of propositional logic.</td>
+<td>Used in logic programming, search, and control flow.</td>
+</tr>
+<tr class="odd">
+<td>Negation (¬)</td>
+<td>Logical NOT — reverses truth value.</td>
+<td>Oldest logical operation.</td>
+<td>Used in Boolean algebra, control statements.</td>
+</tr>
+<tr class="even">
+<td>Implication (→)</td>
+<td>“If P, then Q” — true unless P is true and Q is false.</td>
+<td>Core of deductive reasoning.</td>
+<td>Used in formal proofs and inference systems.</td>
+</tr>
+<tr class="odd">
+<td>Biconditional (↔︎)</td>
+<td>“If and only if” — P and Q share truth value.</td>
+<td>Central to equivalence reasoning.</td>
+<td>Used in mathematical definitions and logic.</td>
+</tr>
+<tr class="even">
+<td>Tautology</td>
+<td>Statement true under all interpretations.</td>
+<td>Identified in classical logic.</td>
+<td>Used in theorem proving, simplification.</td>
+</tr>
+<tr class="odd">
+<td>Contradiction</td>
+<td>Statement false under all interpretations.</td>
+<td>Defined in Aristotle’s <em>Law of Noncontradiction</em>.</td>
+<td>Used in reductio ad absurdum proofs.</td>
+</tr>
+<tr class="even">
+<td>Contrapositive</td>
+<td>The statement “if not Q then not P.”</td>
+<td>Logical equivalence of implication.</td>
+<td>Used in proofs, algorithms, and reasoning.</td>
+</tr>
+<tr class="odd">
+<td>Fallacy</td>
+<td>Error in reasoning invalidating an argument.</td>
+<td>Studied since Aristotle.</td>
+<td>Used in logic, rhetoric, and critical thinking.</td>
+</tr>
+<tr class="even">
+<td>Quantifier</td>
+<td>Symbol expressing quantity (∀, ∃).</td>
+<td>Introduced in predicate logic.</td>
+<td>Used in set theory, formal systems, and logic.</td>
+</tr>
+<tr class="odd">
+<td>Universal Quantifier (∀)</td>
+<td>Asserts that a statement holds for all elements.</td>
+<td>Foundation of general laws.</td>
+<td>Used in mathematics, type theory, programming.</td>
+</tr>
+<tr class="even">
+<td>Existential Quantifier (∃)</td>
+<td>Asserts existence of at least one element satisfying condition.</td>
+<td>Used in constructive reasoning.</td>
+<td>Applied in proofs, search, and model checking.</td>
+</tr>
+<tr class="odd">
+<td>Inference</td>
+<td>Deriving new truths from existing statements.</td>
+<td>Formalized in syllogisms and deduction.</td>
+<td>Used in AI, theorem proving, and reasoning engines.</td>
+</tr>
+<tr class="even">
+<td>Deduction</td>
+<td>Reasoning from general principles to specific conclusions.</td>
+<td>Root of mathematical proof.</td>
+<td>Used in logic, science, and programming.</td>
+</tr>
+<tr class="odd">
+<td>Induction (Mathematical)</td>
+<td>Proving statements by establishing base case and recursive step.</td>
+<td>Used since Peano’s axioms.</td>
+<td>Core method in number theory and algorithms.</td>
+</tr>
+<tr class="even">
+<td>Abduction</td>
+<td>Inferring best explanation for observed facts.</td>
+<td>Introduced by Peirce.</td>
+<td>Used in AI reasoning, hypothesis generation.</td>
+</tr>
+<tr class="odd">
+<td>Proof</td>
+<td>Logical sequence demonstrating truth from axioms.</td>
+<td>Codified by Euclid in <em>Elements</em>.</td>
+<td>Central in all mathematics.</td>
+</tr>
+<tr class="even">
+<td>Axiom</td>
+<td>Self-evident truth serving as starting point.</td>
+<td>From Greek <em>axioma</em>.</td>
+<td>Basis of formal systems like ZFC.</td>
+</tr>
+<tr class="odd">
+<td>Postulate</td>
+<td>Assumption specific to a theory or geometry.</td>
+<td>Used by Euclid as foundations.</td>
+<td>Used in geometry, algebraic systems.</td>
+</tr>
+<tr class="even">
+<td>Lemma</td>
+<td>Auxiliary result aiding in proving a theorem.</td>
+<td>From Greek “premise.”</td>
+<td>Used in structured proofs.</td>
+</tr>
+<tr class="odd">
+<td>Theorem</td>
+<td>Statement proved using logic and axioms.</td>
+<td>Core unit of mathematical knowledge.</td>
+<td>Used across all fields of mathematics.</td>
+</tr>
+<tr class="even">
+<td>Corollary</td>
+<td>Statement following directly from a theorem.</td>
+<td>Latin <em>corollarium</em>, “small garland.”</td>
+<td>Used in mathematical exposition.</td>
+</tr>
+<tr class="odd">
+<td>Conjecture</td>
+<td>Statement believed true but unproven.</td>
+<td>Famous examples: Goldbach, Riemann.</td>
+<td>Drives research; proof transforms it to theorem.</td>
+</tr>
+<tr class="even">
+<td>Counterexample</td>
+<td>Specific case disproving a general claim.</td>
+<td>Tool of refutation.</td>
+<td>Used in logic, programming, and testing.</td>
+</tr>
+<tr class="odd">
+<td>Formal System</td>
+<td>Set of symbols, formation rules, and inference rules.</td>
+<td>Studied by Hilbert, Gödel.</td>
+<td>Used in logic, computation, and proof theory.</td>
+</tr>
+<tr class="even">
+<td>Syntax</td>
+<td>Structure and formation rules of symbols.</td>
+<td>Defined in formal logic.</td>
+<td>Used in compilers, logic, and languages.</td>
+</tr>
+<tr class="odd">
+<td>Semantics</td>
+<td>Meaning assigned to symbols and statements.</td>
+<td>Developed in model theory.</td>
+<td>Used in programming languages, logic.</td>
+</tr>
+<tr class="even">
+<td>Model</td>
+<td>Interpretation making statements true.</td>
+<td>Origin in logical semantics.</td>
+<td>Used in verification, AI, and mathematics.</td>
+</tr>
+<tr class="odd">
+<td>Consistency</td>
+<td>No contradictions derivable from axioms.</td>
+<td>Goal of Hilbert’s program.</td>
+<td>Used in logic, formal methods, and data systems.</td>
+</tr>
+<tr class="even">
+<td>Completeness</td>
+<td>Every true statement is provable within system.</td>
+<td>Defined by Gödel.</td>
+<td>Used in model theory, logic, and databases.</td>
+</tr>
+<tr class="odd">
+<td>Soundness</td>
+<td>Every provable statement is true.</td>
+<td>Core property of formal logic.</td>
+<td>Ensures validity of proofs.</td>
+</tr>
+<tr class="even">
+<td>Decidability</td>
+<td>Whether an algorithm can determine truth of statements.</td>
+<td>Studied by Turing, Church.</td>
+<td>Used in logic, computation, and verification.</td>
+</tr>
+<tr class="odd">
+<td>Undecidable Problem</td>
+<td>No algorithm exists to determine truth in all cases.</td>
+<td>Proven by Turing.</td>
+<td>Found in halting problem, logic.</td>
+</tr>
+<tr class="even">
+<td>Gödel Numbering</td>
+<td>Encoding formulas as numbers.</td>
+<td>Introduced by Gödel (1931).</td>
+<td>Used in incompleteness proofs.</td>
+</tr>
+<tr class="odd">
+<td>Incompleteness Theorem</td>
+<td>Any consistent system rich enough to express arithmetic contains true but unprovable statements.</td>
+<td>Gödel’s 1931 result.</td>
+<td>Philosophical cornerstone of logic.</td>
+</tr>
+<tr class="even">
+<td>Hilbert’s Program</td>
+<td>Aim to formalize all mathematics.</td>
+<td>1920s foundational quest.</td>
+<td>Partially refuted by Gödel.</td>
+</tr>
+<tr class="odd">
+<td>Proof by Contradiction</td>
+<td>Assume negation, derive impossibility.</td>
+<td>Classical proof technique.</td>
+<td>Used in existence and uniqueness proofs.</td>
+</tr>
+<tr class="even">
+<td>Proof by Induction</td>
+<td>Show base case, then generalize.</td>
+<td>Method of infinite descent.</td>
+<td>Used in sequences, algorithms.</td>
+</tr>
+<tr class="odd">
+<td>Direct Proof</td>
+<td>Derive conclusion via logical steps.</td>
+<td>Standard in elementary math.</td>
+<td>Used in algebra, number theory.</td>
+</tr>
+<tr class="even">
+<td>Constructive Proof</td>
+<td>Demonstrates existence by constructing example.</td>
+<td>Used in constructive math.</td>
+<td>Applied in algorithms, type theory.</td>
+</tr>
+<tr class="odd">
+<td>Nonconstructive Proof</td>
+<td>Shows existence without example.</td>
+<td>Common in classical math.</td>
+<td>Used in existence theorems.</td>
+</tr>
+<tr class="even">
+<td>Algorithmic Proof</td>
+<td>Uses computation to establish result.</td>
+<td>Emerged in modern era.</td>
+<td>Used in automated theorem proving.</td>
+</tr>
+<tr class="odd">
+<td>Proof Assistant</td>
+<td>Software aiding formal verification.</td>
+<td>Coq, Lean, Isabelle, Agda.</td>
+<td>Used in formal proofs, software correctness.</td>
+</tr>
+<tr class="even">
+<td>Truth Table</td>
+<td>Tabular method listing all truth values.</td>
+<td>Developed in propositional logic.</td>
+<td>Used in circuits, logic teaching.</td>
+</tr>
+<tr class="odd">
+<td>Resolution</td>
+<td>Rule of inference for propositional logic.</td>
+<td>Used in automated reasoning.</td>
+<td>Found in SAT solvers, logic programming.</td>
+</tr>
+<tr class="even">
+<td>Satisfiability (SAT)</td>
+<td>Existence of assignment making formula true.</td>
+<td>NP-complete problem.</td>
+<td>Used in verification, optimization.</td>
+</tr>
+<tr class="odd">
+<td>Entailment (⊨)</td>
+<td>One statement logically follows from another.</td>
+<td>Defined in formal semantics.</td>
+<td>Used in logic, reasoning, and AI.</td>
+</tr>
+<tr class="even">
+<td>Consistency Check</td>
+<td>Process ensuring no contradiction.</td>
+<td>Used in formal systems.</td>
+<td>Found in databases, theorem proving.</td>
+</tr>
+<tr class="odd">
+<td>Decision Procedure</td>
+<td>Algorithm deciding truth of logical statements.</td>
+<td>Studied in logic, algebra.</td>
+<td>Used in model checking, SMT solvers.</td>
+</tr>
+<tr class="even">
+<td>Type Theory</td>
+<td>Logic where propositions correspond to types.</td>
+<td>Developed by Martin-Löf.</td>
+<td>Used in programming languages, proofs.</td>
+</tr>
+<tr class="odd">
+<td>Lambda Calculus</td>
+<td>Formal system for functions and computation.</td>
+<td>Church, 1930s.</td>
+<td>Foundation of functional programming.</td>
+</tr>
+<tr class="even">
+<td>Sequent Calculus</td>
+<td>Formal proof system using sequents.</td>
+<td>Introduced by Gentzen.</td>
+<td>Used in proof theory, logic programming.</td>
+</tr>
+<tr class="odd">
+<td>Natural Deduction</td>
+<td>Proof system reflecting human reasoning.</td>
+<td>Developed by Gentzen.</td>
+<td>Used in logic, proof assistants.</td>
+</tr>
+<tr class="even">
+<td>Axiomatic System</td>
+<td>Set of axioms and inference rules.</td>
+<td>Used since Euclid.</td>
+<td>Basis of formal mathematics.</td>
+</tr>
+<tr class="odd">
+<td>Metalanguage</td>
+<td>Language used to describe another language.</td>
+<td>Developed in semantics.</td>
+<td>Used in compilers, logic, linguistics.</td>
+</tr>
+<tr class="even">
+<td>Paradox</td>
+<td>Statement leading to self-contradiction.</td>
+<td>Famous: Russell’s, Liar’s paradox.</td>
+<td>Used to test foundations of logic.</td>
+</tr>
+<tr class="odd">
+<td>Set of Axioms</td>
+<td>Foundational assumptions of a theory.</td>
+<td>ZFC for set theory.</td>
+<td>Used in formalizing mathematics.</td>
+</tr>
+<tr class="even">
+<td>Consistency Proof</td>
+<td>Demonstration that no contradictions arise.</td>
+<td>Hilbert’s goal.</td>
+<td>Used in proof theory, logic.</td>
+</tr>
+<tr class="odd">
+<td>Sound Argument</td>
+<td>Valid reasoning with true premises.</td>
+<td>Used in philosophy, logic.</td>
+<td>Ensures correctness of conclusions.</td>
+</tr>
+<tr class="even">
+<td>Inference Rule</td>
+<td>Pattern allowing new truths from existing ones.</td>
+<td>Modus ponens, tollens.</td>
+<td>Used in logic programming, proofs.</td>
+</tr>
+<tr class="odd">
+<td>Modus Ponens</td>
+<td>From P → Q and P, infer Q.</td>
+<td>Classical inference.</td>
+<td>Used in formal reasoning.</td>
+</tr>
+<tr class="even">
+<td>Modus Tollens</td>
+<td>From P → Q and ¬Q, infer ¬P.</td>
+<td>Classical inference.</td>
+<td>Used in contrapositive reasoning.</td>
+</tr>
+<tr class="odd">
+<td>Bivalence</td>
+<td>Every proposition is true or false.</td>
+<td>Assumed in classical logic.</td>
+<td>Challenged by fuzzy and modal logics.</td>
+</tr>
+<tr class="even">
+<td>Fuzzy Logic</td>
+<td>Truth as degree rather than binary.</td>
+<td>Developed by Zadeh.</td>
+<td>Used in control systems, AI, ML.</td>
+</tr>
+<tr class="odd">
+<td>Modal Logic</td>
+<td>Extends logic with necessity (□) and possibility (◇).</td>
+<td>Studied since Aristotle; formalized in 20th century.</td>
+<td>Used in philosophy, AI, verification.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="b5.-data-probability" class="level3">
+<h3 class="anchored" data-anchor-id="b5.-data-probability">B5. Data &amp; Probability</h3>
+<p><em>When the world became too vast to grasp, humanity turned to data — to count, record, and reason from uncertainty. Probability transformed ignorance into insight, and statistics turned variation into knowledge. This cluster explores how randomness, evidence, and inference became pillars of modern understanding.</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 29%">
+<col style="width: 18%">
+<col style="width: 21%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition</th>
+<th>Context</th>
+<th>Modern Usage</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Data</td>
+<td>Recorded observations or measurements representing aspects of reality.</td>
+<td>From Latin <em>datum</em> “something given.”</td>
+<td>Foundation of empirical science, analytics, and AI.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Dataset</td>
+<td>Structured collection of related data points.</td>
+<td>Originated in census and experiments.</td>
+<td>Used in ML, research, and databases.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Variable</td>
+<td>Measurable characteristic that can change or vary.</td>
+<td>Introduced in early statistics.</td>
+<td>Used in modeling, regression, and experiments.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Observation</td>
+<td>Single recorded instance of data.</td>
+<td>Central to empirical reasoning.</td>
+<td>Used in datasets, samples, and experiments.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Feature</td>
+<td>Attribute used to describe data in modeling.</td>
+<td>ML term derived from statistics.</td>
+<td>Used in feature engineering and analysis.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Sample</td>
+<td>Subset of a population selected for study.</td>
+<td>Developed in survey theory.</td>
+<td>Used in inference, polling, and estimation.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Population</td>
+<td>Complete set of entities under study.</td>
+<td>Introduced in demography.</td>
+<td>Used in inference, statistics, and quality control.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Parameter</td>
+<td>Numeric characteristic of a population (mean, variance).</td>
+<td>Distinguished from statistic.</td>
+<td>Estimated in modeling and inference.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Statistic</td>
+<td>Numeric summary computed from sample data.</td>
+<td>Used since 18th century.</td>
+<td>Used for estimation, testing, and reporting.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Descriptive Statistics</td>
+<td>Summarize data (mean, median, mode).</td>
+<td>First stage of analysis.</td>
+<td>Used in reporting, dashboards, and exploration.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Inferential Statistics</td>
+<td>Drawing conclusions about population from sample.</td>
+<td>Origin of modern probability theory.</td>
+<td>Used in hypothesis testing, estimation, prediction.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Mean (Average)</td>
+<td>Sum of values divided by count.</td>
+<td>Used since antiquity.</td>
+<td>Central tendency measure in analysis.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Median</td>
+<td>Middle value when data is ordered.</td>
+<td>Resistant to outliers.</td>
+<td>Used in economics, robust statistics.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Mode</td>
+<td>Most frequent value.</td>
+<td>Early measure of tendency.</td>
+<td>Used in categorical data analysis.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Range</td>
+<td>Difference between max and min.</td>
+<td>Early dispersion measure.</td>
+<td>Used in exploratory analysis.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Variance</td>
+<td>Average squared deviation from mean.</td>
+<td>Defined by Gauss, Fisher.</td>
+<td>Used in statistics, ML, risk analysis.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Standard Deviation</td>
+<td>Square root of variance; typical deviation from mean.</td>
+<td>Introduced in normal theory.</td>
+<td>Used in variability, z-scores, probability.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Skewness</td>
+<td>Measure of asymmetry in distribution.</td>
+<td>Introduced by Karl Pearson.</td>
+<td>Used in descriptive statistics, finance.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Kurtosis</td>
+<td>Measure of tail heaviness.</td>
+<td>Developed in early 20th century.</td>
+<td>Used in risk assessment, signal analysis.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Distribution</td>
+<td>Function showing frequency or probability of values.</td>
+<td>Studied by Gauss, Laplace.</td>
+<td>Used in probability, ML, and data modeling.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Normal Distribution</td>
+<td>Bell-shaped curve; mean = median = mode.</td>
+<td>Discovered by de Moivre, named by Gauss.</td>
+<td>Used in CLT, regression, measurement error.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Uniform Distribution</td>
+<td>Equal probability across interval.</td>
+<td>Basic probability model.</td>
+<td>Used in random sampling, simulations.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Binomial Distribution</td>
+<td>Discrete distribution for number of successes in fixed trials.</td>
+<td>Studied by Bernoulli.</td>
+<td>Used in discrete probability, testing.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Poisson Distribution</td>
+<td>Counts events in fixed interval given constant rate.</td>
+<td>Developed by Poisson.</td>
+<td>Used in queueing, rare events.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Exponential Distribution</td>
+<td>Models time between independent events.</td>
+<td>Derived from Poisson process.</td>
+<td>Used in survival analysis, reliability.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Power Law</td>
+<td>Frequency ∝ size⁻ᵅ; heavy-tailed distribution.</td>
+<td>Found in Pareto, Zipf laws.</td>
+<td>Used in networks, economics, complex systems.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Law of Large Numbers</td>
+<td>Averages converge to expected value as samples grow.</td>
+<td>Proven by Bernoulli.</td>
+<td>Foundation of probability theory.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Central Limit Theorem</td>
+<td>Sum of independent variables tends toward normality.</td>
+<td>Proven by Laplace.</td>
+<td>Basis of inferential statistics.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Random Variable</td>
+<td>Variable whose values result from random process.</td>
+<td>Formalized by Kolmogorov.</td>
+<td>Used in probability, stochastic modeling.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Expectation (Mean)</td>
+<td>Weighted average of all possible values.</td>
+<td>Defined in probability theory.</td>
+<td>Used in decision theory, ML loss functions.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Variance (Probabilistic)</td>
+<td>Expected squared deviation from mean.</td>
+<td>Core measure of spread.</td>
+<td>Used in risk, estimation, and inference.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Covariance</td>
+<td>Measure of joint variability of two variables.</td>
+<td>Introduced in correlation theory.</td>
+<td>Used in portfolio theory, regression.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Correlation</td>
+<td>Standardized covariance between -1 and 1.</td>
+<td>Pearson, early 1900s.</td>
+<td>Used in dependency analysis, ML features.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Independence</td>
+<td>One event’s occurrence doesn’t affect another’s.</td>
+<td>Defined in probability axioms.</td>
+<td>Used in modeling, inference, and ML.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Conditional Probability</td>
+<td>Probability of event given another occurred.</td>
+<td>P(A</td>
+<td>B) = P(A ∩ B) / P(B).</td>
+<td>Used in Bayesian reasoning, ML.</td>
+</tr>
+<tr class="even">
+<td>Bayes’ Theorem</td>
+<td>Relates conditional and marginal probabilities.</td>
+<td>Formulated by Bayes, expanded by Laplace.</td>
+<td>Used in inference, learning, and AI.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Joint Probability</td>
+<td>Probability of two events occurring together.</td>
+<td>Foundation of multivariate analysis.</td>
+<td>Used in networks, graphical models.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Marginal Probability</td>
+<td>Probability of single event regardless of others.</td>
+<td>Derived by summing over variables.</td>
+<td>Used in inference, Bayes nets.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Likelihood</td>
+<td>Probability of data given parameters.</td>
+<td>Introduced by Fisher.</td>
+<td>Used in estimation, ML, and Bayesian stats.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Maximum Likelihood Estimation (MLE)</td>
+<td>Parameter values maximizing likelihood.</td>
+<td>Developed by Fisher.</td>
+<td>Standard estimation technique.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Bayesian Inference</td>
+<td>Updating beliefs with evidence.</td>
+<td>Modern revival of Bayes’ ideas.</td>
+<td>Used in probabilistic modeling, AI.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Prior</td>
+<td>Belief distribution before observing data.</td>
+<td>Bayesian terminology.</td>
+<td>Used in priors for models and reasoning.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Posterior</td>
+<td>Updated belief after seeing data.</td>
+<td>Bayes’ rule: Posterior ∝ Likelihood × Prior.</td>
+<td>Used in ML, decision theory, and AI.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Evidence (Marginal Likelihood)</td>
+<td>Probability of data under all parameter values.</td>
+<td>Used in Bayes’ denominator.</td>
+<td>Used in model comparison.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Hypothesis</td>
+<td>Statement about population or process.</td>
+<td>Root of scientific method.</td>
+<td>Tested statistically or via Bayesian inference.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Null Hypothesis (H₀)</td>
+<td>Default assumption, often of no effect.</td>
+<td>Defined by Fisher.</td>
+<td>Used in hypothesis testing.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Alternative Hypothesis (H₁)</td>
+<td>Competing claim tested against null.</td>
+<td>Part of hypothesis testing.</td>
+<td>Used in statistical decision-making.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>p-value</td>
+<td>Probability of observing data as extreme under H₀.</td>
+<td>Introduced by Fisher.</td>
+<td>Used in significance testing.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Significance Level (α)</td>
+<td>Threshold for rejecting H₀.</td>
+<td>Conventionally 0.05.</td>
+<td>Used in hypothesis testing.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Confidence Interval</td>
+<td>Range likely containing true parameter.</td>
+<td>Developed by Neyman.</td>
+<td>Used in reporting uncertainty.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Test Statistic</td>
+<td>Computed value compared to reference distribution.</td>
+<td>Used in parametric tests.</td>
+<td>Used in t-tests, χ²-tests.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>t-Distribution</td>
+<td>Accounts for small-sample uncertainty.</td>
+<td>Discovered by Gosset (“Student”).</td>
+<td>Used in small-sample inference.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Chi-Square Distribution</td>
+<td>Distribution of sum of squared deviations.</td>
+<td>Used in goodness-of-fit tests.</td>
+<td>Used in categorical analysis, ML.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>F-Distribution</td>
+<td>Ratio of variances; used in ANOVA.</td>
+<td>Developed by Fisher.</td>
+<td>Used in model comparison, regression.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Regression</td>
+<td>Modeling relation between variables.</td>
+<td>Pioneered by Galton, Pearson.</td>
+<td>Used in ML, econometrics, forecasting.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Linear Regression</td>
+<td>Model assuming linear relation between X and Y.</td>
+<td>Simplest predictive model.</td>
+<td>Used in analytics, ML, statistics.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Logistic Regression</td>
+<td>Models binary outcomes using sigmoid function.</td>
+<td>Developed for classification.</td>
+<td>Used in ML, risk modeling, biology.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Residual</td>
+<td>Difference between observed and predicted value.</td>
+<td>Core of regression diagnostics.</td>
+<td>Used in model evaluation.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Goodness of Fit</td>
+<td>Measure of model alignment with data.</td>
+<td>Introduced in early regression.</td>
+<td>Used in model validation.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Overfitting</td>
+<td>Model fits noise rather than signal.</td>
+<td>ML concept from stats.</td>
+<td>Central in regularization, validation.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Bias (Statistical)</td>
+<td>Systematic deviation from true value.</td>
+<td>Defined by Fisher.</td>
+<td>Used in model diagnostics, fairness.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Variance (Estimation)</td>
+<td>Sensitivity of estimator to data variation.</td>
+<td>Bias–variance trade-off.</td>
+<td>Used in ML, estimation theory.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Estimator</td>
+<td>Rule for computing parameter estimate from data.</td>
+<td>Introduced by Fisher.</td>
+<td>Used in inference, ML.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Sufficiency</td>
+<td>Statistic captures all needed info about parameter.</td>
+<td>Fisher’s concept.</td>
+<td>Used in efficient estimation.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Consistency (Estimator)</td>
+<td>Converges to true value as sample grows.</td>
+<td>Defined in estimation theory.</td>
+<td>Used in asymptotic analysis.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Efficiency</td>
+<td>Minimal variance among unbiased estimators.</td>
+<td>Defined by Cramér–Rao bound.</td>
+<td>Used in optimal inference.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Entropy</td>
+<td>Measure of uncertainty or information content.</td>
+<td>Introduced by Shannon.</td>
+<td>Used in information theory, ML.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Information Gain</td>
+<td>Reduction in entropy by observation.</td>
+<td>Used in decision trees.</td>
+<td>Feature selection and model training.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Mutual Information</td>
+<td>Shared information between variables.</td>
+<td>Defined in Shannon theory.</td>
+<td>Used in dependency, feature selection.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Cross-Entropy</td>
+<td>Measure comparing two distributions.</td>
+<td>Used in ML losses.</td>
+<td>Used in classification, information theory.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>KL Divergence</td>
+<td>Measure of difference between two distributions.</td>
+<td>Introduced by Kullback &amp; Leibler.</td>
+<td>Used in optimization, ML, variational inference.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Randomness</td>
+<td>Lack of pattern or predictability.</td>
+<td>Philosophical and statistical roots.</td>
+<td>Used in sampling, cryptography, stochastic models.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Stochastic Process</td>
+<td>Random variable evolving over time.</td>
+<td>Developed by Kolmogorov, Wiener.</td>
+<td>Used in time series, finance, AI.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Time Series</td>
+<td>Sequential data ordered in time.</td>
+<td>Developed in econometrics.</td>
+<td>Used in forecasting, analysis, ML.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Autocorrelation</td>
+<td>Correlation of variable with itself over lags.</td>
+<td>Studied by Yule.</td>
+<td>Used in time-series analysis, signal processing.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Stationarity</td>
+<td>Statistical properties constant over time.</td>
+<td>Needed for time series modeling.</td>
+<td>Used in ARIMA, forecasting.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Markov Property</td>
+<td>Future depends only on present.</td>
+<td>Defined by Markov.</td>
+<td>Used in chains, HMMs, RL.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Hidden Markov Model (HMM)</td>
+<td>Model with unobserved states emitting observations.</td>
+<td>Used in speech, bioinformatics.</td>
+<td>Used in temporal ML models.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Bayesian Network</td>
+<td>Graph of conditional dependencies.</td>
+<td>Developed by Pearl.</td>
+<td>Used in probabilistic reasoning, AI.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Monte Carlo Method</td>
+<td>Simulation by random sampling.</td>
+<td>Developed for nuclear physics.</td>
+<td>Used in integration, inference, ML.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Bootstrap</td>
+<td>Resampling technique for estimating variability.</td>
+<td>Introduced by Efron.</td>
+<td>Used in confidence intervals, ML.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Resampling</td>
+<td>Drawing repeated samples to assess statistics.</td>
+<td>Modern computational method.</td>
+<td>Used in ML, inference, testing.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Simulation</td>
+<td>Using models to imitate systems.</td>
+<td>Used in science and engineering.</td>
+<td>Used in ML, modeling, forecasting.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Uncertainty</td>
+<td>Lack of full knowledge about system.</td>
+<td>Formalized in probability.</td>
+<td>Used in risk analysis, decision theory.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Risk</td>
+<td>Expected loss under uncertainty.</td>
+<td>Studied in finance, economics.</td>
+<td>Used in optimization, control, AI safety.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Decision Theory</td>
+<td>Mathematical study of choices under uncertainty.</td>
+<td>Von Neumann, Savage.</td>
+<td>Used in AI, economics, planning.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Expected Utility</td>
+<td>Weighted value of outcomes by probability.</td>
+<td>Developed by Bernoulli.</td>
+<td>Used in rational choice theory.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Game Theory</td>
+<td>Study of strategic interactions.</td>
+<td>Von Neumann &amp; Morgenstern.</td>
+<td>Used in economics, ML, and AI agents.</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Information Theory</td>
+<td>Quantitative study of information, communication, and uncertainty.</td>
+<td>Founded by Shannon (1948).</td>
+<td>Used in coding, compression, ML.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="b6.-computation-language" class="level3">
+<h3 class="anchored" data-anchor-id="b6.-computation-language">B6. Computation &amp; Language</h3>
+<p><em>From abacus to algorithm, humanity sought not just to calculate, but to describe calculation — to express procedures, encode rules, and automate reason. Computation turned mathematics into action; language made it legible. This cluster explores how symbols became syntax, and how syntax became machine.</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 33%">
+<col style="width: 21%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition</th>
+<th>Context</th>
+<th>Modern Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Computation</td>
+<td>The act of systematically transforming input to output via defined rules.</td>
+<td>Rooted in arithmetic and mechanical calculation.</td>
+<td>Foundation of computer science, automation, and AI.</td>
+</tr>
+<tr class="even">
+<td>Algorithm</td>
+<td>Finite, well-defined sequence of steps for solving a problem.</td>
+<td>From al-Khwarizmi’s <em>al-jabr</em>.</td>
+<td>Core of computation, programming, and data science.</td>
+</tr>
+<tr class="odd">
+<td>Procedure</td>
+<td>Ordered set of operations achieving a specific result.</td>
+<td>From early mathematics and logic.</td>
+<td>Used in programming, algorithms, and proofs.</td>
+</tr>
+<tr class="even">
+<td>Process</td>
+<td>Execution of a series of steps, often concurrently or sequentially.</td>
+<td>Originated in early computing.</td>
+<td>Used in operating systems, pipelines, and AI workflows.</td>
+</tr>
+<tr class="odd">
+<td>Program</td>
+<td>Formal expression of an algorithm in a language.</td>
+<td>Appeared with early computers (ENIAC, 1940s).</td>
+<td>Used in software, automation, and modeling.</td>
+</tr>
+<tr class="even">
+<td>Programming Language</td>
+<td>Formal system for expressing computations.</td>
+<td>Began with FORTRAN, Lisp, ALGOL.</td>
+<td>Used in software, AI, and data systems.</td>
+</tr>
+<tr class="odd">
+<td>Syntax</td>
+<td>Rules governing valid symbol combinations.</td>
+<td>From linguistics to logic to programming.</td>
+<td>Used in compilers, parsers, and interpreters.</td>
+</tr>
+<tr class="even">
+<td>Semantics</td>
+<td>Meaning assigned to syntactically valid expressions.</td>
+<td>Developed in formal language theory.</td>
+<td>Used in programming, AI, and linguistics.</td>
+</tr>
+<tr class="odd">
+<td>Grammar</td>
+<td>Set of production rules generating a language.</td>
+<td>Formalized by Chomsky.</td>
+<td>Used in compilers, natural language processing.</td>
+</tr>
+<tr class="even">
+<td>Parser</td>
+<td>Tool converting text into structured representation (AST).</td>
+<td>Central to compilers.</td>
+<td>Used in programming, interpreters, AI.</td>
+</tr>
+<tr class="odd">
+<td>Compiler</td>
+<td>Translates high-level language to machine code.</td>
+<td>Developed in 1950s (Grace Hopper, FORTRAN).</td>
+<td>Used in software, optimization, and VMs.</td>
+</tr>
+<tr class="even">
+<td>Interpreter</td>
+<td>Executes code directly without compilation.</td>
+<td>Popularized by Lisp, Python.</td>
+<td>Used in scripting, REPLs, and dynamic systems.</td>
+</tr>
+<tr class="odd">
+<td>Machine Code</td>
+<td>Binary instructions executed by CPU.</td>
+<td>First language of hardware.</td>
+<td>Used in low-level programming, firmware.</td>
+</tr>
+<tr class="even">
+<td>Assembly Language</td>
+<td>Human-readable representation of machine code.</td>
+<td>Used in early computers.</td>
+<td>Used in embedded systems, optimization.</td>
+</tr>
+<tr class="odd">
+<td>Abstraction</td>
+<td>Simplification by hiding details, emphasizing structure.</td>
+<td>Rooted in mathematics.</td>
+<td>Used in software design, logic, ML.</td>
+</tr>
+<tr class="even">
+<td>Recursion</td>
+<td>Defining process in terms of itself.</td>
+<td>Used by Euclid, formalized in λ-calculus.</td>
+<td>Used in algorithms, fractals, and languages.</td>
+</tr>
+<tr class="odd">
+<td>Iteration</td>
+<td>Repetition of process until condition is met.</td>
+<td>Ancient method (Babylonians).</td>
+<td>Used in loops, numerical methods, and optimization.</td>
+</tr>
+<tr class="even">
+<td>Flow Control</td>
+<td>Mechanisms directing execution path.</td>
+<td>Introduced in structured programming.</td>
+<td>Used in logic, programming, and automation.</td>
+</tr>
+<tr class="odd">
+<td>Conditional</td>
+<td>Statement executing different branches based on test.</td>
+<td>Present in early languages.</td>
+<td>Used in algorithms, decision logic.</td>
+</tr>
+<tr class="even">
+<td>Loop</td>
+<td>Repeated execution block.</td>
+<td>From early computational routines.</td>
+<td>Used in programming, iteration, simulation.</td>
+</tr>
+<tr class="odd">
+<td>Function</td>
+<td>Reusable named block of code.</td>
+<td>Mathematical concept adapted to computing.</td>
+<td>Used in functional programming, modular design.</td>
+</tr>
+<tr class="even">
+<td>Procedure Call</td>
+<td>Invocation of function or method.</td>
+<td>Developed in structured programming.</td>
+<td>Used in call stacks, recursion.</td>
+</tr>
+<tr class="odd">
+<td>Stack</td>
+<td>LIFO data structure managing function calls.</td>
+<td>Introduced in early compilers.</td>
+<td>Used in memory management, parsing, algorithms.</td>
+</tr>
+<tr class="even">
+<td>Queue</td>
+<td>FIFO structure managing ordered tasks.</td>
+<td>Derived from scheduling theory.</td>
+<td>Used in concurrency, event processing.</td>
+</tr>
+<tr class="odd">
+<td>Variable (Programming)</td>
+<td>Named reference to value in memory.</td>
+<td>Inspired by algebraic variables.</td>
+<td>Used in programming, logic, state representation.</td>
+</tr>
+<tr class="even">
+<td>Constant (Programming)</td>
+<td>Named value immutable after definition.</td>
+<td>Used since assembly language.</td>
+<td>Used for configuration, safety, clarity.</td>
+</tr>
+<tr class="odd">
+<td>Expression</td>
+<td>Combination of variables, constants, and operators producing value.</td>
+<td>Derived from algebraic syntax.</td>
+<td>Used in evaluation, parsing, computation.</td>
+</tr>
+<tr class="even">
+<td>Statement</td>
+<td>Instruction performing action.</td>
+<td>Introduced in imperative languages.</td>
+<td>Used in procedural programming.</td>
+</tr>
+<tr class="odd">
+<td>Block</td>
+<td>Group of statements executed together.</td>
+<td>Originated in ALGOL.</td>
+<td>Used in scope, control flow, and structure.</td>
+</tr>
+<tr class="even">
+<td>Scope</td>
+<td>Region where a variable is valid.</td>
+<td>Developed with structured programming.</td>
+<td>Used in name resolution, closures.</td>
+</tr>
+<tr class="odd">
+<td>Closure</td>
+<td>Function capturing surrounding variables.</td>
+<td>Introduced in Lisp, ML.</td>
+<td>Used in FP, async, and AI pipelines.</td>
+</tr>
+<tr class="even">
+<td>Type</td>
+<td>Classification of data defining valid operations.</td>
+<td>Originated in type theory.</td>
+<td>Used in programming, logic, and proofs.</td>
+</tr>
+<tr class="odd">
+<td>Type System</td>
+<td>Rules assigning and checking types.</td>
+<td>Developed to prevent errors.</td>
+<td>Used in compilers, safety, and correctness.</td>
+</tr>
+<tr class="even">
+<td>Static Typing</td>
+<td>Types checked at compile-time.</td>
+<td>C, Java, Haskell.</td>
+<td>Used in safety-critical software.</td>
+</tr>
+<tr class="odd">
+<td>Dynamic Typing</td>
+<td>Types determined at runtime.</td>
+<td>Lisp, Python.</td>
+<td>Used in scripting, rapid prototyping.</td>
+</tr>
+<tr class="even">
+<td>Strong Typing</td>
+<td>Disallows implicit conversions.</td>
+<td>Promotes safety.</td>
+<td>Used in Rust, Haskell, ML.</td>
+</tr>
+<tr class="odd">
+<td>Weak Typing</td>
+<td>Allows coercion between types.</td>
+<td>Found in C, JavaScript.</td>
+<td>Used in dynamic and flexible systems.</td>
+</tr>
+<tr class="even">
+<td>Type Inference</td>
+<td>Automatic deduction of variable types.</td>
+<td>Developed in ML family languages.</td>
+<td>Used in Haskell, TypeScript, OCaml.</td>
+</tr>
+<tr class="odd">
+<td>Generic</td>
+<td>Type parameterized by other types.</td>
+<td>Introduced in Ada, C++.</td>
+<td>Used in reusable abstractions.</td>
+</tr>
+<tr class="even">
+<td>Polymorphism</td>
+<td>Single interface for different data types.</td>
+<td>Coined by Strachey.</td>
+<td>Used in OOP, generics, FP.</td>
+</tr>
+<tr class="odd">
+<td>Encapsulation</td>
+<td>Bundling data and methods together.</td>
+<td>Key concept in OOP.</td>
+<td>Used in modular design, safety.</td>
+</tr>
+<tr class="even">
+<td>Inheritance</td>
+<td>New types extend existing ones.</td>
+<td>From Simula, Smalltalk.</td>
+<td>Used in class hierarchies, reuse.</td>
+</tr>
+<tr class="odd">
+<td>Interface</td>
+<td>Contract specifying methods a type must implement.</td>
+<td>Used in modular programming.</td>
+<td>Central in Go, Java, APIs.</td>
+</tr>
+<tr class="even">
+<td>Object</td>
+<td>Instance combining state and behavior.</td>
+<td>Introduced by Simula.</td>
+<td>Used in OOP, modeling, simulation.</td>
+</tr>
+<tr class="odd">
+<td>Class</td>
+<td>Template for creating objects.</td>
+<td>Formalized in Smalltalk.</td>
+<td>Used in OOP, modeling, frameworks.</td>
+</tr>
+<tr class="even">
+<td>Module</td>
+<td>Unit of encapsulated code with interface.</td>
+<td>Used since Modula-2.</td>
+<td>Used in imports, libraries, and packages.</td>
+</tr>
+<tr class="odd">
+<td>Library</td>
+<td>Collection of reusable functions or modules.</td>
+<td>Emerged in software engineering.</td>
+<td>Used in all programming ecosystems.</td>
+</tr>
+<tr class="even">
+<td>Framework</td>
+<td>Structured platform for building applications.</td>
+<td>Introduced in OOP era.</td>
+<td>Used in web, ML, and backend systems.</td>
+</tr>
+<tr class="odd">
+<td>API (Application Programming Interface)</td>
+<td>Defined interface for interaction between software components.</td>
+<td>Popularized in modular software.</td>
+<td>Used in services, SDKs, integrations.</td>
+</tr>
+<tr class="even">
+<td>Protocol</td>
+<td>Defined set of communication rules.</td>
+<td>Origin in network engineering.</td>
+<td>Used in distributed systems, APIs.</td>
+</tr>
+<tr class="odd">
+<td>Grammar (Formal)</td>
+<td>Rule set defining a language.</td>
+<td>Developed by Chomsky.</td>
+<td>Used in parsers, compilers, NLP.</td>
+</tr>
+<tr class="even">
+<td>Finite Automaton</td>
+<td>Model recognizing regular languages.</td>
+<td>Developed in automata theory.</td>
+<td>Used in regex, parsing, hardware.</td>
+</tr>
+<tr class="odd">
+<td>Regular Expression</td>
+<td>Pattern for string matching.</td>
+<td>Introduced by Kleene.</td>
+<td>Used in text search, validation.</td>
+</tr>
+<tr class="even">
+<td>Context-Free Grammar</td>
+<td>Grammar generating nested structures.</td>
+<td>Introduced by Chomsky.</td>
+<td>Used in compilers, parsers.</td>
+</tr>
+<tr class="odd">
+<td>Turing Machine</td>
+<td>Abstract model of computation.</td>
+<td>Alan Turing (1936).</td>
+<td>Foundation of computability theory.</td>
+</tr>
+<tr class="even">
+<td>Halting Problem</td>
+<td>Decision problem: will program terminate?</td>
+<td>Proven undecidable by Turing.</td>
+<td>Central in computability limits.</td>
+</tr>
+<tr class="odd">
+<td>Decidability</td>
+<td>Whether a problem can be algorithmically solved.</td>
+<td>Studied by Church, Turing.</td>
+<td>Used in logic, complexity.</td>
+</tr>
+<tr class="even">
+<td>Computability</td>
+<td>What can be computed in principle.</td>
+<td>Defined by Church–Turing thesis.</td>
+<td>Foundation of theoretical CS.</td>
+</tr>
+<tr class="odd">
+<td>Complexity</td>
+<td>Measure of resources (time, space) used by algorithms.</td>
+<td>Formalized in 1960s.</td>
+<td>Used in performance, scalability.</td>
+</tr>
+<tr class="even">
+<td>Big O Notation</td>
+<td>Describes asymptotic growth of algorithm cost.</td>
+<td>Introduced by Bachmann, Landau.</td>
+<td>Used in analysis, optimization.</td>
+</tr>
+<tr class="odd">
+<td>NP-Completeness</td>
+<td>Class of hardest problems in NP.</td>
+<td>Defined by Cook, Karp.</td>
+<td>Used in theory, optimization.</td>
+</tr>
+<tr class="even">
+<td>Reduction</td>
+<td>Transforming one problem into another.</td>
+<td>Tool in complexity theory.</td>
+<td>Used in proving NP-hardness.</td>
+</tr>
+<tr class="odd">
+<td>Heuristic</td>
+<td>Approximation technique for practical solutions.</td>
+<td>Common in AI, optimization.</td>
+<td>Used in search, planning, ML.</td>
+</tr>
+<tr class="even">
+<td>Search Algorithm</td>
+<td>Explores possible states to find goal.</td>
+<td>Developed in AI.</td>
+<td>Used in pathfinding, planning.</td>
+</tr>
+<tr class="odd">
+<td>Parsing</td>
+<td>Converting text into structure.</td>
+<td>Central to compilers.</td>
+<td>Used in programming, NLP.</td>
+</tr>
+<tr class="even">
+<td>Interpreter Loop (REPL)</td>
+<td>Read–Eval–Print loop for interactive execution.</td>
+<td>From Lisp tradition.</td>
+<td>Used in Python, Julia, interactive notebooks.</td>
+</tr>
+<tr class="odd">
+<td>Virtual Machine</td>
+<td>Emulates computer architecture.</td>
+<td>Developed in 1960s.</td>
+<td>Used in JVM, WASM, containers.</td>
+</tr>
+<tr class="even">
+<td>Assembler</td>
+<td>Translates symbolic code to machine code.</td>
+<td>Early programming era.</td>
+<td>Used in systems, embedded code.</td>
+</tr>
+<tr class="odd">
+<td>Linker</td>
+<td>Combines object files into executable.</td>
+<td>Introduced in 1950s.</td>
+<td>Used in build systems, compilers.</td>
+</tr>
+<tr class="even">
+<td>Loader</td>
+<td>Places program into memory for execution.</td>
+<td>Fundamental OS component.</td>
+<td>Used in runtime systems.</td>
+</tr>
+<tr class="odd">
+<td>Garbage Collection</td>
+<td>Automatic memory reclamation.</td>
+<td>Introduced by McCarthy (Lisp).</td>
+<td>Used in Java, Go, ML languages.</td>
+</tr>
+<tr class="even">
+<td>Interpreter Pattern</td>
+<td>Design pattern interpreting structured input.</td>
+<td>Described by GoF.</td>
+<td>Used in DSLs, compilers.</td>
+</tr>
+<tr class="odd">
+<td>DSL (Domain-Specific Language)</td>
+<td>Tailored language for specific domain.</td>
+<td>Grew with declarative paradigms.</td>
+<td>Used in SQL, HTML, configuration.</td>
+</tr>
+<tr class="even">
+<td>Macro</td>
+<td>Rule transforming code before execution.</td>
+<td>Lisp innovation.</td>
+<td>Used in metaprogramming, build tools.</td>
+</tr>
+<tr class="odd">
+<td>Metaprogramming</td>
+<td>Writing programs that manipulate programs.</td>
+<td>Lisp, reflection.</td>
+<td>Used in compilers, frameworks, AI agents.</td>
+</tr>
+<tr class="even">
+<td>Reflection</td>
+<td>Program introspecting its own structure.</td>
+<td>Introduced in Smalltalk.</td>
+<td>Used in dynamic typing, debugging.</td>
+</tr>
+<tr class="odd">
+<td>Symbol Table</td>
+<td>Maps identifiers to values or definitions.</td>
+<td>Core of compilers.</td>
+<td>Used in interpreters, IDEs.</td>
+</tr>
+<tr class="even">
+<td>Evaluation Strategy</td>
+<td>Rules for expression evaluation order.</td>
+<td>Normal, applicative order.</td>
+<td>Used in FP languages, compilers.</td>
+</tr>
+<tr class="odd">
+<td>Lazy Evaluation</td>
+<td>Delays computation until needed.</td>
+<td>Used in Haskell.</td>
+<td>Used in FP, optimization.</td>
+</tr>
+<tr class="even">
+<td>Eager Evaluation</td>
+<td>Computes as soon as possible.</td>
+<td>Default in imperative languages.</td>
+<td>Used in Python, Java.</td>
+</tr>
+<tr class="odd">
+<td>Concurrency</td>
+<td>Overlapping execution of processes.</td>
+<td>Developed in OS research.</td>
+<td>Used in async, multithreading.</td>
+</tr>
+<tr class="even">
+<td>Parallelism</td>
+<td>Simultaneous execution across resources.</td>
+<td>Driven by hardware advances.</td>
+<td>Used in HPC, ML, distributed systems.</td>
+</tr>
+<tr class="odd">
+<td>Synchronization</td>
+<td>Coordination between concurrent processes.</td>
+<td>Introduced with shared memory.</td>
+<td>Used in multithreading, distributed systems.</td>
+</tr>
+<tr class="even">
+<td>Thread</td>
+<td>Lightweight sequence of execution.</td>
+<td>Origin in OS design.</td>
+<td>Used in concurrency, async programming.</td>
+</tr>
+<tr class="odd">
+<td>Process Scheduling</td>
+<td>Allocation of CPU time among processes.</td>
+<td>OS theory.</td>
+<td>Used in scheduling, optimization.</td>
+</tr>
+<tr class="even">
+<td>State Machine</td>
+<td>Model of computation with states and transitions.</td>
+<td>Used in automata theory.</td>
+<td>Used in compilers, control systems.</td>
+</tr>
+<tr class="odd">
+<td>Event Loop</td>
+<td>Architecture responding to events asynchronously.</td>
+<td>Popularized by JavaScript.</td>
+<td>Used in UI, servers, async runtimes.</td>
+</tr>
+<tr class="even">
+<td>Interpreter Design</td>
+<td>Architecture for reading and executing code.</td>
+<td>Core of language runtimes.</td>
+<td>Used in scripting, REPLs, simulation.</td>
+</tr>
+<tr class="odd">
+<td>Abstract Syntax Tree (AST)</td>
+<td>Tree representation of program structure.</td>
+<td>Output of parsing.</td>
+<td>Used in compilers, analyzers, AI code tools.</td>
+</tr>
+<tr class="even">
+<td>Compiler Optimization</td>
+<td>Transformation improving performance.</td>
+<td>Evolved in 1970s.</td>
+<td>Used in LLVM, GCC.</td>
+</tr>
+<tr class="odd">
+<td>Intermediate Representation (IR)</td>
+<td>Abstraction between source and machine code.</td>
+<td>Developed for portability.</td>
+<td>Used in compilers, interpreters.</td>
+</tr>
+<tr class="even">
+<td>Code Generation</td>
+<td>Translating IR into machine code.</td>
+<td>Final compiler stage.</td>
+<td>Used in build pipelines.</td>
+</tr>
+<tr class="odd">
+<td>Formal Language</td>
+<td>Set of strings defined by grammar.</td>
+<td>Studied by Chomsky, Kleene.</td>
+<td>Used in compilers, linguistics, theory.</td>
+</tr>
+<tr class="even">
+<td>Regular Language</td>
+<td>Recognizable by finite automaton.</td>
+<td>Kleene’s theorem.</td>
+<td>Used in regex, tokenizers.</td>
+</tr>
+<tr class="odd">
+<td>Context-Free Language</td>
+<td>Generated by context-free grammar.</td>
+<td>Chomsky hierarchy.</td>
+<td>Used in programming languages.</td>
+</tr>
+<tr class="even">
+<td>Turing Completeness</td>
+<td>Ability to simulate any computation.</td>
+<td>Turing, 1936.</td>
+<td>Criterion for expressive languages.</td>
+</tr>
+<tr class="odd">
+<td>Lambda Calculus</td>
+<td>Formal system modeling computation via functions.</td>
+<td>Church, 1930s.</td>
+<td>Basis for FP and type theory.</td>
+</tr>
+<tr class="even">
+<td>Church–Turing Thesis</td>
+<td>Equivalence of Turing machines and λ-calculus.</td>
+<td>Foundational in CS.</td>
+<td>Defines limits of computation.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="b7.-systems-networks" class="level3">
+<h3 class="anchored" data-anchor-id="b7.-systems-networks">B7. Systems &amp; Networks</h3>
+<p><em>Beyond isolated equations and single algorithms, the modern world runs on systems — interwoven webs of interaction, feedback, and flow. Networks reveal structure in relation; systems reveal behavior in time. This cluster captures the mathematics of connection — from nodes and edges to feedback loops and emergent order.</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 33%">
+<col style="width: 25%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition</th>
+<th>Context</th>
+<th>Modern Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>System</td>
+<td>A set of interacting components forming a unified whole.</td>
+<td>From Greek <em>synistanai</em> — “to combine.”</td>
+<td>Used in engineering, ecology, computing, and AI.</td>
+</tr>
+<tr class="even">
+<td>Subsystem</td>
+<td>A smaller system operating within a larger one.</td>
+<td>Developed in systems engineering.</td>
+<td>Used in modular design, software architecture.</td>
+</tr>
+<tr class="odd">
+<td>Component</td>
+<td>Individual part of a system with defined function.</td>
+<td>Used in mechanical and software systems.</td>
+<td>Used in microservices, architecture, and design.</td>
+</tr>
+<tr class="even">
+<td>Boundary</td>
+<td>The interface separating a system from its environment.</td>
+<td>Defined in control theory.</td>
+<td>Used in modeling, thermodynamics, and software.</td>
+</tr>
+<tr class="odd">
+<td>Environment</td>
+<td>External conditions influencing a system.</td>
+<td>Used in cybernetics and ecology.</td>
+<td>Used in reinforcement learning, simulation.</td>
+</tr>
+<tr class="even">
+<td>Input</td>
+<td>Information or resources entering a system.</td>
+<td>Rooted in control systems.</td>
+<td>Used in computation, ML, and automation.</td>
+</tr>
+<tr class="odd">
+<td>Output</td>
+<td>Result or response produced by a system.</td>
+<td>Control and signal theory.</td>
+<td>Used in analytics, ML, and modeling.</td>
+</tr>
+<tr class="even">
+<td>Feedback</td>
+<td>Process where system outputs are fed back as inputs.</td>
+<td>Coined in cybernetics (Wiener).</td>
+<td>Used in control, ML, and adaptive systems.</td>
+</tr>
+<tr class="odd">
+<td>Control</td>
+<td>Regulation of a system to achieve desired behavior.</td>
+<td>Developed in engineering.</td>
+<td>Used in robotics, feedback loops, AI.</td>
+</tr>
+<tr class="even">
+<td>Open System</td>
+<td>Exchanges matter, energy, or information with environment.</td>
+<td>From thermodynamics.</td>
+<td>Used in ecology, networks, computation.</td>
+</tr>
+<tr class="odd">
+<td>Closed System</td>
+<td>No exchange with environment; isolated.</td>
+<td>Physics and modeling.</td>
+<td>Used in theoretical models, control.</td>
+</tr>
+<tr class="even">
+<td>Dynamic System</td>
+<td>System evolving over time according to rules.</td>
+<td>Studied by Newton, Poincaré.</td>
+<td>Used in control, chaos, and AI agents.</td>
+</tr>
+<tr class="odd">
+<td>State</td>
+<td>Description of system at a given time.</td>
+<td>State-space representation in control theory.</td>
+<td>Used in Markov models, RL, automata.</td>
+</tr>
+<tr class="even">
+<td>State Space</td>
+<td>Set of all possible states of a system.</td>
+<td>Developed in dynamical systems.</td>
+<td>Used in control, planning, and search.</td>
+</tr>
+<tr class="odd">
+<td>Transition</td>
+<td>Change from one state to another.</td>
+<td>Studied in automata and Markov theory.</td>
+<td>Used in computation, RL, and simulations.</td>
+</tr>
+<tr class="even">
+<td>Equilibrium</td>
+<td>State where opposing influences are balanced.</td>
+<td>Physics and economics.</td>
+<td>Used in dynamical systems, game theory.</td>
+</tr>
+<tr class="odd">
+<td>Stability</td>
+<td>System’s ability to return to equilibrium after disturbance.</td>
+<td>Lyapunov theory.</td>
+<td>Used in control, chaos, ML training.</td>
+</tr>
+<tr class="even">
+<td>Nonlinearity</td>
+<td>Output not proportional to input.</td>
+<td>Recognized in complex systems.</td>
+<td>Found in chaos, AI, biology.</td>
+</tr>
+<tr class="odd">
+<td>Complex System</td>
+<td>Many interacting components with emergent behavior.</td>
+<td>Studied by Santa Fe Institute.</td>
+<td>Used in AI, networks, and social modeling.</td>
+</tr>
+<tr class="even">
+<td>Emergence</td>
+<td>Global patterns arising from local interactions.</td>
+<td>Studied in complexity science.</td>
+<td>Used in ML, swarm intelligence, physics.</td>
+</tr>
+<tr class="odd">
+<td>Self-Organization</td>
+<td>Order arising spontaneously without central control.</td>
+<td>Observed in biology and physics.</td>
+<td>Used in networks, AI, and economics.</td>
+</tr>
+<tr class="even">
+<td>Adaptation</td>
+<td>Change in structure or behavior for better fit.</td>
+<td>Studied in cybernetics, evolution.</td>
+<td>Used in ML, AI agents, and optimization.</td>
+</tr>
+<tr class="odd">
+<td>Resilience</td>
+<td>Capacity to absorb disturbance and maintain function.</td>
+<td>Ecology and systems theory.</td>
+<td>Used in engineering, AI safety, economics.</td>
+</tr>
+<tr class="even">
+<td>Entropy (System)</td>
+<td>Measure of disorder or uncertainty in a system.</td>
+<td>From thermodynamics.</td>
+<td>Used in information theory, control, and ML.</td>
+</tr>
+<tr class="odd">
+<td>Homeostasis</td>
+<td>Self-regulation maintaining stability.</td>
+<td>Coined by Cannon (1932).</td>
+<td>Used in biology, AI feedback, control.</td>
+</tr>
+<tr class="even">
+<td>Network</td>
+<td>Collection of nodes connected by edges.</td>
+<td>Studied since Euler’s bridges.</td>
+<td>Used in graph theory, ML, and communication.</td>
+</tr>
+<tr class="odd">
+<td>Node</td>
+<td>Fundamental unit in a network.</td>
+<td>From graph theory.</td>
+<td>Used in social, neural, and data networks.</td>
+</tr>
+<tr class="even">
+<td>Edge</td>
+<td>Connection or relation between nodes.</td>
+<td>Origin in Euler’s graph theory.</td>
+<td>Used in modeling, topology, and algorithms.</td>
+</tr>
+<tr class="odd">
+<td>Graph</td>
+<td>Mathematical structure of nodes and edges.</td>
+<td>Introduced by Euler (1736).</td>
+<td>Used in algorithms, ML, and systems.</td>
+</tr>
+<tr class="even">
+<td>Directed Graph</td>
+<td>Edges have orientation (arrows).</td>
+<td>Developed in order theory.</td>
+<td>Used in DAGs, workflows, knowledge graphs.</td>
+</tr>
+<tr class="odd">
+<td>Undirected Graph</td>
+<td>Edges without direction.</td>
+<td>Basic graph structure.</td>
+<td>Used in social networks, clustering.</td>
+</tr>
+<tr class="even">
+<td>Weighted Graph</td>
+<td>Edges carry numerical values.</td>
+<td>Introduced in optimization.</td>
+<td>Used in routing, neural nets, modeling.</td>
+</tr>
+<tr class="odd">
+<td>Path</td>
+<td>Sequence of connected edges in a graph.</td>
+<td>Euler’s bridges problem.</td>
+<td>Used in routing, graph search, AI.</td>
+</tr>
+<tr class="even">
+<td>Cycle</td>
+<td>Closed path returning to starting node.</td>
+<td>Core of graph theory.</td>
+<td>Used in circuits, recursion, feedback.</td>
+</tr>
+<tr class="odd">
+<td>Connectivity</td>
+<td>Measure of how well nodes are linked.</td>
+<td>Studied in networks.</td>
+<td>Used in robustness, communication.</td>
+</tr>
+<tr class="even">
+<td>Degree</td>
+<td>Number of connections per node.</td>
+<td>Used in network topology.</td>
+<td>Used in centrality, power laws.</td>
+</tr>
+<tr class="odd">
+<td>Centrality</td>
+<td>Measure of a node’s importance.</td>
+<td>Developed in sociology.</td>
+<td>Used in graph analytics, AI, and search.</td>
+</tr>
+<tr class="even">
+<td>Clustering Coefficient</td>
+<td>Measure of node’s local density.</td>
+<td>Watts &amp; Strogatz (1998).</td>
+<td>Used in small-world networks, ML.</td>
+</tr>
+<tr class="odd">
+<td>Network Topology</td>
+<td>Arrangement of nodes and edges.</td>
+<td>Electrical and social networks.</td>
+<td>Used in distributed systems, internet.</td>
+</tr>
+<tr class="even">
+<td>Small-World Network</td>
+<td>High clustering, short path length.</td>
+<td>Watts &amp; Strogatz model.</td>
+<td>Used in sociology, biology, AI.</td>
+</tr>
+<tr class="odd">
+<td>Scale-Free Network</td>
+<td>Degree distribution follows power law.</td>
+<td>Barabási &amp; Albert (1999).</td>
+<td>Used in internet, genetics, ML.</td>
+</tr>
+<tr class="even">
+<td>Random Graph</td>
+<td>Graph formed by random edge placement.</td>
+<td>Erdős–Rényi model.</td>
+<td>Used in probability, network science.</td>
+</tr>
+<tr class="odd">
+<td>Percolation</td>
+<td>Connectivity emergence in random networks.</td>
+<td>Statistical physics.</td>
+<td>Used in epidemics, network theory.</td>
+</tr>
+<tr class="even">
+<td>Flow (Network)</td>
+<td>Movement of resources or information along edges.</td>
+<td>Studied in max-flow min-cut theorem.</td>
+<td>Used in logistics, data, computation.</td>
+</tr>
+<tr class="odd">
+<td>Capacity</td>
+<td>Maximum flow allowed on an edge.</td>
+<td>Used in optimization.</td>
+<td>Found in transport, communication.</td>
+</tr>
+<tr class="even">
+<td>Bottleneck</td>
+<td>Limiting constraint on system throughput.</td>
+<td>Queuing theory.</td>
+<td>Used in optimization, computing.</td>
+</tr>
+<tr class="odd">
+<td>Queueing Theory</td>
+<td>Study of waiting lines and service processes.</td>
+<td>Erlang, 1909.</td>
+<td>Used in telecom, computing, logistics.</td>
+</tr>
+<tr class="even">
+<td>Throughput</td>
+<td>Rate at which system processes input.</td>
+<td>Control and performance theory.</td>
+<td>Used in networks, databases.</td>
+</tr>
+<tr class="odd">
+<td>Latency</td>
+<td>Delay between input and response.</td>
+<td>Origin in signal processing.</td>
+<td>Used in networking, systems, UX.</td>
+</tr>
+<tr class="even">
+<td>Feedback Loop</td>
+<td>Circular flow of cause and effect.</td>
+<td>Cybernetics, control theory.</td>
+<td>Used in ML training, economics, ecosystems.</td>
+</tr>
+<tr class="odd">
+<td>Positive Feedback</td>
+<td>Amplifies change; leads to growth or instability.</td>
+<td>Studied in biology and systems.</td>
+<td>Used in reinforcement, signal gain.</td>
+</tr>
+<tr class="even">
+<td>Negative Feedback</td>
+<td>Dampens change; promotes stability.</td>
+<td>Basis of control systems.</td>
+<td>Used in thermostats, AI regulation.</td>
+</tr>
+<tr class="odd">
+<td>Control Loop</td>
+<td>Mechanism adjusting system based on output.</td>
+<td>Engineering concept.</td>
+<td>Used in robotics, automation, ML.</td>
+</tr>
+<tr class="even">
+<td>PID Controller</td>
+<td>Proportional–Integral–Derivative feedback mechanism.</td>
+<td>Industrial control.</td>
+<td>Used in robotics, flight, optimization.</td>
+</tr>
+<tr class="odd">
+<td>Signal</td>
+<td>Function conveying information about variation.</td>
+<td>Signal processing roots.</td>
+<td>Used in communication, ML.</td>
+</tr>
+<tr class="even">
+<td>Noise</td>
+<td>Random variation obscuring signal.</td>
+<td>Studied in Shannon theory.</td>
+<td>Used in filtering, ML, and estimation.</td>
+</tr>
+<tr class="odd">
+<td>Filter</td>
+<td>System removing unwanted signal components.</td>
+<td>Signal theory, Kalman filters.</td>
+<td>Used in ML, control, tracking.</td>
+</tr>
+<tr class="even">
+<td>Kalman Filter</td>
+<td>Recursive estimator combining prediction and observation.</td>
+<td>Kalman (1960).</td>
+<td>Used in control, robotics, navigation.</td>
+</tr>
+<tr class="odd">
+<td>State Machine</td>
+<td>Abstract model with states and transitions.</td>
+<td>Automata theory.</td>
+<td>Used in computation, control, AI.</td>
+</tr>
+<tr class="even">
+<td>Petri Net</td>
+<td>Graphical model of distributed systems.</td>
+<td>Carl Adam Petri (1962).</td>
+<td>Used in concurrency, workflow modeling.</td>
+</tr>
+<tr class="odd">
+<td>Markov Chain</td>
+<td>System where next state depends only on current.</td>
+<td>Andrey Markov (1906).</td>
+<td>Used in stochastic modeling, RL.</td>
+</tr>
+<tr class="even">
+<td>Agent</td>
+<td>Entity perceiving environment and acting upon it.</td>
+<td>AI and control theory.</td>
+<td>Used in multi-agent systems, RL.</td>
+</tr>
+<tr class="odd">
+<td>Multi-Agent System</td>
+<td>Collection of interacting agents.</td>
+<td>Distributed AI research.</td>
+<td>Used in economics, swarm intelligence.</td>
+</tr>
+<tr class="even">
+<td>Swarm Intelligence</td>
+<td>Collective behavior from simple agents.</td>
+<td>Modeled after nature (ants, birds).</td>
+<td>Used in optimization, robotics, AI.</td>
+</tr>
+<tr class="odd">
+<td>Network Dynamics</td>
+<td>Evolution of network structure or state.</td>
+<td>Emerging in complex systems.</td>
+<td>Used in epidemiology, ML, social modeling.</td>
+</tr>
+<tr class="even">
+<td>Resonance</td>
+<td>Amplification when frequency matches natural mode.</td>
+<td>Physics, systems.</td>
+<td>Used in control, oscillations, design.</td>
+</tr>
+<tr class="odd">
+<td>Coupling</td>
+<td>Strength of interaction between subsystems.</td>
+<td>Systems theory.</td>
+<td>Used in modularity, software, synchronization.</td>
+</tr>
+<tr class="even">
+<td>Decoupling</td>
+<td>Reducing interdependence between components.</td>
+<td>Engineering and software design.</td>
+<td>Used in modular systems, fault isolation.</td>
+</tr>
+<tr class="odd">
+<td>Redundancy</td>
+<td>Duplication for reliability.</td>
+<td>Control and reliability theory.</td>
+<td>Used in fault tolerance, resilience.</td>
+</tr>
+<tr class="even">
+<td>Fault Tolerance</td>
+<td>Ability to function despite failure.</td>
+<td>Engineering reliability.</td>
+<td>Used in distributed systems, databases.</td>
+</tr>
+<tr class="odd">
+<td>Robustness</td>
+<td>Performance stability under perturbations.</td>
+<td>Systems design principle.</td>
+<td>Used in ML, engineering, finance.</td>
+</tr>
+<tr class="even">
+<td>Modularity</td>
+<td>Division into independent, composable parts.</td>
+<td>Biological and engineering origins.</td>
+<td>Used in software, design, architecture.</td>
+</tr>
+<tr class="odd">
+<td>Hierarchy</td>
+<td>Organization in layered structure.</td>
+<td>Observed in nature, systems.</td>
+<td>Used in networks, management, computation.</td>
+</tr>
+<tr class="even">
+<td>Topology (Network)</td>
+<td>Structural arrangement of connections.</td>
+<td>Mathematical abstraction.</td>
+<td>Used in routing, distributed design.</td>
+</tr>
+<tr class="odd">
+<td>Graph Laplacian</td>
+<td>Matrix representing node connectivity.</td>
+<td>Used in spectral graph theory.</td>
+<td>Applied in clustering, ML, networks.</td>
+</tr>
+<tr class="even">
+<td>Spectral Analysis</td>
+<td>Studying eigenvalues of network matrices.</td>
+<td>Graph theory.</td>
+<td>Used in community detection, diffusion.</td>
+</tr>
+<tr class="odd">
+<td>Diffusion (Network)</td>
+<td>Spread of information or influence.</td>
+<td>Modeled after physical diffusion.</td>
+<td>Used in epidemics, ML, social networks.</td>
+</tr>
+<tr class="even">
+<td>Information Flow</td>
+<td>Transmission of data through system.</td>
+<td>Control and communication.</td>
+<td>Used in AI, security, system design.</td>
+</tr>
+<tr class="odd">
+<td>Synchronization</td>
+<td>Coordination across components or nodes.</td>
+<td>Studied in coupled systems.</td>
+<td>Used in distributed systems, robotics.</td>
+</tr>
+<tr class="even">
+<td>Load Balancing</td>
+<td>Distribution of tasks across resources.</td>
+<td>Network design principle.</td>
+<td>Used in computing, cloud, logistics.</td>
+</tr>
+<tr class="odd">
+<td>Scalability</td>
+<td>Ability to handle growing workload.</td>
+<td>Systems engineering.</td>
+<td>Used in cloud computing, architecture.</td>
+</tr>
+<tr class="even">
+<td>Throughput Optimization</td>
+<td>Maximizing flow under constraints.</td>
+<td>Control and networks.</td>
+<td>Used in performance engineering, design.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="b8.-learning-intelligence" class="level3">
+<h3 class="anchored" data-anchor-id="b8.-learning-intelligence">B8. Learning &amp; Intelligence</h3>
+<p><em>To learn is to change with experience. Mathematics gave this act form: error became signal, data became teacher, and knowledge became computation. Intelligence, in turn, is learning applied — adapting models to meaning. This cluster maps the mathematical anatomy of learning: from perception to prediction, from memory to mind.</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 29%">
+<col style="width: 24%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition</th>
+<th>Context</th>
+<th>Modern Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Learning</td>
+<td>Process of improving performance or knowledge with experience.</td>
+<td>Studied in psychology and AI.</td>
+<td>Foundation of machine learning and adaptive systems.</td>
+</tr>
+<tr class="even">
+<td>Supervised Learning</td>
+<td>Learning from labeled examples.</td>
+<td>Developed from regression and classification.</td>
+<td>Used in ML tasks like image, speech, and text recognition.</td>
+</tr>
+<tr class="odd">
+<td>Unsupervised Learning</td>
+<td>Discovering structure from unlabeled data.</td>
+<td>Rooted in clustering and dimensionality reduction.</td>
+<td>Used in representation learning, data compression.</td>
+</tr>
+<tr class="even">
+<td>Semi-Supervised Learning</td>
+<td>Combines labeled and unlabeled data.</td>
+<td>Developed for data-scarce domains.</td>
+<td>Used in NLP, bioinformatics, and finance.</td>
+</tr>
+<tr class="odd">
+<td>Reinforcement Learning</td>
+<td>Learning through interaction and reward.</td>
+<td>Inspired by behavioral psychology.</td>
+<td>Used in robotics, games, and agents.</td>
+</tr>
+<tr class="even">
+<td>Online Learning</td>
+<td>Model updated continuously with new data.</td>
+<td>Developed in adaptive systems.</td>
+<td>Used in finance, recommendation, and personalization.</td>
+</tr>
+<tr class="odd">
+<td>Batch Learning</td>
+<td>Model trained on entire dataset at once.</td>
+<td>Classical ML paradigm.</td>
+<td>Used in static training, research models.</td>
+</tr>
+<tr class="even">
+<td>Transfer Learning</td>
+<td>Reusing knowledge from one task to another.</td>
+<td>Inspired by human cognition.</td>
+<td>Used in NLP, vision, multitask ML.</td>
+</tr>
+<tr class="odd">
+<td>Few-Shot Learning</td>
+<td>Learning from very few examples.</td>
+<td>Driven by data efficiency goals.</td>
+<td>Used in AI generalization, foundation models.</td>
+</tr>
+<tr class="even">
+<td>Meta-Learning</td>
+<td>“Learning to learn” — optimizing learning algorithms.</td>
+<td>Rooted in adaptive optimization.</td>
+<td>Used in AutoML, AI agents.</td>
+</tr>
+<tr class="odd">
+<td>Feature Extraction</td>
+<td>Transforming raw data into informative attributes.</td>
+<td>Early stage of ML pipelines.</td>
+<td>Used in classical ML, computer vision.</td>
+</tr>
+<tr class="even">
+<td>Representation Learning</td>
+<td>Learning useful data features automatically.</td>
+<td>Core of deep learning.</td>
+<td>Used in embeddings, neural networks.</td>
+</tr>
+<tr class="odd">
+<td>Latent Variable</td>
+<td>Hidden factor influencing observed data.</td>
+<td>Used in factor analysis, generative models.</td>
+<td>Used in VAEs, topic models.</td>
+</tr>
+<tr class="even">
+<td>Model</td>
+<td>Mathematical structure mapping input to output.</td>
+<td>From statistics and simulation.</td>
+<td>Central in ML, science, and decision systems.</td>
+</tr>
+<tr class="odd">
+<td>Hypothesis Space</td>
+<td>Set of all models a learner can explore.</td>
+<td>Defined in learning theory.</td>
+<td>Used in capacity control, generalization.</td>
+</tr>
+<tr class="even">
+<td>Capacity</td>
+<td>Complexity or expressiveness of a model.</td>
+<td>Trade-off with generalization.</td>
+<td>Used in neural networks, theory.</td>
+</tr>
+<tr class="odd">
+<td>Generalization</td>
+<td>Model’s ability to perform on unseen data.</td>
+<td>Central challenge of ML.</td>
+<td>Used in validation, theory, design.</td>
+</tr>
+<tr class="even">
+<td>Overfitting</td>
+<td>Model fits noise rather than signal.</td>
+<td>Identified in statistics.</td>
+<td>Mitigated by regularization, cross-validation.</td>
+</tr>
+<tr class="odd">
+<td>Underfitting</td>
+<td>Model too simple to capture structure.</td>
+<td>Classical trade-off in ML.</td>
+<td>Fixed by increasing capacity or features.</td>
+</tr>
+<tr class="even">
+<td>Bias–Variance Tradeoff</td>
+<td>Balance between simplicity and sensitivity.</td>
+<td>Defined in statistical learning.</td>
+<td>Used in model selection, diagnostics.</td>
+</tr>
+<tr class="odd">
+<td>Loss Function</td>
+<td>Quantifies error between predictions and truth.</td>
+<td>Core of optimization.</td>
+<td>Used in training, evaluation, control.</td>
+</tr>
+<tr class="even">
+<td>Objective Function</td>
+<td>Function to be minimized or maximized in learning.</td>
+<td>Unified view of optimization.</td>
+<td>Used in ML, AI planning, control.</td>
+</tr>
+<tr class="odd">
+<td>Gradient Descent</td>
+<td>Iterative method to minimize loss.</td>
+<td>Introduced in calculus of variations.</td>
+<td>Used in ML optimization, deep learning.</td>
+</tr>
+<tr class="even">
+<td>Stochastic Gradient Descent (SGD)</td>
+<td>Gradient descent using random mini-batches.</td>
+<td>Efficient large-scale optimizer.</td>
+<td>Used in deep learning, online learning.</td>
+</tr>
+<tr class="odd">
+<td>Backpropagation</td>
+<td>Algorithm for computing gradients in layered networks.</td>
+<td>Developed by Rumelhart, Hinton, Williams (1986).</td>
+<td>Backbone of deep learning.</td>
+</tr>
+<tr class="even">
+<td>Optimizer</td>
+<td>Algorithm adjusting parameters to reduce loss.</td>
+<td>Combines calculus and computation.</td>
+<td>Used in ML (Adam, RMSProp, etc.).</td>
+</tr>
+<tr class="odd">
+<td>Activation Function</td>
+<td>Introduces nonlinearity in neural networks.</td>
+<td>Sigmoid, ReLU, tanh.</td>
+<td>Used in deep learning models.</td>
+</tr>
+<tr class="even">
+<td>Neuron (Artificial)</td>
+<td>Unit computing weighted sum and activation.</td>
+<td>Inspired by biological neurons.</td>
+<td>Used in neural networks, deep learning.</td>
+</tr>
+<tr class="odd">
+<td>Layer</td>
+<td>Collection of neurons at one level of network.</td>
+<td>Defined in neural architectures.</td>
+<td>Used in CNNs, RNNs, Transformers.</td>
+</tr>
+<tr class="even">
+<td>Feedforward Network</td>
+<td>Connections move from input to output.</td>
+<td>First neural model class.</td>
+<td>Used in MLPs, classification tasks.</td>
+</tr>
+<tr class="odd">
+<td>Convolutional Layer</td>
+<td>Applies filters capturing spatial patterns.</td>
+<td>Developed for vision.</td>
+<td>Used in CNNs, image processing.</td>
+</tr>
+<tr class="even">
+<td>Recurrent Layer</td>
+<td>Processes sequences by passing state forward.</td>
+<td>Designed for time-series data.</td>
+<td>Used in RNNs, LSTMs, sequence modeling.</td>
+</tr>
+<tr class="odd">
+<td>Transformer</td>
+<td>Architecture based on attention mechanisms.</td>
+<td>Introduced by Vaswani et al.&nbsp;(2017).</td>
+<td>Used in LLMs, vision, multimodal models.</td>
+</tr>
+<tr class="even">
+<td>Attention</td>
+<td>Mechanism focusing on relevant inputs.</td>
+<td>Modeled after human cognition.</td>
+<td>Used in Transformers, seq2seq models.</td>
+</tr>
+<tr class="odd">
+<td>Embedding</td>
+<td>Mapping entities into vector space.</td>
+<td>Word2Vec, deep embeddings.</td>
+<td>Used in NLP, retrieval, recommender systems.</td>
+</tr>
+<tr class="even">
+<td>Regularization</td>
+<td>Techniques preventing overfitting (L1, L2, dropout).</td>
+<td>Rooted in statistics.</td>
+<td>Used in deep learning, regression.</td>
+</tr>
+<tr class="odd">
+<td>Normalization</td>
+<td>Scaling data or activations to stabilize learning.</td>
+<td>BatchNorm, LayerNorm.</td>
+<td>Used in networks, preprocessing.</td>
+</tr>
+<tr class="even">
+<td>Dropout</td>
+<td>Randomly disabling neurons during training.</td>
+<td>Srivastava et al.&nbsp;(2014).</td>
+<td>Used for regularization.</td>
+</tr>
+<tr class="odd">
+<td>Batch Size</td>
+<td>Number of samples per gradient update.</td>
+<td>Key training hyperparameter.</td>
+<td>Used in optimization tuning.</td>
+</tr>
+<tr class="even">
+<td>Epoch</td>
+<td>One full pass through training data.</td>
+<td>Common ML training term.</td>
+<td>Used in iteration counting.</td>
+</tr>
+<tr class="odd">
+<td>Validation Set</td>
+<td>Data subset for tuning models.</td>
+<td>Developed in ML workflow.</td>
+<td>Used in model selection.</td>
+</tr>
+<tr class="even">
+<td>Test Set</td>
+<td>Held-out data to assess generalization.</td>
+<td>Core evaluation concept.</td>
+<td>Used in benchmarking, deployment.</td>
+</tr>
+<tr class="odd">
+<td>Cross-Validation</td>
+<td>Splitting data into folds for robust evaluation.</td>
+<td>Introduced by Mosteller &amp; Tukey.</td>
+<td>Used in small datasets, model tuning.</td>
+</tr>
+<tr class="even">
+<td>Early Stopping</td>
+<td>Halt training when validation error rises.</td>
+<td>Prevents overfitting.</td>
+<td>Used in deep learning, iterative methods.</td>
+</tr>
+<tr class="odd">
+<td>Hyperparameter</td>
+<td>Parameter set before training begins.</td>
+<td>Distinct from learned parameters.</td>
+<td>Tuned via grid search, Bayesian optimization.</td>
+</tr>
+<tr class="even">
+<td>Hyperparameter Tuning</td>
+<td>Searching for optimal training settings.</td>
+<td>Automated via search algorithms.</td>
+<td>Used in AutoML, optimization.</td>
+</tr>
+<tr class="odd">
+<td>Feature Engineering</td>
+<td>Designing input variables to improve performance.</td>
+<td>Early ML craft.</td>
+<td>Used in structured data, classic ML.</td>
+</tr>
+<tr class="even">
+<td>Dimensionality Reduction</td>
+<td>Compressing features while preserving structure.</td>
+<td>PCA, t-SNE, UMAP.</td>
+<td>Used in visualization, preprocessing.</td>
+</tr>
+<tr class="odd">
+<td>Principal Component Analysis (PCA)</td>
+<td>Orthogonal projection capturing maximum variance.</td>
+<td>Pearson, 1901.</td>
+<td>Used in data compression, exploration.</td>
+</tr>
+<tr class="even">
+<td>Clustering</td>
+<td>Grouping data by similarity.</td>
+<td>k-means, hierarchical clustering.</td>
+<td>Used in segmentation, unsupervised learning.</td>
+</tr>
+<tr class="odd">
+<td>k-Means</td>
+<td>Partitioning method minimizing within-cluster variance.</td>
+<td>Lloyd’s algorithm.</td>
+<td>Used in unsupervised learning, analysis.</td>
+</tr>
+<tr class="even">
+<td>Hierarchical Clustering</td>
+<td>Builds nested clusters via linkage.</td>
+<td>Dendrogram structures.</td>
+<td>Used in exploratory data analysis.</td>
+</tr>
+<tr class="odd">
+<td>Gaussian Mixture Model (GMM)</td>
+<td>Probabilistic clustering using Gaussian components.</td>
+<td>EM algorithm.</td>
+<td>Used in density estimation.</td>
+</tr>
+<tr class="even">
+<td>Outlier</td>
+<td>Observation deviating significantly from trend.</td>
+<td>Studied in robust statistics.</td>
+<td>Used in anomaly detection, quality control.</td>
+</tr>
+<tr class="odd">
+<td>Anomaly Detection</td>
+<td>Identifying rare or abnormal data points.</td>
+<td>Statistical and ML methods.</td>
+<td>Used in fraud detection, monitoring.</td>
+</tr>
+<tr class="even">
+<td>Reinforcement Signal</td>
+<td>Reward or penalty guiding agent behavior.</td>
+<td>RL foundation.</td>
+<td>Used in learning from environment feedback.</td>
+</tr>
+<tr class="odd">
+<td>Policy</td>
+<td>Mapping from state to action in RL.</td>
+<td>Central to control and decision theory.</td>
+<td>Used in RL agents, robotics.</td>
+</tr>
+<tr class="even">
+<td>Value Function</td>
+<td>Expected reward from a state.</td>
+<td>Bellman equation.</td>
+<td>Used in RL optimization.</td>
+</tr>
+<tr class="odd">
+<td>Bellman Equation</td>
+<td>Recursive definition of value in dynamic programming.</td>
+<td>Richard Bellman, 1950s.</td>
+<td>Core of RL algorithms (Q-learning).</td>
+</tr>
+<tr class="even">
+<td>Exploration–Exploitation Tradeoff</td>
+<td>Balancing novelty and reward.</td>
+<td>Sutton &amp; Barto, RL theory.</td>
+<td>Used in adaptive learning, agents.</td>
+</tr>
+<tr class="odd">
+<td>Q-Learning</td>
+<td>Model-free RL algorithm updating action values.</td>
+<td>Watkins, 1989.</td>
+<td>Used in agents, games, control.</td>
+</tr>
+<tr class="even">
+<td>Policy Gradient</td>
+<td>Optimizing parameterized policies directly.</td>
+<td>REINFORCE algorithm.</td>
+<td>Used in actor-critic models, robotics.</td>
+</tr>
+<tr class="odd">
+<td>Actor–Critic</td>
+<td>RL framework combining value and policy learning.</td>
+<td>Sutton et al.</td>
+<td>Used in deep RL, control systems.</td>
+</tr>
+<tr class="even">
+<td>Reward Function</td>
+<td>Signal defining agent’s objective.</td>
+<td>RL design element.</td>
+<td>Used in AI safety, goal alignment.</td>
+</tr>
+<tr class="odd">
+<td>Imitation Learning</td>
+<td>Learning by mimicking expert behavior.</td>
+<td>Inspired by humans, animals.</td>
+<td>Used in robotics, autonomous systems.</td>
+</tr>
+<tr class="even">
+<td>Curriculum Learning</td>
+<td>Training on progressively harder tasks.</td>
+<td>Bengio et al.&nbsp;(2009).</td>
+<td>Used in deep learning, RL.</td>
+</tr>
+<tr class="odd">
+<td>Self-Supervised Learning</td>
+<td>Learning from data’s internal structure.</td>
+<td>Inspired by pretraining objectives.</td>
+<td>Used in LLMs, vision transformers.</td>
+</tr>
+<tr class="even">
+<td>Contrastive Learning</td>
+<td>Learning by comparing positive/negative pairs.</td>
+<td>SimCLR, InfoNCE.</td>
+<td>Used in embeddings, representation learning.</td>
+</tr>
+<tr class="odd">
+<td>Foundation Model</td>
+<td>Large pre-trained model adapted to many tasks.</td>
+<td>Emerged in AI scaling era.</td>
+<td>Used in GPT, CLIP, multimodal AI.</td>
+</tr>
+<tr class="even">
+<td>Transformer (Architecture)</td>
+<td>Sequence model using attention, no recurrence.</td>
+<td>“Attention is All You Need” (2017).</td>
+<td>Basis of GPT, BERT, and LLMs.</td>
+</tr>
+<tr class="odd">
+<td>Fine-Tuning</td>
+<td>Adapting a pre-trained model to new task.</td>
+<td>Transfer learning technique.</td>
+<td>Used in domain adaptation.</td>
+</tr>
+<tr class="even">
+<td>Zero-Shot Learning</td>
+<td>Generalizing to unseen tasks without examples.</td>
+<td>Enabled by large language models.</td>
+<td>Used in LLM reasoning, AI inference.</td>
+</tr>
+<tr class="odd">
+<td>Few-Shot Prompting</td>
+<td>Conditioning LLMs on small example sets.</td>
+<td>Emerging from prompt engineering.</td>
+<td>Used in GPT, instruction following.</td>
+</tr>
+<tr class="even">
+<td>Prompt Engineering</td>
+<td>Designing model inputs to elicit desired outputs.</td>
+<td>Popularized with LLMs.</td>
+<td>Used in AI interaction, reasoning.</td>
+</tr>
+<tr class="odd">
+<td>Evaluation Metric</td>
+<td>Quantitative measure of model performance.</td>
+<td>Accuracy, precision, recall, F1.</td>
+<td>Used in ML, benchmarking.</td>
+</tr>
+<tr class="even">
+<td>Precision</td>
+<td>Fraction of correct positive predictions.</td>
+<td>From classification metrics.</td>
+<td>Used in ML, IR, and safety-critical systems.</td>
+</tr>
+<tr class="odd">
+<td>Recall</td>
+<td>Fraction of actual positives correctly identified.</td>
+<td>Statistical detection measure.</td>
+<td>Used in ML, search, evaluation.</td>
+</tr>
+<tr class="even">
+<td>F1 Score</td>
+<td>Harmonic mean of precision and recall.</td>
+<td>Balances false positives and negatives.</td>
+<td>Used in ML classification evaluation.</td>
+</tr>
+<tr class="odd">
+<td>ROC Curve</td>
+<td>Trade-off plot between true and false positive rates.</td>
+<td>Diagnostic performance tool.</td>
+<td>Used in classifiers, thresholds.</td>
+</tr>
+<tr class="even">
+<td>AUC (Area Under Curve)</td>
+<td>Scalar summary of ROC performance.</td>
+<td>Threshold-independent metric.</td>
+<td>Used in model evaluation, comparison.</td>
+</tr>
+<tr class="odd">
+<td>Confusion Matrix</td>
+<td>Table of predicted vs.&nbsp;actual outcomes.</td>
+<td>Diagnostic visualization.</td>
+<td>Used in ML, error analysis.</td>
+</tr>
+<tr class="even">
+<td>Explainability</td>
+<td>Understanding model decisions.</td>
+<td>AI interpretability field.</td>
+<td>Used in responsible AI, compliance.</td>
+</tr>
+<tr class="odd">
+<td>Interpretability</td>
+<td>Clarity of model’s internal logic.</td>
+<td>Grew from explainable ML.</td>
+<td>Used in trust, safety, science.</td>
+</tr>
+<tr class="even">
+<td>Feature Importance</td>
+<td>Contribution of input to output.</td>
+<td>Introduced in tree models.</td>
+<td>Used in interpretability, auditing.</td>
+</tr>
+<tr class="odd">
+<td>SHAP Values</td>
+<td>Game-theoretic feature attribution.</td>
+<td>Lundberg &amp; Lee (2017).</td>
+<td>Used in explainable AI.</td>
+</tr>
+<tr class="even">
+<td>LIME</td>
+<td>Local interpretable model-agnostic explanations.</td>
+<td>Ribeiro et al.&nbsp;(2016).</td>
+<td>Used for post-hoc explainability.</td>
+</tr>
+<tr class="odd">
+<td>Fairness</td>
+<td>Ensuring equitable model outcomes.</td>
+<td>Ethical ML concern.</td>
+<td>Used in AI governance, bias mitigation.</td>
+</tr>
+<tr class="even">
+<td>Bias (Ethical)</td>
+<td>Systematic unfairness in model behavior.</td>
+<td>Social and algorithmic issue.</td>
+<td>Used in fairness research, policy.</td>
+</tr>
+<tr class="odd">
+<td>Robustness (ML)</td>
+<td>Model’s resilience to noise and perturbation.</td>
+<td>Studied in adversarial ML.</td>
+<td>Used in safety, deployment.</td>
+</tr>
+<tr class="even">
+<td>Adversarial Example</td>
+<td>Input crafted to fool model.</td>
+<td>Goodfellow et al.&nbsp;(2014).</td>
+<td>Used in robustness testing, security.</td>
+</tr>
+<tr class="odd">
+<td>Regularization (Ethical)</td>
+<td>Constraint ensuring fairness and simplicity.</td>
+<td>Extends from L1/L2 principles.</td>
+<td>Used in value alignment.</td>
+</tr>
+<tr class="even">
+<td>Continual Learning</td>
+<td>Adapting to new tasks without forgetting old ones.</td>
+<td>Inspired by biological learning.</td>
+<td>Used in agents, lifelong AI.</td>
+</tr>
+<tr class="odd">
+<td>Catastrophic Forgetting</td>
+<td>Loss of prior knowledge when learning new tasks.</td>
+<td>Challenge in continual learning.</td>
+<td>Studied in neural systems, RL.</td>
+</tr>
+<tr class="even">
+<td>Knowledge Distillation</td>
+<td>Transferring knowledge from large to small model.</td>
+<td>Hinton et al.&nbsp;(2015).</td>
+<td>Used in model compression, deployment.</td>
+</tr>
+<tr class="odd">
+<td>Model Compression</td>
+<td>Reducing size without major performance loss.</td>
+<td>Efficiency research.</td>
+<td>Used in edge AI, deployment.</td>
+</tr>
+<tr class="even">
+<td>Edge AI</td>
+<td>Running ML models on local devices.</td>
+<td>Driven by IoT, privacy.</td>
+<td>Used in robotics, mobile computing.</td>
+</tr>
+<tr class="odd">
+<td>Ethical AI</td>
+<td>Development aligned with moral principles.</td>
+<td>Emerged with societal AI impact.</td>
+<td>Used in governance, design, policy.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="b9.-philosophy-foundations" class="level3">
+<h3 class="anchored" data-anchor-id="b9.-philosophy-foundations">B9. Philosophy &amp; Foundations</h3>
+<p><em>Beneath every theorem lies a belief; beneath every equation, a worldview. Mathematics and computation do not float above culture — they emerge from it. This cluster examines the philosophical bedrock of the mathematical mind: number as narrative, logic as law, knowledge as construction, and truth as choice.</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 32%">
+<col style="width: 23%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition</th>
+<th>Context</th>
+<th>Modern Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Philosophy of Mathematics</td>
+<td>Study of nature, meaning, and justification of mathematics.</td>
+<td>Rooted in Greek thought (Plato, Aristotle).</td>
+<td>Explores ontology, epistemology, and methodology of math.</td>
+</tr>
+<tr class="even">
+<td>Platonism</td>
+<td>Belief that mathematical objects exist independently of human minds.</td>
+<td>Plato’s <em>Theory of Forms</em>.</td>
+<td>Influences views of realism in math and science.</td>
+</tr>
+<tr class="odd">
+<td>Formalism</td>
+<td>Mathematics as manipulation of symbols under rules.</td>
+<td>Championed by Hilbert.</td>
+<td>Foundation for formal systems, proof assistants.</td>
+</tr>
+<tr class="even">
+<td>Logicism</td>
+<td>Reduction of mathematics to logic.</td>
+<td>Frege, Russell, Whitehead.</td>
+<td>Influenced analytic philosophy, type theory.</td>
+</tr>
+<tr class="odd">
+<td>Intuitionism</td>
+<td>Mathematics as mental construction, rejecting nonconstructive proofs.</td>
+<td>Brouwer’s school.</td>
+<td>Used in constructive logic, type theory.</td>
+</tr>
+<tr class="even">
+<td>Constructivism</td>
+<td>Knowledge built by constructing proofs and meaning.</td>
+<td>Philosophical extension of intuitionism.</td>
+<td>Used in education, constructive math.</td>
+</tr>
+<tr class="odd">
+<td>Empiricism (Mathematics)</td>
+<td>View that math knowledge arises from experience.</td>
+<td>Hume, Mill.</td>
+<td>Influences data-driven epistemology.</td>
+</tr>
+<tr class="even">
+<td>Nominalism</td>
+<td>Denies abstract existence of numbers; sees them as names or fictions.</td>
+<td>Medieval philosophy.</td>
+<td>Used in philosophy of language, formal ontology.</td>
+</tr>
+<tr class="odd">
+<td>Structuralism (Math)</td>
+<td>Focus on relations and structures rather than individual objects.</td>
+<td>Category theory influence.</td>
+<td>Used in modern foundations, physics.</td>
+</tr>
+<tr class="even">
+<td>Set-Theoretic Realism</td>
+<td>Belief that sets constitute fundamental mathematical reality.</td>
+<td>Zermelo-Fraenkel framework.</td>
+<td>Dominant foundation of 20th-century math.</td>
+</tr>
+<tr class="odd">
+<td>Category-Theoretic Foundation</td>
+<td>Mathematics based on morphisms and relationships.</td>
+<td>Eilenberg, Mac Lane (1945).</td>
+<td>Used in abstract algebra, logic, ML.</td>
+</tr>
+<tr class="even">
+<td>Axiomatic Method</td>
+<td>Building systems from explicit postulates.</td>
+<td>Euclid’s <em>Elements</em>.</td>
+<td>Used in formal logic, modern math.</td>
+</tr>
+<tr class="odd">
+<td>Model-Theoretic View</td>
+<td>Truth as satisfaction within models.</td>
+<td>Tarski’s semantics.</td>
+<td>Used in logic, computation, AI.</td>
+</tr>
+<tr class="even">
+<td>Proof-Theoretic View</td>
+<td>Truth as provability.</td>
+<td>Hilbert, Gentzen.</td>
+<td>Used in type theory, programming languages.</td>
+</tr>
+<tr class="odd">
+<td>Finitism</td>
+<td>Acceptance only of finite mathematical entities.</td>
+<td>Hilbert’s later philosophy.</td>
+<td>Used in constructive logic, computer science.</td>
+</tr>
+<tr class="even">
+<td>Ultrafinitism</td>
+<td>Denial even of large finite numbers’ existence.</td>
+<td>Esenin-Volpin.</td>
+<td>Niche philosophical stance in math.</td>
+</tr>
+<tr class="odd">
+<td>Mathematical Realism</td>
+<td>Belief in objective mathematical truths.</td>
+<td>Continuation of Platonism.</td>
+<td>Used in metaphysics, philosophy of science.</td>
+</tr>
+<tr class="even">
+<td>Mathematical Fictionalism</td>
+<td>Math as useful fiction aiding science.</td>
+<td>Hartry Field (1980s).</td>
+<td>Used in philosophy of language, logic.</td>
+</tr>
+<tr class="odd">
+<td>Epistemology (Math)</td>
+<td>Study of how we know mathematical truths.</td>
+<td>Philosophical tradition.</td>
+<td>Applied in learning theory, foundations.</td>
+</tr>
+<tr class="even">
+<td>Ontology (Math)</td>
+<td>Study of what mathematical entities exist.</td>
+<td>From Greek <em>ontos</em>, “being.”</td>
+<td>Used in metaphysics, logic.</td>
+</tr>
+<tr class="odd">
+<td>Semantics (Philosophy)</td>
+<td>Study of meaning in formal and natural systems.</td>
+<td>Frege, Tarski.</td>
+<td>Used in logic, computation, linguistics.</td>
+</tr>
+<tr class="even">
+<td>Syntax (Philosophy)</td>
+<td>Study of structure independent of meaning.</td>
+<td>Logical positivists.</td>
+<td>Used in linguistics, formal theory.</td>
+</tr>
+<tr class="odd">
+<td>Analytic Philosophy</td>
+<td>Tradition emphasizing clarity and logical analysis.</td>
+<td>Frege, Russell, Wittgenstein.</td>
+<td>Influenced philosophy of math and language.</td>
+</tr>
+<tr class="even">
+<td>Continental Philosophy (Math)</td>
+<td>Explores meaning, history, and embodiment of thought.</td>
+<td>Husserl, Heidegger, Derrida.</td>
+<td>Used in phenomenology, post-structuralism.</td>
+</tr>
+<tr class="odd">
+<td>Phenomenology</td>
+<td>Study of experience and consciousness.</td>
+<td>Husserl’s <em>Logical Investigations</em>.</td>
+<td>Influences intuitionism, embodied cognition.</td>
+</tr>
+<tr class="even">
+<td>Embodied Cognition</td>
+<td>View that cognition arises from bodily experience.</td>
+<td>Lakoff &amp; Núñez, <em>Where Mathematics Comes From</em>.</td>
+<td>Used in cognitive science, math education.</td>
+</tr>
+<tr class="odd">
+<td>Cognitive Constructivism</td>
+<td>Learning as active mental construction.</td>
+<td>Piaget’s theory.</td>
+<td>Used in pedagogy, ML analogy.</td>
+</tr>
+<tr class="even">
+<td>Social Constructivism</td>
+<td>Knowledge shaped by cultural and social context.</td>
+<td>Vygotsky, Kuhn.</td>
+<td>Used in sociology of science, education.</td>
+</tr>
+<tr class="odd">
+<td>Paradigm (Kuhn)</td>
+<td>Shared framework defining scientific inquiry.</td>
+<td><em>The Structure of Scientific Revolutions</em> (1962).</td>
+<td>Used in theory change, AI research.</td>
+</tr>
+<tr class="even">
+<td>Scientific Revolution</td>
+<td>Periods of radical conceptual transformation.</td>
+<td>Copernicus, Newton, Einstein.</td>
+<td>Used in philosophy of science.</td>
+</tr>
+<tr class="odd">
+<td>Reductionism</td>
+<td>Explaining wholes via parts.</td>
+<td>Classical science.</td>
+<td>Challenged by complexity, emergence.</td>
+</tr>
+<tr class="even">
+<td>Holism</td>
+<td>Understanding systems as integrated wholes.</td>
+<td>Gestalt theory.</td>
+<td>Used in ecology, complexity science.</td>
+</tr>
+<tr class="odd">
+<td>Emergentism</td>
+<td>Higher-order properties arise from lower interactions.</td>
+<td>Complexity theory.</td>
+<td>Used in AI, philosophy of mind.</td>
+</tr>
+<tr class="even">
+<td>Dualism</td>
+<td>Separation of mind and matter.</td>
+<td>Descartes.</td>
+<td>Influences cognitive science debates.</td>
+</tr>
+<tr class="odd">
+<td>Monism</td>
+<td>Unity of reality; denies mind–matter split.</td>
+<td>Spinoza.</td>
+<td>Used in naturalism, systems theory.</td>
+</tr>
+<tr class="even">
+<td>Materialism</td>
+<td>Reality as purely physical.</td>
+<td>Marx, modern science.</td>
+<td>Basis for naturalistic views of mind.</td>
+</tr>
+<tr class="odd">
+<td>Idealism</td>
+<td>Reality as fundamentally mental or conceptual.</td>
+<td>Kant, Hegel.</td>
+<td>Opposes materialism; influences math realism.</td>
+</tr>
+<tr class="even">
+<td>Pragmatism</td>
+<td>Truth as what works in practice.</td>
+<td>Peirce, James, Dewey.</td>
+<td>Influences applied math, AI, ML.</td>
+</tr>
+<tr class="odd">
+<td>Instrumentalism</td>
+<td>Theories as tools, not truths.</td>
+<td>Duhem, Carnap.</td>
+<td>Used in philosophy of science.</td>
+</tr>
+<tr class="even">
+<td>Relativism</td>
+<td>Truth depends on context or perspective.</td>
+<td>Kuhn, Feyerabend.</td>
+<td>Used in sociology, epistemology.</td>
+</tr>
+<tr class="odd">
+<td>Absolutism</td>
+<td>Belief in universal, context-independent truth.</td>
+<td>Classical metaphysics.</td>
+<td>Used in logic, ethics, mathematics.</td>
+</tr>
+<tr class="even">
+<td>Fallibilism</td>
+<td>All knowledge is provisional and revisable.</td>
+<td>Peirce, Popper.</td>
+<td>Used in science, philosophy.</td>
+</tr>
+<tr class="odd">
+<td>Falsifiability</td>
+<td>Criterion distinguishing science from non-science.</td>
+<td>Karl Popper.</td>
+<td>Used in scientific methodology.</td>
+</tr>
+<tr class="even">
+<td>Verificationism</td>
+<td>Meaning only in empirically verifiable statements.</td>
+<td>Logical positivists.</td>
+<td>Influenced early analytic philosophy.</td>
+</tr>
+<tr class="odd">
+<td>Mathematical Beauty</td>
+<td>Aesthetic judgment of simplicity and elegance.</td>
+<td>Poincaré, Dirac.</td>
+<td>Guides discovery, design, and theory choice.</td>
+</tr>
+<tr class="even">
+<td>Elegance (Math)</td>
+<td>Minimality with maximal expressive power.</td>
+<td>Shared across mathematics.</td>
+<td>Used in proof design, AI reasoning.</td>
+</tr>
+<tr class="odd">
+<td>Simplicity (Occam’s Razor)</td>
+<td>Prefer simplest theory fitting facts.</td>
+<td>William of Ockham.</td>
+<td>Used in modeling, inference, science.</td>
+</tr>
+<tr class="even">
+<td>Necessity and Contingency</td>
+<td>Distinguishing what must be vs.&nbsp;what might be.</td>
+<td>Modal logic roots.</td>
+<td>Used in metaphysics, mathematics.</td>
+</tr>
+<tr class="odd">
+<td>Determinism</td>
+<td>Every event follows fixed laws.</td>
+<td>Newtonian worldview.</td>
+<td>Debated in physics, computation.</td>
+</tr>
+<tr class="even">
+<td>Indeterminism</td>
+<td>Some events are probabilistic or free.</td>
+<td>Quantum mechanics, chaos.</td>
+<td>Used in ML, decision theory.</td>
+</tr>
+<tr class="odd">
+<td>Free Will</td>
+<td>Capacity to choose independent of causation.</td>
+<td>Ancient and modern debate.</td>
+<td>Explored in AI ethics, philosophy of mind.</td>
+</tr>
+<tr class="even">
+<td>Agency</td>
+<td>Power to act and make choices.</td>
+<td>Sociology, AI.</td>
+<td>Used in agent-based modeling, ethics.</td>
+</tr>
+<tr class="odd">
+<td>Consciousness</td>
+<td>Awareness of self and experience.</td>
+<td>Central in philosophy of mind.</td>
+<td>Studied in neuroscience, AI theory.</td>
+</tr>
+<tr class="even">
+<td>Mind–Body Problem</td>
+<td>Relation between mental and physical.</td>
+<td>Descartes’ dualism.</td>
+<td>Studied in cognitive science, AI.</td>
+</tr>
+<tr class="odd">
+<td>Computationalism</td>
+<td>Mind as information processing system.</td>
+<td>Turing, Putnam.</td>
+<td>Influences cognitive science, AI.</td>
+</tr>
+<tr class="even">
+<td>Functionalism</td>
+<td>Mental states defined by causal roles.</td>
+<td>Putnam, Fodor.</td>
+<td>Used in AI, philosophy of mind.</td>
+</tr>
+<tr class="odd">
+<td>Pancomputationalism</td>
+<td>Universe as a computational process.</td>
+<td>Wolfram, Lloyd.</td>
+<td>Used in digital physics, complexity.</td>
+</tr>
+<tr class="even">
+<td>Mathematical Universe Hypothesis</td>
+<td>Reality is a mathematical structure.</td>
+<td>Max Tegmark.</td>
+<td>Used in cosmology, metaphysics.</td>
+</tr>
+<tr class="odd">
+<td>Anthropic Principle</td>
+<td>Universe’s laws allow observers to exist.</td>
+<td>Cosmology and philosophy.</td>
+<td>Used in reasoning about constants, design.</td>
+</tr>
+<tr class="even">
+<td>Simulation Hypothesis</td>
+<td>Reality may be computationally simulated.</td>
+<td>Bostrom (2003).</td>
+<td>Popular in philosophy, AI culture.</td>
+</tr>
+<tr class="odd">
+<td>Ethics of Knowledge</td>
+<td>Moral dimensions of discovery and use.</td>
+<td>Ancient to modern inquiry.</td>
+<td>Used in AI, bioethics, data science.</td>
+</tr>
+<tr class="even">
+<td>Epistemic Justice</td>
+<td>Fair access to knowledge and credibility.</td>
+<td>Fricker (2007).</td>
+<td>Used in AI ethics, education.</td>
+</tr>
+<tr class="odd">
+<td>Epistemic Humility</td>
+<td>Recognition of knowledge’s limits.</td>
+<td>Classical virtue.</td>
+<td>Encouraged in science, AI, policy.</td>
+</tr>
+<tr class="even">
+<td>Reflexivity</td>
+<td>Knowledge influenced by observer’s position.</td>
+<td>Social theory.</td>
+<td>Used in sociology, AI interpretability.</td>
+</tr>
+<tr class="odd">
+<td>Posthumanism</td>
+<td>Philosophy beyond human-centered worldview.</td>
+<td>Haraway, Braidotti.</td>
+<td>Used in AI ethics, design.</td>
+</tr>
+<tr class="even">
+<td>Technē</td>
+<td>Craft or art of making; practical knowledge.</td>
+<td>Ancient Greek term.</td>
+<td>Root of “technology.”</td>
+</tr>
+<tr class="odd">
+<td>Epistēmē</td>
+<td>Theoretical knowledge or understanding.</td>
+<td>Greek distinction from technē.</td>
+<td>Used in philosophy of science.</td>
+</tr>
+<tr class="even">
+<td>Phronesis</td>
+<td>Practical wisdom, judgment in context.</td>
+<td>Aristotle’s ethics.</td>
+<td>Used in AI decision-making, governance.</td>
+</tr>
+<tr class="odd">
+<td>Logos</td>
+<td>Rational principle or word ordering reality.</td>
+<td>Heraclitus, Stoics.</td>
+<td>Foundational to logic and reason.</td>
+</tr>
+<tr class="even">
+<td>Mythos</td>
+<td>Narrative explanation preceding reason.</td>
+<td>Ancient cosmologies.</td>
+<td>Studied in philosophy, anthropology.</td>
+</tr>
+<tr class="odd">
+<td>Aletheia</td>
+<td>Unconcealment, truth as disclosure.</td>
+<td>Heidegger’s concept.</td>
+<td>Used in phenomenology, AI epistemics.</td>
+</tr>
+<tr class="even">
+<td>Telos</td>
+<td>Purpose or end-goal.</td>
+<td>Aristotle’s final cause.</td>
+<td>Used in systems, AI design, ethics.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="b10.-future-horizon" class="level3">
+<h3 class="anchored" data-anchor-id="b10.-future-horizon">B10. Future &amp; Horizon</h3>
+<p><em>As mathematics merges with data and intelligence, a new horizon unfolds — where proof becomes computation, models become mirrors, and knowledge bends toward consciousness. This cluster gathers the frontier vocabulary of our evolving epistemic landscape: where human reason meets synthetic mind, and abstraction becomes architecture.</em></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 28%">
+<col style="width: 21%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Definition</th>
+<th>Context</th>
+<th>Modern Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Artificial Intelligence (AI)</td>
+<td>Systems that perform tasks requiring human-like intelligence.</td>
+<td>Coined at Dartmouth Conference (1956).</td>
+<td>Used in automation, reasoning, learning, and perception.</td>
+</tr>
+<tr class="even">
+<td>Machine Intelligence</td>
+<td>Broader term encompassing all computational intelligence.</td>
+<td>Grew with cybernetics and ML.</td>
+<td>Used in AI research and cognitive modeling.</td>
+</tr>
+<tr class="odd">
+<td>Artificial General Intelligence (AGI)</td>
+<td>Hypothetical AI with human-level flexibility and understanding.</td>
+<td>Philosophical and technical aspiration.</td>
+<td>Used in alignment research, AI safety.</td>
+</tr>
+<tr class="even">
+<td>Artificial Superintelligence (ASI)</td>
+<td>Intelligence far surpassing human capacity.</td>
+<td>Concept from Nick Bostrom’s writings.</td>
+<td>Used in foresight studies, existential risk.</td>
+</tr>
+<tr class="odd">
+<td>Synthetic Consciousness</td>
+<td>Artificial system exhibiting awareness or sentience.</td>
+<td>Philosophical and experimental notion.</td>
+<td>Used in cognitive AI, robotics, philosophy of mind.</td>
+</tr>
+<tr class="even">
+<td>Cognitive Architecture</td>
+<td>Blueprint for modeling general intelligence.</td>
+<td>Newell, Simon’s <em>Soar</em>, ACT-R.</td>
+<td>Used in cognitive science, AI agents.</td>
+</tr>
+<tr class="odd">
+<td>Neurosymbolic AI</td>
+<td>Integration of neural and symbolic reasoning.</td>
+<td>Emerging from hybrid AI.</td>
+<td>Used in explainable, robust systems.</td>
+</tr>
+<tr class="even">
+<td>Embodied AI</td>
+<td>Agents learning through interaction with physical world.</td>
+<td>Rooted in robotics, embodied cognition.</td>
+<td>Used in robotics, reinforcement learning.</td>
+</tr>
+<tr class="odd">
+<td>Agentic AI</td>
+<td>Systems capable of autonomous planning and action.</td>
+<td>Emerging from RL and LLM integration.</td>
+<td>Used in AI agents, multi-agent frameworks.</td>
+</tr>
+<tr class="even">
+<td>Autonomous System</td>
+<td>Self-governing system operating without continuous supervision.</td>
+<td>Control theory and robotics.</td>
+<td>Used in vehicles, drones, agents.</td>
+</tr>
+<tr class="odd">
+<td>Alignment</td>
+<td>Ensuring AI goals match human values.</td>
+<td>Central concern of AI ethics.</td>
+<td>Used in governance, safety research.</td>
+</tr>
+<tr class="even">
+<td>Value Learning</td>
+<td>Deriving moral or preference functions from data.</td>
+<td>AI alignment research.</td>
+<td>Used in RLHF, ethical AI.</td>
+</tr>
+<tr class="odd">
+<td>RLHF (Reinforcement Learning from Human Feedback)</td>
+<td>Technique aligning model behavior with human intent.</td>
+<td>OpenAI, DeepMind developments.</td>
+<td>Used in LLM fine-tuning, alignment.</td>
+</tr>
+<tr class="even">
+<td>Interpretability (AI)</td>
+<td>Understanding model’s internal reasoning.</td>
+<td>Essential for trust.</td>
+<td>Used in AI auditing, compliance.</td>
+</tr>
+<tr class="odd">
+<td>Transparency (AI)</td>
+<td>Clarity about model design, data, and behavior.</td>
+<td>Part of AI governance.</td>
+<td>Used in regulations, safety.</td>
+</tr>
+<tr class="even">
+<td>Explainable AI (XAI)</td>
+<td>Methods making AI decisions intelligible.</td>
+<td>DARPA initiative (2016).</td>
+<td>Used in critical domains (finance, health).</td>
+</tr>
+<tr class="odd">
+<td>Ethical Alignment</td>
+<td>Integration of normative values into AI behavior.</td>
+<td>Interdisciplinary research.</td>
+<td>Used in policy, governance, and design.</td>
+</tr>
+<tr class="even">
+<td>AI Governance</td>
+<td>Frameworks for managing AI responsibly.</td>
+<td>Emerging global policy field.</td>
+<td>Used in regulation, ethics, oversight.</td>
+</tr>
+<tr class="odd">
+<td>Responsible AI</td>
+<td>Development adhering to fairness, transparency, safety.</td>
+<td>Tech industry frameworks.</td>
+<td>Used in practice, governance.</td>
+</tr>
+<tr class="even">
+<td>AI Safety</td>
+<td>Preventing harmful behavior in powerful systems.</td>
+<td>Central to existential risk studies.</td>
+<td>Used in AGI research, alignment.</td>
+</tr>
+<tr class="odd">
+<td>Existential Risk</td>
+<td>Threats that could annihilate or irreversibly harm humanity.</td>
+<td>Nick Bostrom, <em>Global Catastrophic Risks</em>.</td>
+<td>Used in longtermism, policy, AI ethics.</td>
+</tr>
+<tr class="even">
+<td>Longtermism</td>
+<td>Ethical focus on long-term future impact.</td>
+<td>Effective altruism movement.</td>
+<td>Used in AI, governance, philosophy.</td>
+</tr>
+<tr class="odd">
+<td>Effective Altruism</td>
+<td>Using evidence and reason to maximize good.</td>
+<td>MacAskill, Singer, Bostrom.</td>
+<td>Influences AI ethics, philanthropy.</td>
+</tr>
+<tr class="even">
+<td>Technological Singularity</td>
+<td>Point of accelerating, self-improving intelligence.</td>
+<td>Popularized by Kurzweil.</td>
+<td>Used in futurism, AI forecasting.</td>
+</tr>
+<tr class="odd">
+<td>Accelerationism</td>
+<td>Belief that technological progress should be hastened.</td>
+<td>Philosophical and political idea.</td>
+<td>Used in debates on AI, automation.</td>
+</tr>
+<tr class="even">
+<td>Decelerationism</td>
+<td>Advocacy for slowing tech to ensure safety.</td>
+<td>Emerging counterview.</td>
+<td>Used in policy, bioethics, AI regulation.</td>
+</tr>
+<tr class="odd">
+<td>Posthuman Intelligence</td>
+<td>Intelligence beyond biological humanity.</td>
+<td>Philosophical speculation.</td>
+<td>Used in AI futures, transhumanism.</td>
+</tr>
+<tr class="even">
+<td>Transhumanism</td>
+<td>Movement advocating human enhancement via technology.</td>
+<td>Founded by FM-2030, Max More.</td>
+<td>Used in ethics, biotech, AI integration.</td>
+</tr>
+<tr class="odd">
+<td>Human–Machine Symbiosis</td>
+<td>Cooperative interaction between human and AI.</td>
+<td>Licklider’s vision (1960).</td>
+<td>Used in AI design, augmentation.</td>
+</tr>
+<tr class="even">
+<td>Cyborg</td>
+<td>Organism enhanced by cybernetic systems.</td>
+<td>Coined by Clynes &amp; Kline (1960).</td>
+<td>Used in bioengineering, ethics, sci-fi.</td>
+</tr>
+<tr class="odd">
+<td>Neural Interface</td>
+<td>Direct communication link between brain and machine.</td>
+<td>Brain–computer interface research.</td>
+<td>Used in medicine, augmentation.</td>
+</tr>
+<tr class="even">
+<td>Augmented Intelligence</td>
+<td>AI amplifying rather than replacing human cognition.</td>
+<td>Alternative to automation narrative.</td>
+<td>Used in decision support, creativity tools.</td>
+</tr>
+<tr class="odd">
+<td>Collective Intelligence</td>
+<td>Group-level cognition emerging from collaboration.</td>
+<td>Pierre Lévy, systems theory.</td>
+<td>Used in crowdsourcing, swarm AI.</td>
+</tr>
+<tr class="even">
+<td>Networked Intelligence</td>
+<td>Distributed knowledge across connected agents.</td>
+<td>Internet and cloud computing.</td>
+<td>Used in IoT, AI ecosystems.</td>
+</tr>
+<tr class="odd">
+<td>Cloud Intelligence</td>
+<td>AI leveraging cloud-scale computation.</td>
+<td>Rise of hyperscale computing.</td>
+<td>Used in LLMs, SaaS AI systems.</td>
+</tr>
+<tr class="even">
+<td>Edge Intelligence</td>
+<td>AI computation performed on local devices.</td>
+<td>Emerged with IoT and privacy concerns.</td>
+<td>Used in robotics, real-time systems.</td>
+</tr>
+<tr class="odd">
+<td>Federated Learning</td>
+<td>Distributed training across devices without sharing raw data.</td>
+<td>Google (2017).</td>
+<td>Used in privacy-preserving AI.</td>
+</tr>
+<tr class="even">
+<td>Privacy-Preserving ML</td>
+<td>ML techniques protecting data confidentiality.</td>
+<td>Cryptography + ML fusion.</td>
+<td>Used in healthcare, finance.</td>
+</tr>
+<tr class="odd">
+<td>Differential Privacy</td>
+<td>Guarantee limiting individual data influence.</td>
+<td>Dwork et al.&nbsp;(2006).</td>
+<td>Used in statistics, AI governance.</td>
+</tr>
+<tr class="even">
+<td>Homomorphic Encryption</td>
+<td>Computation on encrypted data.</td>
+<td>Gentry (2009).</td>
+<td>Used in secure AI, cloud computing.</td>
+</tr>
+<tr class="odd">
+<td>Zero-Knowledge Proof</td>
+<td>Prove knowledge without revealing it.</td>
+<td>Goldwasser, Micali, Rackoff.</td>
+<td>Used in cryptography, verification.</td>
+</tr>
+<tr class="even">
+<td>Data Sovereignty</td>
+<td>Right to control one’s data and its processing.</td>
+<td>Policy concept in digital ethics.</td>
+<td>Used in AI governance, law.</td>
+</tr>
+<tr class="odd">
+<td>Digital Identity</td>
+<td>Representation of personhood in data systems.</td>
+<td>Grew with online ecosystems.</td>
+<td>Used in authentication, privacy.</td>
+</tr>
+<tr class="even">
+<td>Self-Sovereign Identity (SSI)</td>
+<td>Decentralized identity model.</td>
+<td>Blockchain technologies.</td>
+<td>Used in Web3, governance.</td>
+</tr>
+<tr class="odd">
+<td>Decentralized AI</td>
+<td>AI distributed across networks, not centralized.</td>
+<td>Linked with blockchain.</td>
+<td>Used in edge networks, federated systems.</td>
+</tr>
+<tr class="even">
+<td>AI Constitution</td>
+<td>Set of rules guiding AI behavior and judgment.</td>
+<td>Anthropic’s <em>constitutional AI</em>.</td>
+<td>Used in governance, alignment.</td>
+</tr>
+<tr class="odd">
+<td>Mechanistic Interpretability</td>
+<td>Reverse-engineering learned model circuits.</td>
+<td>DeepMind, Anthropic research.</td>
+<td>Used in safety, transparency.</td>
+</tr>
+<tr class="even">
+<td>Causal Inference</td>
+<td>Modeling cause-effect rather than correlation.</td>
+<td>Pearl’s <em>Do-Calculus</em>.</td>
+<td>Used in science, fairness, AI reasoning.</td>
+</tr>
+<tr class="odd">
+<td>Counterfactual Reasoning</td>
+<td>Exploring “what-if” scenarios.</td>
+<td>Hume, Pearl.</td>
+<td>Used in explainability, ethics, planning.</td>
+</tr>
+<tr class="even">
+<td>Simulacrum</td>
+<td>Representation detached from original reality.</td>
+<td>Baudrillard, <em>Simulacra and Simulation</em>.</td>
+<td>Used in generative AI, media theory.</td>
+</tr>
+<tr class="odd">
+<td>Synthetic Data</td>
+<td>Artificially generated data preserving patterns.</td>
+<td>Developed for privacy and testing.</td>
+<td>Used in ML training, simulation.</td>
+</tr>
+<tr class="even">
+<td>Digital Twin</td>
+<td>Virtual replica of real-world system.</td>
+<td>NASA, manufacturing.</td>
+<td>Used in simulation, AI control.</td>
+</tr>
+<tr class="odd">
+<td>World Model</td>
+<td>Internal simulation of environment.</td>
+<td>Robotics, RL research.</td>
+<td>Used in planning, predictive AI.</td>
+</tr>
+<tr class="even">
+<td>Self-Modeling Agent</td>
+<td>AI maintaining a model of its own state.</td>
+<td>Recursive modeling theory.</td>
+<td>Used in meta-learning, alignment.</td>
+</tr>
+<tr class="odd">
+<td>Theory of Mind (AI)</td>
+<td>AI’s capacity to infer beliefs or intentions of others.</td>
+<td>Cognitive psychology concept.</td>
+<td>Used in social AI, cooperation.</td>
+</tr>
+<tr class="even">
+<td>Goal-Oriented Architecture</td>
+<td>System designed around explicit objectives.</td>
+<td>Cybernetics, planning.</td>
+<td>Used in RL, autonomous systems.</td>
+</tr>
+<tr class="odd">
+<td>Teleology (AI)</td>
+<td>Study of purpose-driven behavior in machines.</td>
+<td>Philosophical lineage from Aristotle.</td>
+<td>Used in ethics, AI design.</td>
+</tr>
+<tr class="even">
+<td>Emergent Behavior</td>
+<td>Complex patterns arising from simple rules.</td>
+<td>Observed in multi-agent systems.</td>
+<td>Used in swarm AI, LLMs.</td>
+</tr>
+<tr class="odd">
+<td>AI Ecology</td>
+<td>Interaction of multiple AI agents and humans.</td>
+<td>Systems view of intelligence.</td>
+<td>Used in governance, environment modeling.</td>
+</tr>
+<tr class="even">
+<td>Cognitive Economy</td>
+<td>Efficient allocation of limited cognitive resources.</td>
+<td>Herbert Simon.</td>
+<td>Used in bounded rationality, AI design.</td>
+</tr>
+<tr class="odd">
+<td>Bounded Rationality</td>
+<td>Decision-making under resource constraints.</td>
+<td>Simon’s theory.</td>
+<td>Used in AI planning, behavioral economics.</td>
+</tr>
+<tr class="even">
+<td>Heuristic Reasoning</td>
+<td>Approximate problem-solving using experience.</td>
+<td>Kahneman, Tversky.</td>
+<td>Used in search, decision-making, AI.</td>
+</tr>
+<tr class="odd">
+<td>Intuition (AI)</td>
+<td>Rapid, non-analytic inference.</td>
+<td>Psychological analogy.</td>
+<td>Used in heuristics, neural reasoning.</td>
+</tr>
+<tr class="even">
+<td>Moral Philosophy (AI)</td>
+<td>Application of ethics to autonomous decisions.</td>
+<td>Derived from normative ethics.</td>
+<td>Used in policy, governance, design.</td>
+</tr>
+<tr class="odd">
+<td>Deontic Logic</td>
+<td>Logic of obligation and permission.</td>
+<td>Von Wright (1951).</td>
+<td>Used in AI law, normative systems.</td>
+</tr>
+<tr class="even">
+<td>Virtue Ethics (AI)</td>
+<td>AI guided by character and moral virtue.</td>
+<td>Aristotelian ethics.</td>
+<td>Used in design for trust and care.</td>
+</tr>
+<tr class="odd">
+<td>Consequentialism</td>
+<td>Judging actions by outcomes.</td>
+<td>Mill, Bentham.</td>
+<td>Used in utility-based AI, RL.</td>
+</tr>
+<tr class="even">
+<td>Deontology</td>
+<td>Judging actions by rules or duties.</td>
+<td>Kantian ethics.</td>
+<td>Used in constraint-based AI.</td>
+</tr>
+<tr class="odd">
+<td>Care Ethics</td>
+<td>Emphasizing empathy and relationality.</td>
+<td>Gilligan, Noddings.</td>
+<td>Used in social robotics, AI ethics.</td>
+</tr>
+<tr class="even">
+<td>AI Personhood</td>
+<td>Concept of granting rights to artificial agents.</td>
+<td>Legal and ethical debate.</td>
+<td>Used in jurisprudence, ethics.</td>
+</tr>
+<tr class="odd">
+<td>Digital Ethics</td>
+<td>Moral evaluation of digital systems.</td>
+<td>Interdisciplinary field.</td>
+<td>Used in policy, AI design.</td>
+</tr>
+<tr class="even">
+<td>Epistemic AI</td>
+<td>AI systems concerned with knowledge and belief.</td>
+<td>AI epistemology.</td>
+<td>Used in reasoning, knowledge graphs.</td>
+</tr>
+<tr class="odd">
+<td>Ontological Design</td>
+<td>Designing systems that shape being and behavior.</td>
+<td>Escobar, Winograd.</td>
+<td>Used in HCI, AI, architecture.</td>
+</tr>
+<tr class="even">
+<td>Speculative Design</td>
+<td>Envisioning futures through prototypes.</td>
+<td>Dunne &amp; Raby.</td>
+<td>Used in foresight, AI ethics.</td>
+</tr>
+<tr class="odd">
+<td>Design Fiction</td>
+<td>Narrative speculation exploring technology’s impact.</td>
+<td>Julian Bleecker.</td>
+<td>Used in storytelling, research, foresight.</td>
+</tr>
+<tr class="even">
+<td>Futures Literacy</td>
+<td>Capacity to anticipate and imagine alternatives.</td>
+<td>UNESCO initiative.</td>
+<td>Used in foresight education, policy.</td>
+</tr>
+<tr class="odd">
+<td>Posthuman Ethics</td>
+<td>Ethics beyond human-centered frameworks.</td>
+<td>Braidotti, Haraway.</td>
+<td>Used in AI, ecology, governance.</td>
+</tr>
+<tr class="even">
+<td>Cosmotechnics</td>
+<td>Integration of technology and cosmology.</td>
+<td>Yuk Hui’s philosophy.</td>
+<td>Used in cross-cultural AI thought.</td>
+</tr>
+<tr class="odd">
+<td>Mathematics of Meaning</td>
+<td>Formal structures modeling semantics and value.</td>
+<td>Category theory, vector semantics.</td>
+<td>Used in AI language models, cognitive science.</td>
+</tr>
+<tr class="even">
+<td>Computational Epistemology</td>
+<td>Study of knowledge in algorithmic systems.</td>
+<td>Emerging field at intersection of logic and AI.</td>
+<td>Used in explainable AI, reasoning systems.</td>
+</tr>
+<tr class="odd">
+<td>Synthetic Philosophy</td>
+<td>Integration of science, computation, and metaphysics.</td>
+<td>Spencer, AI renaissance.</td>
+<td>Used in AGI and epistemic architectures.</td>
+</tr>
+<tr class="even">
+<td>Mathematical Theology</td>
+<td>Inquiry into ultimate reality via number and logic.</td>
+<td>Pythagorean tradition revived.</td>
+<td>Used in philosophy of AI, metaphysics.</td>
+</tr>
+<tr class="odd">
+<td>Infinite Horizon</td>
+<td>Perspective extending beyond temporal bounds.</td>
+<td>Control theory, philosophy.</td>
+<td>Used in RL, ethics, and foresight.</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../books/en-US/chronicles-a.html" class="pagination-link" aria-label="Annex A. Mathematical Timeline: 40 Milestones in 4000 Years">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Annex A. Mathematical Timeline: 40 Milestones in 4000 Years</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../books/en-US/chronicles-c.html" class="pagination-link" aria-label="Annex C. Portraits of Thinkers">
+        <span class="nav-page-text"><span class="chapter-title">Annex C. Portraits of Thinkers</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

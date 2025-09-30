@@ -1,6 +1,7 @@
 # Content 
 
 - The Tales 
-- The Stories 
+- The Ideas 
 - The Chronicles
+- The Code
 - The Treatise
